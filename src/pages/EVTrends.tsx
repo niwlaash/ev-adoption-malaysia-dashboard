@@ -88,9 +88,14 @@ export default function EVTrends() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-blue-600 p-8 rounded-2xl text-white">
            <Users className="w-8 h-8 mb-4 opacity-80" />
-           <h3 className="text-2xl font-bold mb-2">Social Proof Trends</h3>
+           <h4 className="text-2xl font-bold mb-2">Social Proof Trends</h4>
            <p className="text-blue-100 mb-6">EV adoption is moving from "Early Adopter" to "Early Majority". 2026 data shows widespread adoption across suburban regions.</p>
-           <button className="px-6 py-2 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors">View Map Breakdown</button>
+           <button 
+             onClick={() => alert('Regional Map Breakdown coming in the next data sync. Stay tuned!')}
+             className="px-6 py-2 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors"
+           >
+             View Map Breakdown
+           </button>
         </div>
         <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 text-white">
            <TrendingUp className="w-8 h-8 mb-4 text-purple-500" />

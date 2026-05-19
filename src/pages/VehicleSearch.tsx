@@ -9,6 +9,21 @@ const mockCompareData = [
 ];
 
 export default function VehicleSearch() {
+  const handleExport = () => {
+    const headers = ['Make', 'Model', 'Type', 'Range', 'Price', 'Sales'];
+    const rows = mockCompareData.map(v => [v.make, v.model, v.type, v.range, v.price, v.sales]);
+    const csvContent = [headers, ...rows].map(e => e.join(",")).join("\n");
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement("a");
+    const url = URL.createObjectURL(blob);
+    link.setAttribute("href", url);
+    link.setAttribute("download", "ev_comparison_malaysia_2026.csv");
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -16,7 +31,10 @@ export default function VehicleSearch() {
           <h2 className="text-3xl font-bold tracking-tight">Vehicle Comparison</h2>
           <p className="text-neutral-500">Search and compare specific models by performance and adoption rate.</p>
         </div>
-        <button className="flex items-center gap-2 px-4 py-2 bg-neutral-900 border border-neutral-800 rounded-lg text-sm font-medium hover:bg-neutral-800 transition-colors">
+        <button 
+          onClick={handleExport}
+          className="flex items-center gap-2 px-4 py-2 bg-neutral-900 border border-neutral-800 rounded-lg text-sm font-medium hover:bg-neutral-800 transition-colors"
+        >
           <Download className="w-4 h-4" /> Export CSV
         </button>
       </div>
