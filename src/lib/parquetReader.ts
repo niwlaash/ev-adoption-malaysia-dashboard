@@ -29,9 +29,9 @@ export async function fetchAndParseParquet(url: string): Promise<Table> {
     const uint8Array = new Uint8Array(arrayBuffer);
     
     // Read parquet into Arrow IPC format
-    const arrowWasmData = readParquet(uint8Array);
+    const arrowWasmData = readParquet(uint8Array) as any;
     
-    if (!arrowWasmData || arrowWasmData.length === 0) {
+    if (!arrowWasmData || (arrowWasmData.length === 0 && !arrowWasmData.numRows)) {
        throw new Error("Parquet reader returned empty Arrow data");
     }
 
