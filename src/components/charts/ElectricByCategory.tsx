@@ -8,9 +8,9 @@ export default function ElectricByCategory() {
 
     // Filter out 'all_types' and map to chart format
     const chartData = (data?.category_dist || [])
-        .filter((item: any) => item.type !== 'all_types')
+        .filter((item: any) => item.type !== 'All Types')
         .map((item: any) => ({
-            name: item.type.charAt(0).toUpperCase() + item.type.slice(1),
+            name: item.type,
             count: item.count
         }));
 
@@ -24,6 +24,8 @@ export default function ElectricByCategory() {
                     <Tooltip
                         cursor={{ fill: 'rgba(255,255,255,0.05)' }}
                         contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
+                        itemStyle={{ color: '#fff' }}
+                        labelStyle={{ color: '#fff' }}
                     />
                     <Bar dataKey="count" radius={[4, 4, 0, 0]} name="Electric Regs" barSize={40}>
                         {chartData.map((_entry: any, index: number) => (

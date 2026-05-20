@@ -1,4 +1,4 @@
-import { LayoutDashboard, TrendingUp, Search, Info, ShieldCheck } from 'lucide-react';
+import { LayoutDashboard, TrendingUp, Search, Info } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const navItems = [
@@ -6,7 +6,6 @@ const navItems = [
   { name: 'EV Trends', path: '/dashboard/trends', icon: TrendingUp },
   { name: 'Vehicle Comparison', path: '/dashboard/compare', icon: Search },
   { name: 'About', path: '/dashboard/about', icon: Info },
-  { name: 'Data Inspector', path: '/dashboard/prototype', icon: ShieldCheck },
 ];
 
 export default function Sidebar() {

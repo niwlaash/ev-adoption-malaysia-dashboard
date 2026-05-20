@@ -152,7 +152,7 @@
       "month": "Jan",
       "year": "2025",
       "date_sort": "2025-01",
-      "BYD": 505,
+      "Byd": 505,
       "Chery": 12,
       "Proton": 421,
       "Tesla": 13,
@@ -162,7 +162,7 @@
       "month": "Feb",
       "year": "2025",
       "date_sort": "2025-02",
-      "BYD": 634,
+      "Byd": 634,
       "Chery": 10,
       "Proton": 580,
       "Tesla": 443,
@@ -172,7 +172,7 @@
       "month": "Mar",
       "year": "2025",
       "date_sort": "2025-03",
-      "BYD": 1020,
+      "Byd": 1020,
       "Chery": 30,
       "Proton": 737,
       "Tesla": 171,
@@ -182,7 +182,7 @@
       "month": "Apr",
       "year": "2025",
       "date_sort": "2025-04",
-      "BYD": 1048,
+      "Byd": 1048,
       "Chery": 45,
       "Proton": 799,
       "Tesla": 108,
@@ -192,7 +192,7 @@
       "month": "May",
       "year": "2025",
       "date_sort": "2025-05",
-      "BYD": 1148,
+      "Byd": 1148,
       "Chery": 116,
       "Proton": 862,
       "Tesla": 1075,
@@ -202,7 +202,7 @@
       "month": "Jun",
       "year": "2025",
       "date_sort": "2025-06",
-      "BYD": 1045,
+      "Byd": 1045,
       "Chery": 189,
       "Proton": 604,
       "Tesla": 587,
@@ -212,7 +212,7 @@
       "month": "Jul",
       "year": "2025",
       "date_sort": "2025-07",
-      "BYD": 870,
+      "Byd": 870,
       "Chery": 59,
       "Proton": 686,
       "Tesla": 256,
@@ -222,7 +222,7 @@
       "month": "Aug",
       "year": "2025",
       "date_sort": "2025-08",
-      "BYD": 1119,
+      "Byd": 1119,
       "Chery": 53,
       "Proton": 766,
       "Tesla": 509,
@@ -232,7 +232,7 @@
       "month": "Sep",
       "year": "2025",
       "date_sort": "2025-09",
-      "BYD": 1028,
+      "Byd": 1028,
       "Chery": 96,
       "Proton": 757,
       "Tesla": 685,
@@ -242,7 +242,7 @@
       "month": "Oct",
       "year": "2025",
       "date_sort": "2025-10",
-      "BYD": 1748,
+      "Byd": 1748,
       "Chery": 342,
       "Proton": 742,
       "Tesla": 320,
@@ -252,7 +252,7 @@
       "month": "Nov",
       "year": "2025",
       "date_sort": "2025-11",
-      "BYD": 1705,
+      "Byd": 1705,
       "Chery": 250,
       "Proton": 830,
       "Tesla": 1301,
@@ -262,7 +262,7 @@
       "month": "Dec",
       "year": "2025",
       "date_sort": "2025-12",
-      "BYD": 2537,
+      "Byd": 2537,
       "Chery": 343,
       "Proton": 1106,
       "Tesla": 1814,
@@ -272,7 +272,7 @@
       "month": "Jan",
       "year": "2026",
       "date_sort": "2026-01",
-      "BYD": 913,
+      "Byd": 913,
       "Chery": 463,
       "Proton": 3276,
       "Tesla": 176,
@@ -282,7 +282,7 @@
       "month": "Feb",
       "year": "2026",
       "date_sort": "2026-02",
-      "BYD": 469,
+      "Byd": 469,
       "Chery": 303,
       "Proton": 1802,
       "Tesla": 144,
@@ -292,7 +292,7 @@
       "month": "Mar",
       "year": "2026",
       "date_sort": "2026-03",
-      "BYD": 879,
+      "Byd": 879,
       "Chery": 265,
       "Proton": 2377,
       "Tesla": 338,
@@ -302,7 +302,7 @@
       "month": "Apr",
       "year": "2026",
       "date_sort": "2026-04",
-      "BYD": 1413,
+      "Byd": 1413,
       "Chery": 562,
       "Proton": 2408,
       "Tesla": 172,
@@ -314,27 +314,27 @@
     "total_2026": 270314,
     "ev_total_2025": 44813,
     "hybrid_total_2025": 31190,
-    "last_updated": "2026-05-20 20:25:13"
+    "last_updated": "2026-05-20 20:56:04"
   },
   "fuel_dist": [
     {
-      "name": "petrol",
+      "name": "Petrol",
       "value": 743469
     },
     {
-      "name": "greendiesel",
+      "name": "Green Diesel",
       "value": 45422
     },
     {
-      "name": "electric",
+      "name": "Electric",
       "value": 44813
     },
     {
-      "name": "hybrid_petrol",
+      "name": "Hybrid Petrol",
       "value": 31176
     },
     {
-      "name": "diesel",
+      "name": "Diesel",
       "value": 5430
     }
   ],
@@ -374,19 +374,19 @@
   ],
   "top_ev_models": [
     {
-      "model": "Proton e.MAS 7",
+      "model": "Proton E.Mas 7",
       "count": 10067
     },
     {
-      "model": "Proton e.MAS 5",
+      "model": "Proton E.Mas 5",
       "count": 8686
     },
     {
-      "model": "BYD Atto 3",
+      "model": "Byd Atto 3",
       "count": 5846
     },
     {
-      "model": "BYD Sealion",
+      "model": "Byd Sealion",
       "count": 5046
     },
     {
@@ -402,7 +402,7 @@
       "count": 2509
     },
     {
-      "model": "BYD Atto 2",
+      "model": "Byd Atto 2",
       "count": 2052
     }
   ],
@@ -412,7 +412,7 @@
       "count": 18753
     },
     {
-      "make": "BYD",
+      "make": "Byd",
       "count": 18081
     },
     {
@@ -432,7 +432,7 @@
       "count": 1930
     },
     {
-      "make": "BMW",
+      "make": "Bmw",
       "count": 1705
     },
     {
@@ -442,11 +442,11 @@
   ],
   "state_dist": [
     {
-      "state": "Rakan Niaga",
+      "state": "Corporate Fleet",
       "count": 34884
     },
     {
-      "state": "W.P. Kuala Lumpur",
+      "state": "Kuala Lumpur",
       "count": 4572
     },
     {
@@ -484,31 +484,31 @@
   ],
   "category_dist": [
     {
-      "type": "all_types",
+      "type": "All Types",
       "count": 140529
     },
     {
-      "type": "car",
+      "type": "Passenger Car",
       "count": 104096
     },
     {
-      "type": "motorcycle",
+      "type": "Motorcycle",
       "count": 25531
     },
     {
-      "type": "other",
+      "type": "Special Purpose",
       "count": 10007
     },
     {
-      "type": "van",
+      "type": "Van/Commercial",
       "count": 577
     },
     {
-      "type": "bus",
+      "type": "Bus",
       "count": 253
     },
     {
-      "type": "lorry",
+      "type": "Lorry/Truck",
       "count": 65
     }
   ]

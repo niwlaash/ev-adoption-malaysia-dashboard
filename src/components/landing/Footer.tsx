@@ -10,28 +10,27 @@ export default function Footer() {
             A professional analytics platform built to visualize open data from the Department of Statistics Malaysia (DOSM) regarding vehicle registration adoption metrics.
           </p>
         </div>
-        
+
         <div>
           <h4 className="text-white font-semibold mb-4">Resources</h4>
           <ul className="space-y-2 text-sm flex flex-col">
             <a href="https://data.gov.my/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">DOSM Open Data</a>
-            <a href="https://github.com/niwlaash/ev-adoption-malaysia-dashboard.git" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub Repository</a>
-            <Link to="/contact" className="hover:text-white transition-colors">Contact Support</Link>
+            <a href="https://github.com/niwlaash" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Developer GitHub</a>
+            <a href="https://www.linkedin.com/in/alwin-ashraf-nor-azmil-4628a9223/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Developer LinkedIn</a>
           </ul>
         </div>
-        
+
         <div>
-          <h4 className="text-white font-semibold mb-4">Legal</h4>
+          <h4 className="text-white font-semibold mb-4">System</h4>
           <ul className="space-y-2 text-sm flex flex-col">
+            <Link to="/contact" className="hover:text-white transition-colors">Contact Developer</Link>
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link to="/license" className="hover:text-white transition-colors">MIT License</Link>
-            <Link to="/contact" className="hover:text-white transition-colors">Contact</Link>
           </ul>
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-neutral-800 text-sm flex flex-col md:flex-row justify-between items-center text-neutral-500">
-        <p>&copy; {new Date().getFullYear()} EV Analytics Malaysia. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Alwin Ashraf. All rights reserved.</p>
         <p>Built with React & Vite.</p>
       </div>
     </footer>

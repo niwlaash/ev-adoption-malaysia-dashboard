@@ -1,4 +1,4 @@
-import { Download, TrendingUp } from 'lucide-react';
+import { Download, TrendingUp, Trophy, Award, Medal } from 'lucide-react';
 import { useSummaryStats } from '../hooks/useMetricsData';
 
 export default function VehicleSearch() {
@@ -12,78 +12,97 @@ export default function VehicleSearch() {
   })) || [];
 
   const handleExport = () => {
-    const headers = ['Make', 'Model', 'Registrations'];
-    const rows = displayData.map((v: any) => [v.make, v.model, v.regs]);
+    const headers = ['Rank', 'Make', 'Model', 'Registrations'];
+    const rows = displayData.map((v: any, i: number) => [i + 1, v.make, v.model, v.regs]);
     const csvContent = [headers, ...rows].map(e => e.join(",")).join("\n");
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
     const url = URL.createObjectURL(blob);
     link.setAttribute("href", url);
-    link.setAttribute("download", "ev_comparison_malaysia_2026.csv");
+    link.setAttribute("download", "malaysia_ev_leaderboard_2026.csv");
     link.style.visibility = 'hidden';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
+  const getRankIcon = (index: number) => {
+    switch (index) {
+      case 0: return <Trophy className="w-5 h-5 text-yellow-500" />;
+      case 1: return <Medal className="w-5 h-5 text-neutral-400" />;
+      case 2: return <Award className="w-5 h-5 text-amber-700" />;
+      default: return <span className="text-sm font-bold text-neutral-500 w-5 text-center">{index + 1}</span>;
+    }
+  };
+
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex flex-col gap-1">
-          <h2 className="text-3xl font-bold tracking-tight">Vehicle Leaderboard</h2>
-          <p className="text-neutral-500">Real-time adoption rankings based on official 2025-2026 registration data.</p>
+          <h2 className="text-4xl font-black tracking-tight uppercase">EV Leaderboard</h2>
+          <p className="text-neutral-500 font-medium">Official registration rankings for 2025 - Present.</p>
         </div>
         <button
           onClick={handleExport}
-          className="flex items-center gap-2 px-4 py-2 bg-neutral-900 border border-neutral-800 rounded-lg text-sm font-medium hover:bg-neutral-800 transition-colors"
+          className="flex items-center gap-2 px-6 py-3 bg-neutral-900 border border-neutral-800 rounded-xl text-sm font-bold hover:bg-neutral-800 transition-all active:scale-95"
         >
-          <Download className="w-4 h-4" /> Export CSV
+          <Download className="w-4 h-4" /> Export Report
         </button>
       </div>
 
-      <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-4 rounded-xl shadow-sm flex flex-wrap gap-4">
-        <div className="flex-1 min-w-[200px] relative text-neutral-500 text-sm py-2">
-          Search and detailed filtering available in the Full Inspector (ParquetPrototype)
+      <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/20 p-6 rounded-2xl">
+        <div className="flex items-start gap-4">
+          <div className="p-3 bg-blue-500/20 rounded-xl text-blue-500">
+            <TrendingUp className="w-6 h-6" />
+          </div>
+          <div>
+            <h3 className="font-bold text-neutral-900 dark:text-white mb-1">Market Dynamics</h3>
+            <p className="text-sm text-neutral-500 leading-relaxed">This leaderboard is dynamically generated from DOSM registration data. Rankings are calculated based on the cumulative volume since January 2025.</p>
+          </div>
         </div>
       </div>
 
-      <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl shadow-sm overflow-hidden">
+      <div className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-[32px] shadow-xl overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead>
-              <tr className="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950">
-                <th className="px-6 py-4 text-xs font-bold text-neutral-500 uppercase tracking-wider">Make & Model</th>
-                <th className="px-6 py-4 text-xs font-bold text-neutral-500 uppercase tracking-wider">Type</th>
-                <th className="px-6 py-4 text-xs font-bold text-neutral-500 uppercase tracking-wider">Registry Year</th>
-                <th className="px-6 py-4 text-xs font-bold text-neutral-500 uppercase tracking-wider">Total Registrations</th>
-                <th className="px-6 py-4 text-xs font-bold text-neutral-500 uppercase tracking-wider">Market Status</th>
+              <tr className="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950/50">
+                <th className="px-8 py-6 text-[10px] font-black text-neutral-400 uppercase tracking-[0.2em]">Rank</th>
+                <th className="px-8 py-6 text-[10px] font-black text-neutral-400 uppercase tracking-[0.2em]">Model Identity</th>
+                <th className="px-8 py-6 text-[10px] font-black text-neutral-400 uppercase tracking-[0.2em]">Fuel Type</th>
+                <th className="px-8 py-6 text-[10px] font-black text-neutral-400 uppercase tracking-[0.2em]">Volume (Units)</th>
+                <th className="px-8 py-6 text-[10px] font-black text-neutral-400 uppercase tracking-[0.2em]">Performance</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">
+            <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/50">
               {displayData.map((v: any, i: number) => (
-                <tr key={i} className="hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors cursor-pointer">
-                  <td className="px-6 py-4">
-                    <div className="flex flex-col">
-                      <span className="font-bold text-neutral-900 dark:text-white uppercase tracking-tight">{v.make}</span>
-                      <span className="text-xs text-neutral-500 uppercase">{v.model}</span>
+                <tr key={i} className="group hover:bg-neutral-50 dark:hover:bg-neutral-800/30 transition-all cursor-pointer">
+                  <td className="px-8 py-6">
+                    <div className="flex items-center justify-center w-10 h-10 bg-neutral-100 dark:bg-neutral-800/50 rounded-xl group-hover:scale-110 transition-transform">
+                      {getRankIcon(i)}
                     </div>
                   </td>
-                  <td className="px-6 py-4">
-                    <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-purple-100 dark:bg-purple-500/20 text-purple-600 dark:text-purple-400">
+                  <td className="px-8 py-6">
+                    <div className="flex flex-col">
+                      <span className="font-black text-neutral-900 dark:text-white uppercase tracking-tight text-lg">{v.make}</span>
+                      <span className="text-xs font-bold text-neutral-400 uppercase">{v.model}</span>
+                    </div>
+                  </td>
+                  <td className="px-8 py-6">
+                    <span className="px-3 py-1 rounded-full text-[10px] font-black uppercase bg-purple-100 dark:bg-purple-500/20 text-purple-600 dark:text-purple-400 border border-purple-500/10">
                       {v.type}
                     </span>
                   </td>
-                  <td className="px-6 py-4 text-sm font-medium text-neutral-500">2025-2026</td>
-                  <td className="px-6 py-4">
+                  <td className="px-8 py-6">
                     <div className="flex flex-col">
-                      <span className="text-lg font-black text-neutral-900 dark:text-white">{v.regs.toLocaleString()}</span>
-                      <span className="text-[10px] text-neutral-400 uppercase font-bold">Total Units</span>
+                      <span className="text-2xl font-black text-neutral-900 dark:text-white tabular-nums tracking-tighter">{v.regs.toLocaleString()}</span>
+                      <span className="text-[10px] text-neutral-400 uppercase font-black">Verified Regs</span>
                     </div>
                   </td>
-                  <td className="px-6 py-4">
-                    <div className="flex items-center gap-1.5 text-xs text-green-500 font-bold uppercase">
-                      <TrendingUp className="w-3 h-3" />
-                      Top Performer
+                  <td className="px-8 py-6">
+                    <div className="flex items-center gap-2 text-[10px] text-green-500 font-black uppercase tracking-widest bg-green-500/10 px-3 py-1.5 rounded-lg w-fit">
+                      <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
+                      Outperforming
                     </div>
                   </td>
                 </tr>

@@ -86,31 +86,60 @@ def sync_data():
 
         # 3. Fuel Distribution (2025 Data)
         fuel_dist = combined_df[combined_df['year'] == '2025']['fuel'].value_counts().head(5).to_dict()
-        fuel_json = [{"name": k, "value": v} for k, v in fuel_dist.items()]
+        
+        def clean_label(label):
+            if not label: return "Other"
+            # Special manual mapping for known technical names
+            mapping = {
+                'greendiesel': 'Green Diesel',
+                'hybrid_petrol': 'Hybrid Petrol',
+                'petrol': 'Petrol',
+                'diesel': 'Diesel',
+                'electric': 'Electric',
+                'car': 'Passenger Car',
+                'motorcycle': 'Motorcycle',
+                'van': 'Van/Commercial',
+                'bus': 'Bus',
+                'lorry': 'Lorry/Truck',
+                'other': 'Special Purpose'
+            }
+            
+            lower_label = label.lower()
+            if lower_label in mapping:
+                return mapping[lower_label]
+                
+            # Fallback to general cleaning
+            cleaned = label.replace('_', ' ').title()
+            if cleaned.lower() == 'ev': return 'EV'
+            return cleaned
+
+        fuel_json = [{"name": clean_label(k), "value": v} for k, v in fuel_dist.items()]
 
         # 4. Top Models (Overall)
-        combined_df['full_model'] = combined_df['maker'] + " " + combined_df['model']
+        combined_df['full_model'] = (combined_df['maker'].astype(str) + " " + combined_df['model'].astype(str)).str.title()
         top_models = combined_df['full_model'].value_counts().head(8).to_dict()
         models_json = [{"model": k, "count": v} for k, v in top_models.items()]
 
         # 4b. Top EV Models (Electric Only)
         ev_only_models = combined_df[combined_df['is_ev']].copy().reset_index(drop=True)
-        ev_only_models['full_model'] = ev_only_models['maker'] + " " + ev_only_models['model']
+        ev_only_models['full_model'] = (ev_only_models['maker'].astype(str) + " " + ev_only_models['model'].astype(str)).str.title()
         top_ev_models = ev_only_models['full_model'].value_counts().head(8).to_dict()
         ev_models_json = [{"model": k, "count": v} for k, v in top_ev_models.items()]
 
         # 4c. Top EV Makes (Electric Only)
-        top_ev_makes = ev_only_models['maker'].value_counts().head(8).to_dict()
+        top_ev_makes = ev_only_models['maker'].astype(str).str.title().value_counts().head(8).to_dict()
         ev_makes_json = [{"make": k, "count": v} for k, v in top_ev_makes.items()]
 
         # 4d. Trend of Top 5 EV Makes (Monthly)
-        top_5_makes = ev_only_models['maker'].value_counts().head(5).index.tolist()
+        top_5_makes_idx = ev_only_models['maker'].value_counts().head(5).index.tolist()
         make_trends = []
-        if top_5_makes:
-            # Group by Month index, Year, and Maker
-            # We name the month index explicitly to avoid index column ambiguity
-            make_monthly = ev_only_models[ev_only_models['maker'].isin(top_5_makes)].groupby(
-                [ev_only_models['date'].dt.month.rename('month_idx'), 'year', 'maker']
+        if top_5_makes_idx:
+            make_monthly = ev_only_models[ev_only_models['maker'].isin(top_5_makes_idx)].copy()
+            # Clean maker name before grouping
+            make_monthly['maker'] = make_monthly['maker'].astype(str).str.title()
+            
+            make_monthly = make_monthly.groupby(
+                [make_monthly['date'].dt.month.rename('month_idx'), 'year', 'maker']
             ).size().unstack(level=2, fill_value=0).reset_index()
             
             month_names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -123,9 +152,7 @@ def sync_data():
                     "year": y,
                     "date_sort": f"{y}-{m_idx:02d}"
                 }
-                # Add make counts (all columns except month_idx and year)
                 maker_counts = row.drop(['month_idx', 'year']).to_dict()
-                # Ensure values are ints
                 maker_counts = {k: int(v) for k, v in maker_counts.items()}
                 entry.update(maker_counts)
                 make_trends.append(entry)
@@ -133,28 +160,29 @@ def sync_data():
             make_trends.sort(key=lambda x: x['date_sort'])
 
         # 4e. State-wise EV Distribution (2025)
+        def clean_state(s):
+            if not s: return "Unknown"
+            if s == "Rakan Niaga": return "Corporate Fleet"
+            return s.replace('W.P. ', '').title()
+
         if 'state' in ev_only_models.columns:
             state_ev = ev_only_models[ev_only_models['year'] == '2025']['state'].value_counts().head(10).to_dict()
-            state_json = [{"state": k, "count": v} for k, v in state_ev.items()]
+            state_json = [{"state": clean_state(k), "count": v} for k, v in state_ev.items()]
         else:
             state_json = []
 
         # 5. Category-based Fuel Distribution
         category_json = []
         try:
-            # Find the fuel_df in all_years_data (it might be the last one or have fuel_types in url)
             fuel_df = next(df for df in all_years_data if 'type' in df.columns and 'registrations' in df.columns)
-            
-            # Aggregate counts for Electric fuel specifically across all types
             electric_by_type = fuel_df[fuel_df['fuel'].str.contains('Electric', case=False, na=False)]
             
-            # Sum up 'registrations' per vehicle 'type'
             if 'registrations' in electric_by_type.columns:
                 cat_summary = electric_by_type.groupby('type')['registrations'].sum().sort_values(ascending=False).head(8).to_dict()
             else:
                 cat_summary = electric_by_type['type'].value_counts().head(8).to_dict()
             
-            category_json = [{"type": k, "count": int(v)} for k, v in cat_summary.items()]
+            category_json = [{"type": clean_label(k), "count": int(v)} for k, v in cat_summary.items()]
         except Exception as e:
             print(f"  Warning: Could not process category distribution: {str(e)}")
 

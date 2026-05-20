@@ -51,6 +51,7 @@ export default function AdoptionChart() {
             <Tooltip
               contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
               itemStyle={{ color: '#fff' }}
+              labelStyle={{ color: '#fff' }}
             />
             <Area type="monotone" dataKey="y2025" stroke="#8b5cf6" strokeWidth={3} fillOpacity={1} fill="url(#color2025)" name="2025 Registrations" />
             <Area type="monotone" dataKey="y2026" stroke="#3b82f6" strokeWidth={3} fillOpacity={1} fill="url(#color2026)" name="2026 Registrations" />

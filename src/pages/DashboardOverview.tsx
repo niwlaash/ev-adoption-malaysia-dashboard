@@ -1,11 +1,11 @@
 import { useMemo } from 'react';
 import { useSummaryStats } from '../hooks/useMetricsData';
-import AdoptionChart from '../components/charts/AdoptionChart';
-import TopModelsBar from '../components/charts/TopModelsBar';
-import TopEVModelsBar from '../components/charts/TopEVModelsBar';
-import EVBrandTrend from '../components/charts/EVBrandTrend';
-import FuelTypeDonut from '../components/charts/FuelTypeDonut';
-import ElectricByCategory from '../components/charts/ElectricByCategory';
+import AdoptionChart from '../components/charts/AdoptionChart.tsx';
+import TopModelsBar from '../components/charts/TopModelsBar.tsx';
+import TopEVModelsBar from '../components/charts/TopEVModelsBar.tsx';
+import EVBrandTrend from '../components/charts/EVBrandTrend.tsx';
+import FuelTypeDonut from '../components/charts/FuelTypeDonut.tsx';
+import ElectricByCategory from '../components/charts/ElectricByCategory.tsx';
 
 export default function DashboardOverview() {
   const { data, error, isLoading } = useSummaryStats();

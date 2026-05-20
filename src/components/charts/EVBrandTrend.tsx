@@ -32,6 +32,7 @@ export default function EVBrandTrend() {
                     <Tooltip
                         contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
                         itemStyle={{ color: '#fff' }}
+                        labelStyle={{ color: '#fff' }}
                     />
                     <Legend iconType="circle" wrapperStyle={{ paddingTop: '20px' }} />
                     {brands.map((brand, index) => (

@@ -14,6 +14,8 @@ export default function TopModelsBar() {
           <Tooltip
             cursor={{ fill: 'rgba(255,255,255,0.05)' }}
             contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
+            itemStyle={{ color: '#fff' }}
+            labelStyle={{ color: '#fff' }}
           />
           <Bar dataKey="count" fill="#6366f1" radius={[0, 4, 4, 0]} name="Registrations" barSize={24} />
         </BarChart>

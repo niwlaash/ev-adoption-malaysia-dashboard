@@ -28,6 +28,7 @@ export default function FuelTypeDonut() {
           <Tooltip
             contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
             itemStyle={{ color: '#fff' }}
+            labelStyle={{ color: '#fff' }}
             formatter={(value) => new Intl.NumberFormat('en-MY').format(value as number)}
           />
           <Legend verticalAlign="bottom" height={36} iconType="circle" />

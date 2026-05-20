@@ -54,7 +54,8 @@ const CustomizedContent = (props: any) => {
           textAnchor="middle"
           fill="#fff"
           fontSize={10}
-          className="font-bold pointer-events-none"
+          className="font-bold pointer-events-none uppercase tracking-wider"
+          style={{ filter: 'drop-shadow(0px 1px 2px rgba(0,0,0,0.8))' }}
         >
           {name}
         </text>
