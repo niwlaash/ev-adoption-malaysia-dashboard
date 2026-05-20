@@ -19,7 +19,7 @@ export default function DashboardOverview() {
     // Basic aggregation: this assumes columns like 'fuel' exist. 
     // We'll count all rows for now as "Total" and provide a structured layout.
     // In a production app, we would use data.getChildAt(fuelIndex) to filter.
-    
+
     return [
       { title: 'Total Regs (2025)', value: totalRegs.toLocaleString(), change: '+14%', positive: true },
       { title: 'Electric Vehicles', value: 'Calculating...', change: 'DOSM', positive: true },
@@ -31,13 +31,21 @@ export default function DashboardOverview() {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Dashboard Overview</h2>
-        <div className="text-sm bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 rounded-md flex items-center gap-2">
-          <div className={`w-2 h-2 rounded-full ${isLoading ? 'bg-yellow-500 animate-pulse' : error ? 'bg-red-500' : 'bg-green-500'}`}></div>
-          {isLoading ? 'Querying Parquet...' : error ? `Error: ${error.message}` : 'Data Synced via DOSM Apache Arrow'}
+        <div className="flex flex-col">
+          <h2 className="text-3xl font-bold tracking-tight">Dashboard Overview</h2>
+          <p className="text-sm text-neutral-500">Official DOSM Vehicle Registration Analytics</p>
+        </div>
+        <div className="flex flex-col items-end gap-2 text-xs">
+          <div className="bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 rounded-md flex items-center gap-2">
+            <div className={`w-2 h-2 rounded-full ${isLoading ? 'bg-yellow-500 animate-pulse' : error ? 'bg-red-500' : 'bg-green-500'}`}></div>
+            {isLoading ? 'Fetching fresh monthly data...' : error ? `Error: ${error.message}` : 'Status: Data Cached (30-day sync active)'}
+          </div>
+          {!isLoading && !error && (
+            <span className="text-neutral-500 italic">Next scheduled sync: 1st of next month</span>
+          )}
         </div>
       </div>
-      
+
       {/* KPI Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {(kpis || []).map((kpi, i) => (
@@ -67,19 +75,19 @@ export default function DashboardOverview() {
 
         {/* Donut Chart */}
         <div className="col-span-1 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 rounded-xl shadow-sm">
-           <div>
-              <h3 className="font-semibold text-lg">Fuel Type Distribution</h3>
-              <p className="text-sm text-neutral-500">Market share by powertrain</p>
-            </div>
+          <div>
+            <h3 className="font-semibold text-lg">Fuel Type Distribution</h3>
+            <p className="text-sm text-neutral-500">Market share by powertrain</p>
+          </div>
           <FuelTypeDonut />
         </div>
 
         {/* Top Models */}
         <div className="col-span-1 lg:col-span-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 rounded-xl shadow-sm">
-           <div>
-              <h3 className="font-semibold text-lg">Top Make & Model Comparison</h3>
-              <p className="text-sm text-neutral-500">Highest cumulative registrations (EV)</p>
-            </div>
+          <div>
+            <h3 className="font-semibold text-lg">Top Make & Model Comparison</h3>
+            <p className="text-sm text-neutral-500">Highest cumulative registrations (EV)</p>
+          </div>
           <TopModelsBar />
         </div>
       </div>
