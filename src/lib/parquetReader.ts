@@ -1,5 +1,5 @@
 import init, { readParquet } from 'parquet-wasm';
-import { Table, tableFromIPC } from 'apache-arrow';
+import { Table, RecordBatchReader } from 'apache-arrow';
 
 let wasmPromise: Promise<unknown> | null = null;
 
