@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { fetchAndParseParquet } from '../lib/parquetReader';
-import { parquetRead } from 'hyparquet';
 import { Search, Database, Table as TableIcon, AlertCircle, Loader2 } from 'lucide-react';
 
 export default function ParquetPrototype() {
