@@ -32,7 +32,7 @@ export default function VehicleTypeTreemap() {
 }
 
 const CustomizedContent = (props: any) => {
-  const { root, depth, x, y, width, height, index, name } = props;
+  const { depth, x, y, width, height, name } = props;
 
   return (
     <g>
@@ -51,10 +51,10 @@ const CustomizedContent = (props: any) => {
       {width > 50 && height > 30 && (
         <text
           x={x + width / 2}
-          y={y + height / 2}
+          y={y + height / 2 + 5}
           textAnchor="middle"
           fill="#fff"
-          fontSize={12}
+          fontSize={10}
           className="font-bold pointer-events-none"
         >
           {name}
