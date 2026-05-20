@@ -1,33 +1,14 @@
 import { ResponsiveContainer, Treemap, Tooltip } from 'recharts';
-
-const data = [
-  {
-    name: 'Passenger Cars',
-    children: [
-      { name: 'Sedan', size: 45000 },
-      { name: 'Hatchback', size: 32000 },
-      { name: 'SUV', size: 58000 },
-      { name: 'MPV', size: 12000 },
-    ],
-  },
-  {
-    name: 'Commercial',
-    children: [
-      { name: 'Van', size: 8000 },
-      { name: 'Pickup', size: 25000 },
-      { name: 'Lorry', size: 15000 },
-    ],
-  },
-  {
-    name: 'Motorcycles',
-    children: [
-      { name: 'Scooter', size: 42000 },
-      { name: 'Street', size: 18000 },
-    ],
-  },
-];
+import { useSummaryStats } from '../../hooks/useMetricsData';
 
 export default function VehicleTypeTreemap() {
+  const { data: summaryData } = useSummaryStats();
+
+  const data = summaryData?.category_dist?.map((item: any) => ({
+    name: item.type,
+    size: item.count
+  })) || [];
+
   return (
     <div className="h-[500px] w-full mt-6">
       <ResponsiveContainer width="100%" height="100%">
@@ -37,13 +18,48 @@ export default function VehicleTypeTreemap() {
           aspectRatio={4 / 3}
           stroke="#fff"
           fill="#8b5cf6"
+          content={<CustomizedContent />}
         >
-          <Tooltip 
-             contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
-             itemStyle={{ color: '#fff' }}
+          <Tooltip
+            contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
+            itemStyle={{ color: '#fff' }}
+            formatter={(value: number) => [value.toLocaleString(), 'Registrations']}
           />
         </Treemap>
       </ResponsiveContainer>
     </div>
   );
 }
+
+const CustomizedContent = (props: any) => {
+  const { root, depth, x, y, width, height, index, name } = props;
+
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        style={{
+          fill: depth < 2 ? `rgba(139, 92, 246, ${1 / (depth + 1)})` : 'none',
+          stroke: '#171717',
+          strokeWidth: 2 / (depth + 1),
+          strokeOpacity: 1 / (depth + 1),
+        }}
+      />
+      {width > 50 && height > 30 && (
+        <text
+          x={x + width / 2}
+          y={y + height / 2}
+          textAnchor="middle"
+          fill="#fff"
+          fontSize={12}
+          className="font-bold pointer-events-none"
+        >
+          {name}
+        </text>
+      )}
+    </g>
+  );
+};
