@@ -23,7 +23,6 @@ export default function VehicleTypeTreemap() {
           <Tooltip
             contentStyle={{ backgroundColor: '#171717', border: '1px solid #333', borderRadius: '8px', color: '#fff' }}
             itemStyle={{ color: '#fff' }}
-            formatter={(value: number) => [value.toLocaleString(), 'Registrations']}
           />
         </Treemap>
       </ResponsiveContainer>

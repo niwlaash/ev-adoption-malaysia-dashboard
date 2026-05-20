@@ -1,4 +1,4 @@
-import { Search, Filter, Download, Activity, TrendingUp } from 'lucide-react';
+import { Download, TrendingUp } from 'lucide-react';
 import { useSummaryStats } from '../hooks/useMetricsData';
 
 export default function VehicleSearch() {
@@ -13,7 +13,7 @@ export default function VehicleSearch() {
 
   const handleExport = () => {
     const headers = ['Make', 'Model', 'Registrations'];
-    const rows = displayData.map(v => [v.make, v.model, v.regs]);
+    const rows = displayData.map((v: any) => [v.make, v.model, v.regs]);
     const csvContent = [headers, ...rows].map(e => e.join(",")).join("\n");
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
