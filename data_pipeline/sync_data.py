@@ -7,7 +7,8 @@ from pathlib import Path
 # Configuration
 DATA_SOURCES = {
     '2025': 'https://storage.data.gov.my/transportation/cars_2025.parquet',
-    '2026': 'https://storage.data.gov.my/transportation/cars_2026.parquet'
+    '2026': 'https://storage.data.gov.my/transportation/cars_2026.parquet',
+    'fuel_types': 'https://storage.data.gov.my/transportation/registrations_type_fuel.parquet'
 }
 
 OUTPUT_DIR = Path(__file__).parent.parent / 'public' / 'data'
@@ -60,10 +61,19 @@ def sync_data():
         print("\nGenerating aggregated summaries...")
         combined_df = pd.concat(all_years_data)
         
-        # 1. Monthly Trends
+        # 1. Monthly Trends (Total Market)
         monthly_trends = combined_df.groupby([combined_df['date'].dt.month, 'year']).size().unstack(fill_value=0)
         monthly_trends.index = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][:len(monthly_trends)]
         trends_json = monthly_trends.reset_index().rename(columns={'index': 'month'}).to_dict(orient='records')
+        
+        # 1b. Monthly EV Trends
+        ev_only = combined_df[combined_df['is_ev']]
+        if not ev_only.empty:
+            ev_monthly = ev_only.groupby([ev_only['date'].dt.month, 'year']).size().unstack(fill_value=0)
+            ev_monthly.index = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][:len(ev_monthly)]
+            ev_trends_json = ev_monthly.reset_index().rename(columns={'index': 'month'}).to_dict(orient='records')
+        else:
+            ev_trends_json = []
         
         # 2. KPI Totals
         stats = {
@@ -83,13 +93,34 @@ def sync_data():
         top_models = combined_df['full_model'].value_counts().head(8).to_dict()
         models_json = [{"model": k, "count": v} for k, v in top_models.items()]
 
+        # 5. Category-based Fuel Distribution (from fuel_types dataset)
+        category_json = []
+        try:
+            # Find the fuel_df in all_years_data (it might be the last one or have fuel_types in url)
+            fuel_df = next(df for df in all_years_data if 'type' in df.columns and 'registrations' in df.columns)
+            
+            # Aggregate counts for Electric fuel specifically across all types
+            electric_by_type = fuel_df[fuel_df['fuel'].str.contains('Electric', case=False, na=False)]
+            
+            # Sum up 'registrations' per vehicle 'type'
+            if 'registrations' in electric_by_type.columns:
+                cat_summary = electric_by_type.groupby('type')['registrations'].sum().sort_values(ascending=False).head(8).to_dict()
+            else:
+                cat_summary = electric_by_type['type'].value_counts().head(8).to_dict()
+            
+            category_json = [{"type": k, "count": int(v)} for k, v in cat_summary.items()]
+        except Exception as e:
+            print(f"  Warning: Could not process category distribution: {str(e)}")
+
         # Write summaries
         with open(OUTPUT_DIR / 'summary_stats.json', 'w') as f:
             json.dump({
                 'trends': trends_json,
+                'ev_trends': ev_trends_json,
                 'stats': stats,
                 'fuel_dist': fuel_json,
-                'top_models': models_json
+                'top_models': models_json,
+                'category_dist': category_json
             }, f, indent=2)
         
         print("  Summaries generated: summary_stats.json")

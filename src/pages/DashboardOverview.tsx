@@ -3,6 +3,7 @@ import { useSummaryStats } from '../hooks/useMetricsData';
 import AdoptionChart from '../components/charts/AdoptionChart';
 import TopModelsBar from '../components/charts/TopModelsBar';
 import FuelTypeDonut from '../components/charts/FuelTypeDonut';
+import ElectricByCategory from '../components/charts/ElectricByCategory';
 
 export default function DashboardOverview() {
   const { data, error, isLoading } = useSummaryStats();
@@ -83,9 +84,18 @@ export default function DashboardOverview() {
         <div className="col-span-1 lg:col-span-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 rounded-xl shadow-sm">
           <div>
             <h3 className="font-semibold text-lg">Top Make & Model Comparison</h3>
-            <p className="text-sm text-neutral-500">Highest cumulative registrations (EV)</p>
+            <p className="text-sm text-neutral-500">Highest cumulative registrations (Overall Market)</p>
           </div>
           <TopModelsBar />
+        </div>
+
+        {/* Electric by Category */}
+        <div className="col-span-1 lg:col-span-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 rounded-xl shadow-sm">
+          <div>
+            <h3 className="font-semibold text-lg">Electric Breakdown by Category</h3>
+            <p className="text-sm text-neutral-500">Comparing Electric adoption across Cars, Motorcycles, Busses, etc.</p>
+          </div>
+          <ElectricByCategory />
         </div>
       </div>
     </div>
