@@ -2,6 +2,8 @@ import { useMemo } from 'react';
 import { useSummaryStats } from '../hooks/useMetricsData';
 import AdoptionChart from '../components/charts/AdoptionChart';
 import TopModelsBar from '../components/charts/TopModelsBar';
+import TopEVModelsBar from '../components/charts/TopEVModelsBar';
+import EVBrandTrend from '../components/charts/EVBrandTrend';
 import FuelTypeDonut from '../components/charts/FuelTypeDonut';
 import ElectricByCategory from '../components/charts/ElectricByCategory';
 
@@ -80,13 +82,30 @@ export default function DashboardOverview() {
           <FuelTypeDonut />
         </div>
 
-        {/* Top Models */}
+        {/* Overall Market Rankings */}
+        <div className="col-span-1 lg:col-span-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 rounded-xl shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="flex-1">
+              <h3 className="font-semibold text-lg">Top Make & Model (Overall)</h3>
+              <p className="text-sm text-neutral-500 mb-4">Highest cumulative registrations (All Types)</p>
+              <TopModelsBar />
+            </div>
+            <div className="w-px h-full bg-neutral-200 dark:bg-neutral-800 hidden md:block" />
+            <div className="flex-1 pt-6 md:pt-0">
+              <h3 className="font-semibold text-lg">Top EV Make & Model</h3>
+              <p className="text-sm text-neutral-500 mb-4">Electric-only market leaders</p>
+              <TopEVModelsBar />
+            </div>
+          </div>
+        </div>
+
+        {/* Brand Popularity Trend */}
         <div className="col-span-1 lg:col-span-3 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 p-6 rounded-xl shadow-sm">
           <div>
-            <h3 className="font-semibold text-lg">Top Make & Model Comparison</h3>
-            <p className="text-sm text-neutral-500">Highest cumulative registrations (Overall Market)</p>
+            <h3 className="font-semibold text-lg">EV Brand Popularity Trend (2025-Present)</h3>
+            <p className="text-sm text-neutral-500 mb-4">Monthly adoption velocity for Top 5 Electric Brands</p>
           </div>
-          <TopModelsBar />
+          <EVBrandTrend />
         </div>
 
         {/* Electric by Category */}

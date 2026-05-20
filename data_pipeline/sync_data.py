@@ -88,12 +88,58 @@ def sync_data():
         fuel_dist = combined_df[combined_df['year'] == '2025']['fuel'].value_counts().head(5).to_dict()
         fuel_json = [{"name": k, "value": v} for k, v in fuel_dist.items()]
 
-        # 4. Top Models (Combined)
+        # 4. Top Models (Overall)
         combined_df['full_model'] = combined_df['maker'] + " " + combined_df['model']
         top_models = combined_df['full_model'].value_counts().head(8).to_dict()
         models_json = [{"model": k, "count": v} for k, v in top_models.items()]
 
-        # 5. Category-based Fuel Distribution (from fuel_types dataset)
+        # 4b. Top EV Models (Electric Only)
+        ev_only_models = combined_df[combined_df['is_ev']].copy().reset_index(drop=True)
+        ev_only_models['full_model'] = ev_only_models['maker'] + " " + ev_only_models['model']
+        top_ev_models = ev_only_models['full_model'].value_counts().head(8).to_dict()
+        ev_models_json = [{"model": k, "count": v} for k, v in top_ev_models.items()]
+
+        # 4c. Top EV Makes (Electric Only)
+        top_ev_makes = ev_only_models['maker'].value_counts().head(8).to_dict()
+        ev_makes_json = [{"make": k, "count": v} for k, v in top_ev_makes.items()]
+
+        # 4d. Trend of Top 5 EV Makes (Monthly)
+        top_5_makes = ev_only_models['maker'].value_counts().head(5).index.tolist()
+        make_trends = []
+        if top_5_makes:
+            # Group by Month index, Year, and Maker
+            # We name the month index explicitly to avoid index column ambiguity
+            make_monthly = ev_only_models[ev_only_models['maker'].isin(top_5_makes)].groupby(
+                [ev_only_models['date'].dt.month.rename('month_idx'), 'year', 'maker']
+            ).size().unstack(level=2, fill_value=0).reset_index()
+            
+            month_names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            
+            for _, row in make_monthly.iterrows():
+                m_idx = int(row['month_idx'])
+                y = row['year']
+                entry = {
+                    "month": month_names[m_idx-1],
+                    "year": y,
+                    "date_sort": f"{y}-{m_idx:02d}"
+                }
+                # Add make counts (all columns except month_idx and year)
+                maker_counts = row.drop(['month_idx', 'year']).to_dict()
+                # Ensure values are ints
+                maker_counts = {k: int(v) for k, v in maker_counts.items()}
+                entry.update(maker_counts)
+                make_trends.append(entry)
+            
+            make_trends.sort(key=lambda x: x['date_sort'])
+
+        # 4e. State-wise EV Distribution (2025)
+        if 'state' in ev_only_models.columns:
+            state_ev = ev_only_models[ev_only_models['year'] == '2025']['state'].value_counts().head(10).to_dict()
+            state_json = [{"state": k, "count": v} for k, v in state_ev.items()]
+        else:
+            state_json = []
+
+        # 5. Category-based Fuel Distribution
         category_json = []
         try:
             # Find the fuel_df in all_years_data (it might be the last one or have fuel_types in url)
@@ -117,9 +163,13 @@ def sync_data():
             json.dump({
                 'trends': trends_json,
                 'ev_trends': ev_trends_json,
+                'make_trends': make_trends,
                 'stats': stats,
                 'fuel_dist': fuel_json,
                 'top_models': models_json,
+                'top_ev_models': ev_models_json,
+                'top_ev_makes': ev_makes_json,
+                'state_dist': state_json,
                 'category_dist': category_json
             }, f, indent=2)
         

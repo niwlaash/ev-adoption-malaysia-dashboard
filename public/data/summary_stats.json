@@ -147,12 +147,174 @@
       "fuel_types": 72
     }
   ],
+  "make_trends": [
+    {
+      "month": "Jan",
+      "year": "2025",
+      "date_sort": "2025-01",
+      "BYD": 505,
+      "Chery": 12,
+      "Proton": 421,
+      "Tesla": 13,
+      "Zeekr": 101
+    },
+    {
+      "month": "Feb",
+      "year": "2025",
+      "date_sort": "2025-02",
+      "BYD": 634,
+      "Chery": 10,
+      "Proton": 580,
+      "Tesla": 443,
+      "Zeekr": 11
+    },
+    {
+      "month": "Mar",
+      "year": "2025",
+      "date_sort": "2025-03",
+      "BYD": 1020,
+      "Chery": 30,
+      "Proton": 737,
+      "Tesla": 171,
+      "Zeekr": 157
+    },
+    {
+      "month": "Apr",
+      "year": "2025",
+      "date_sort": "2025-04",
+      "BYD": 1048,
+      "Chery": 45,
+      "Proton": 799,
+      "Tesla": 108,
+      "Zeekr": 91
+    },
+    {
+      "month": "May",
+      "year": "2025",
+      "date_sort": "2025-05",
+      "BYD": 1148,
+      "Chery": 116,
+      "Proton": 862,
+      "Tesla": 1075,
+      "Zeekr": 105
+    },
+    {
+      "month": "Jun",
+      "year": "2025",
+      "date_sort": "2025-06",
+      "BYD": 1045,
+      "Chery": 189,
+      "Proton": 604,
+      "Tesla": 587,
+      "Zeekr": 65
+    },
+    {
+      "month": "Jul",
+      "year": "2025",
+      "date_sort": "2025-07",
+      "BYD": 870,
+      "Chery": 59,
+      "Proton": 686,
+      "Tesla": 256,
+      "Zeekr": 61
+    },
+    {
+      "month": "Aug",
+      "year": "2025",
+      "date_sort": "2025-08",
+      "BYD": 1119,
+      "Chery": 53,
+      "Proton": 766,
+      "Tesla": 509,
+      "Zeekr": 88
+    },
+    {
+      "month": "Sep",
+      "year": "2025",
+      "date_sort": "2025-09",
+      "BYD": 1028,
+      "Chery": 96,
+      "Proton": 757,
+      "Tesla": 685,
+      "Zeekr": 293
+    },
+    {
+      "month": "Oct",
+      "year": "2025",
+      "date_sort": "2025-10",
+      "BYD": 1748,
+      "Chery": 342,
+      "Proton": 742,
+      "Tesla": 320,
+      "Zeekr": 390
+    },
+    {
+      "month": "Nov",
+      "year": "2025",
+      "date_sort": "2025-11",
+      "BYD": 1705,
+      "Chery": 250,
+      "Proton": 830,
+      "Tesla": 1301,
+      "Zeekr": 356
+    },
+    {
+      "month": "Dec",
+      "year": "2025",
+      "date_sort": "2025-12",
+      "BYD": 2537,
+      "Chery": 343,
+      "Proton": 1106,
+      "Tesla": 1814,
+      "Zeekr": 842
+    },
+    {
+      "month": "Jan",
+      "year": "2026",
+      "date_sort": "2026-01",
+      "BYD": 913,
+      "Chery": 463,
+      "Proton": 3276,
+      "Tesla": 176,
+      "Zeekr": 489
+    },
+    {
+      "month": "Feb",
+      "year": "2026",
+      "date_sort": "2026-02",
+      "BYD": 469,
+      "Chery": 303,
+      "Proton": 1802,
+      "Tesla": 144,
+      "Zeekr": 191
+    },
+    {
+      "month": "Mar",
+      "year": "2026",
+      "date_sort": "2026-03",
+      "BYD": 879,
+      "Chery": 265,
+      "Proton": 2377,
+      "Tesla": 338,
+      "Zeekr": 177
+    },
+    {
+      "month": "Apr",
+      "year": "2026",
+      "date_sort": "2026-04",
+      "BYD": 1413,
+      "Chery": 562,
+      "Proton": 2408,
+      "Tesla": 172,
+      "Zeekr": 357
+    }
+  ],
   "stats": {
     "total_2025": 870327,
     "total_2026": 270314,
     "ev_total_2025": 44813,
     "hybrid_total_2025": 31190,
-    "last_updated": "2026-05-20 20:17:33"
+    "last_updated": "2026-05-20 20:25:13"
   },
   "fuel_dist": [
     {
@@ -208,6 +370,116 @@
     {
       "model": "Proton X50",
       "count": 35867
+    }
+  ],
+  "top_ev_models": [
+    {
+      "model": "Proton e.MAS 7",
+      "count": 10067
+    },
+    {
+      "model": "Proton e.MAS 5",
+      "count": 8686
+    },
+    {
+      "model": "BYD Atto 3",
+      "count": 5846
+    },
+    {
+      "model": "BYD Sealion",
+      "count": 5046
+    },
+    {
+      "model": "Tesla Model Y",
+      "count": 4772
+    },
+    {
+      "model": "Tesla Model 3",
+      "count": 3339
+    },
+    {
+      "model": "Zeekr 7X",
+      "count": 2509
+    },
+    {
+      "model": "BYD Atto 2",
+      "count": 2052
+    }
+  ],
+  "top_ev_makes": [
+    {
+      "make": "Proton",
+      "count": 18753
+    },
+    {
+      "make": "BYD",
+      "count": 18081
+    },
+    {
+      "make": "Tesla",
+      "count": 8112
+    },
+    {
+      "make": "Zeekr",
+      "count": 3774
+    },
+    {
+      "make": "Chery",
+      "count": 3138
+    },
+    {
+      "make": "Xpeng",
+      "count": 1930
+    },
+    {
+      "make": "BMW",
+      "count": 1705
+    },
+    {
+      "make": "Denza",
+      "count": 1344
+    }
+  ],
+  "state_dist": [
+    {
+      "state": "Rakan Niaga",
+      "count": 34884
+    },
+    {
+      "state": "W.P. Kuala Lumpur",
+      "count": 4572
+    },
+    {
+      "state": "Selangor",
+      "count": 1657
+    },
+    {
+      "state": "Johor",
+      "count": 980
+    },
+    {
+      "state": "Pulau Pinang",
+      "count": 716
+    },
+    {
+      "state": "Sabah",
+      "count": 406
+    },
+    {
+      "state": "Sarawak",
+      "count": 294
+    },
+    {
+      "state": "Melaka",
+      "count": 275
+    },
+    {
+      "state": "Perak",
+      "count": 263
+    },
+    {
+      "state": "Pahang",
+      "count": 261
     }
   ],
   "category_dist": [
