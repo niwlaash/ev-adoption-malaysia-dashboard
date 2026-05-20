@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# 🏎️ Malaysia Automotive Market Dashboard
+### Experience Malaysia's Sustainable Transport Transition through Open Data
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, professional analytics dashboard designed to visualize the rapidly evolving automotive landscape in Malaysia. This project leverages official Department of Statistics Malaysia (DOSM) registration data to provide deep insights into Electric Vehicle (EV) adoption, market share shifts, and regional growth trends.
 
-Currently, two official plugins are available:
+![Dashboard Preview](https://github.com/niwlaash/ev-adoption-malaysia-dashboard/raw/main/public/preview_placeholder.png) 
+*(Note: Replace with actual screenshot for GitHub)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Key Features
 
-## React Compiler
+### 📊 Real-Time EV Adoption Trends
+Track the velocity of the electric vehicle transition with comparative monthly data (2025 vs 2026). Visualize growth rates, year-to-date performance, and cumulative milestones.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🧩 Market Share Intelligence
+A comprehensive breakdown of powertrain distribution across the country. Compare Petrol, Hybrid, and Electric shares in real-time, calibrated directly from official parquet datasets.
 
-## Expanding the ESLint configuration
+### 🏆 Manufacturer & Model Leaderboards
+Who is leading the race? Dynamic rankings of the top-performing brands and models in the Malaysian EV space, featuring performance indicators and volume metrics.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📍 Regional Adoption Heatmaps
+Identify Malaysia's sustainable transport hubs. Distribution analytics across every state and territory, including private vs corporate registration ratios.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS
+- **Visualization**: Recharts (Customized Premium Themes)
+- **Animations**: Framer Motion
+- **Data Engineering**: Python (Pandas/Polars), Apache Parquet
+- **Deployment**: Optimized Production Build Support
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Execution Guide
+
+### 1. Prerequisites
+- **Node.js** (v18+)
+- **Python** (v3.10+)
+
+### 2. Data Synchronization
+The system processes raw open data files provided by DOSM. To update the dashboard with the latest metrics:
+```bash
+# Navigate to the data pipeline
+cd data_pipeline
+pip install -r requirements.txt
+python sync_data.py
+```
+This script aggregates millions of registration rows into optimized JSON summaries for the dashboard.
+
+### 3. Frontend Setup
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📈 Market Impact
+This dashboard is built to demystify Malaysia’s shift toward sustainable transport. By converting complex parquet datasets into actionable insights, it serves as a powerful tool for analysts, enthusiasts, and policymakers to monitor the progress of the National Energy Transition Roadmap (NETR).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+**Author**: [Alwin Ashraf](https://www.linkedin.com/in/alwin-ashraf-nor-azmil-4628a9223/)  
+**Data Source**: Official Open Data from [DOSM (Department of Statistics Malaysia)](https://data.gov.my/)
