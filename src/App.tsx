@@ -13,6 +13,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import MITLicense from './pages/MITLicense';
 import Contact from './pages/Contact';
+import ParquetPrototype from './pages/ParquetPrototype';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="models" element={<TopModels />} />
           <Route path="insights" element={<Insights />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="prototype" element={<ParquetPrototype />} />
         </Route>
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />

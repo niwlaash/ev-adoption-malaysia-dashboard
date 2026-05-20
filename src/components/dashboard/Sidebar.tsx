@@ -1,4 +1,4 @@
-import { LayoutDashboard, TrendingUp, Search, Info } from 'lucide-react';
+import { LayoutDashboard, TrendingUp, Search, Info, ShieldCheck } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const navItems = [
@@ -6,6 +6,7 @@ const navItems = [
   { name: 'EV Trends', path: '/dashboard/trends', icon: TrendingUp },
   { name: 'Vehicle Comparison', path: '/dashboard/compare', icon: Search },
   { name: 'About', path: '/dashboard/about', icon: Info },
+  { name: 'Data Inspector', path: '/dashboard/prototype', icon: ShieldCheck },
 ];
 
 export default function Sidebar() {
@@ -19,7 +20,7 @@ export default function Sidebar() {
           EV Analytics
         </span>
       </div>
-      
+
       <nav className="flex-1 py-4 px-3 space-y-1 overflow-y-auto hidden-scrollbar">
         {(navItems || []).map((item) => (
           <NavLink
@@ -27,10 +28,9 @@ export default function Sidebar() {
             to={item.path}
             end={item.path === '/dashboard'}
             className={({ isActive }) =>
-              `flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-medium transition-colors ${
-                isActive 
-                  ? 'bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400' 
-                  : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/50 hover:text-neutral-900 dark:hover:text-white'
+              `flex items-center gap-3 px-3 py-2.5 rounded-md text-sm font-medium transition-colors ${isActive
+                ? 'bg-blue-50 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400'
+                : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/50 hover:text-neutral-900 dark:hover:text-white'
               }`
             }
           >
@@ -39,9 +39,9 @@ export default function Sidebar() {
           </NavLink>
         ))}
       </nav>
-      
+
       <div className="p-4 border-t border-neutral-200 dark:border-neutral-800">
-        <NavLink 
+        <NavLink
           to="/"
           className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
         >
