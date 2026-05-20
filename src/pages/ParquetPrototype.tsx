@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { fetchAndParseParquet } from '../lib/parquetReader';
-import { Table } from 'apache-arrow';
+import { parquetRead } from 'hyparquet';
 import { Search, Database, Table as TableIcon, AlertCircle, Loader2 } from 'lucide-react';
 
 export default function ParquetPrototype() {
     const [url, setUrl] = useState('/transportation/cars_2025.parquet');
-    const [data, setData] = useState<Table | null>(null);
+    const [data, setData] = useState<any[] | null>(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -24,10 +24,10 @@ export default function ParquetPrototype() {
     };
 
     const renderTablePreview = () => {
-        if (!data) return null;
+        if (!data || data.length === 0) return null;
 
-        const columns = data.schema.fields.map(f => f.name);
-        const rows = [...data.slice(0, 15)]; // Preview first 15 rows
+        const columns = Object.keys(data[0]);
+        const rows = data.slice(0, 15); // Preview first 15 rows
 
         return (
             <div className="mt-8 overflow-x-auto border border-neutral-800 rounded-xl bg-neutral-950">
@@ -51,9 +51,9 @@ export default function ParquetPrototype() {
                         ))}
                     </tbody>
                 </table>
-                {data.numRows > 15 && (
+                {data.length > 15 && (
                     <div className="p-4 text-center border-t border-neutral-800 bg-neutral-900/30">
-                        <p className="text-xs text-neutral-500 italic">Showing 15 of {data.numRows.toLocaleString()} rows</p>
+                        <p className="text-xs text-neutral-500 italic">Showing 15 of {data.length.toLocaleString()} rows</p>
                     </div>
                 )}
             </div>
@@ -103,15 +103,15 @@ export default function ParquetPrototype() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-in fade-in slide-in-from-bottom-4">
                         <div className="bg-black/40 border border-neutral-800 p-4 rounded-xl">
                             <p className="text-xs text-neutral-500 uppercase tracking-widest mb-1">Total Rows</p>
-                            <p className="text-2xl font-bold text-white">{data.numRows.toLocaleString()}</p>
+                            <p className="text-2xl font-bold text-white">{data.length.toLocaleString()}</p>
                         </div>
                         <div className="bg-black/40 border border-neutral-800 p-4 rounded-xl">
                             <p className="text-xs text-neutral-500 uppercase tracking-widest mb-1">Columns</p>
-                            <p className="text-2xl font-bold text-white">{data.schema.fields.length}</p>
+                            <p className="text-2xl font-bold text-white">{Object.keys(data[0] || {}).length}</p>
                         </div>
                         <div className="bg-black/40 border border-neutral-800 p-4 rounded-xl">
                             <p className="text-xs text-neutral-500 uppercase tracking-widest mb-1">Memory Mode</p>
-                            <p className="text-2xl font-bold text-blue-400">Arrow IPC</p>
+                            <p className="text-2xl font-bold text-green-400">Pure JS Array</p>
                         </div>
                     </div>
                 )}

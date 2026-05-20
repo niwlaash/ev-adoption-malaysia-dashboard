@@ -15,7 +15,7 @@ export default function DashboardOverview() {
       { title: 'Market Sentiment', value: 'Ready', change: 'Live', positive: true },
     ];
 
-    const totalRegs = data.numRows;
+    const totalRegs = data.length;
     // Basic aggregation: this assumes columns like 'fuel' exist. 
     // We'll count all rows for now as "Total" and provide a structured layout.
     // In a production app, we would use data.getChildAt(fuelIndex) to filter.
