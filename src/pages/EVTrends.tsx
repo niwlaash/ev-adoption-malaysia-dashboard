@@ -17,7 +17,7 @@ export default function EVTrends() {
       { month: 'Apr', previous: 1300, current: 2100 },
       { month: 'May', previous: 1600, current: 2840 },
       { month: 'Jun', previous: 1900, current: 3310 },
-      { month: 'Jul', previous: 2200, current: data2026?.numRows || 4100 },
+      { month: 'Jul', previous: 2200, current: data2026?.length || 4100 },
     ];
   }, [data2025, data2026]);
   return (
@@ -87,27 +87,27 @@ export default function EVTrends() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-blue-600 p-8 rounded-2xl text-white">
-           <Users className="w-8 h-8 mb-4 opacity-80" />
-           <h4 className="text-2xl font-bold mb-2">Social Proof Trends</h4>
-           <p className="text-blue-100 mb-6">EV adoption is moving from "Early Adopter" to "Early Majority". 2026 data shows widespread adoption across suburban regions.</p>
-           <button 
-             onClick={() => alert('Regional Map Breakdown coming in the next data sync. Stay tuned!')}
-             className="px-6 py-2 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors"
-           >
-             View Map Breakdown
-           </button>
+          <Users className="w-8 h-8 mb-4 opacity-80" />
+          <h4 className="text-2xl font-bold mb-2">Social Proof Trends</h4>
+          <p className="text-blue-100 mb-6">EV adoption is moving from "Early Adopter" to "Early Majority". 2026 data shows widespread adoption across suburban regions.</p>
+          <button
+            onClick={() => alert('Regional Map Breakdown coming in the next data sync. Stay tuned!')}
+            className="px-6 py-2 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors"
+          >
+            View Map Breakdown
+          </button>
         </div>
         <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 text-white">
-           <TrendingUp className="w-8 h-8 mb-4 text-purple-500" />
-           <h3 className="text-2xl font-bold mb-2">Sustainable Milestones</h3>
-           <p className="text-neutral-400 mb-6">Malaysia is on track to hit 100,000 cumulative EV registrations 3 months ahead of the initial national projection.</p>
-           <div className="w-full bg-neutral-800 h-2 rounded-full overflow-hidden">
-             <div className="bg-gradient-to-r from-blue-500 to-purple-500 h-full w-[82%]"></div>
-           </div>
-           <div className="flex justify-between mt-2 text-xs text-neutral-500">
-             <span>Current: 82,401</span>
-             <span>Goal: 100,000</span>
-           </div>
+          <TrendingUp className="w-8 h-8 mb-4 text-purple-500" />
+          <h3 className="text-2xl font-bold mb-2">Sustainable Milestones</h3>
+          <p className="text-neutral-400 mb-6">Malaysia is on track to hit 100,000 cumulative EV registrations 3 months ahead of the initial national projection.</p>
+          <div className="w-full bg-neutral-800 h-2 rounded-full overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-500 to-purple-500 h-full w-[82%]"></div>
+          </div>
+          <div className="flex justify-between mt-2 text-xs text-neutral-500">
+            <span>Current: 82,401</span>
+            <span>Goal: 100,000</span>
+          </div>
         </div>
       </div>
     </div>
