@@ -11,11 +11,27 @@ export default function ParquetPrototype() {
     const handleFetch = async () => {
         setLoading(true);
         setError(null);
+
+        let targetUrl = url.trim();
+
+        // CORS Safety: Automatically sanitize DOSM URLs to use the local proxy
+        if (targetUrl.startsWith('https://storage.data.gov.my/transportation/')) {
+            targetUrl = targetUrl.replace('https://storage.data.gov.my/transportation/', '/transportation/');
+            console.log('CORS Safety: Rewrote URL to local proxy path:', targetUrl);
+        }
+
         try {
-            const table = await fetchAndParseParquet(url);
+            const table = await fetchAndParseParquet(targetUrl);
             setData(table);
         } catch (err: any) {
-            setError(err.message || 'Failed to fetch data');
+            let errorMsg = err.message || 'Failed to fetch data';
+
+            // Helpful error for users attempting direct CORS requests
+            if (errorMsg.includes('Failed to fetch') || errorMsg.includes('NetworkError')) {
+                errorMsg = "CORS Error: The browser blocked the direct request to DOSM. Please use official paths starting with '/transportation/'";
+            }
+
+            setError(errorMsg);
             setData(null);
         } finally {
             setLoading(false);
