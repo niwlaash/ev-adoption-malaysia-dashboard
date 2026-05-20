@@ -31,20 +31,23 @@ export async function fetchAndParseParquet(url: string): Promise<Table> {
     // Read parquet into Arrow IPC format
     const arrowWasmData = readParquet(uint8Array) as any;
 
-    if (!arrowWasmData || (arrowWasmData.length === 0 && !arrowWasmData.numRows)) {
-      throw new Error("Parquet reader returned empty Arrow data");
+    // Safety check on the returned binary data
+    if (!arrowWasmData || (arrowWasmData.byteLength === 0 && !arrowWasmData.numRows)) {
+      throw new Error("Parquet reader returned empty binary data");
     }
 
     // Parse Arrow IPC into an Apache Arrow Table
     try {
-      const table = tableFromIPC(arrowWasmData);
+      // RecordBatchReader is often more resilient to metadata inconsistencies 
+      // than the high-level tableFromIPC function.
+      const reader = RecordBatchReader.from(arrowWasmData);
+      const table = new Table(reader.schema, [...reader]);
+      if (!table) throw new Error("Failed to initialize Arrow reader");
       return table;
     } catch (arrowErr: any) {
-      console.error("Arrow parsing failed. Data length:", arrowWasmData.length);
-      if (arrowErr.message && arrowErr.message.includes('map is not a function')) {
-        throw new Error(`Arrow IPC Mismatch: The binary stream from DOSM returned an invalid metadata array. Error: ${arrowErr.message}`);
-      }
-      throw arrowErr;
+      console.error("Arrow parsing failed:", arrowErr);
+      // Fallback or more descriptive error
+      throw new Error(`Data Engine Error: Your browser or the dataset has an incompatibility with the data engine. (${arrowErr.message})`);
     }
   } catch (err: any) {
     console.error(`Parquet processing error for ${url}:`, err);
