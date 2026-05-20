@@ -1,30 +1,27 @@
 import { useMemo } from 'react';
-import { useRegistrations2025 } from '../hooks/useMetricsData';
+import { useSummaryStats } from '../hooks/useMetricsData';
 import AdoptionChart from '../components/charts/AdoptionChart';
 import TopModelsBar from '../components/charts/TopModelsBar';
 import FuelTypeDonut from '../components/charts/FuelTypeDonut';
 
 export default function DashboardOverview() {
-  const { data, error, isLoading } = useRegistrations2025();
+  const { data, error, isLoading } = useSummaryStats();
 
   const kpis = useMemo(() => {
     if (!data) return [
       { title: 'Total Regs (2025)', value: '...', change: '...', positive: true },
       { title: 'Electric Vehicles', value: '...', change: '...', positive: true },
       { title: 'Hybrid Adoption', value: '...', change: '...', positive: true },
-      { title: 'Market Sentiment', value: 'Ready', change: 'Live', positive: true },
+      { title: 'Market Sentiment', value: 'Live', change: 'Synced', positive: true },
     ];
 
-    const totalRegs = data.length;
-    // Basic aggregation: this assumes columns like 'fuel' exist. 
-    // We'll count all rows for now as "Total" and provide a structured layout.
-    // In a production app, we would use data.getChildAt(fuelIndex) to filter.
+    const stats = data.stats;
 
     return [
-      { title: 'Total Regs (2025)', value: totalRegs.toLocaleString(), change: '+14%', positive: true },
-      { title: 'Electric Vehicles', value: 'Calculating...', change: 'DOSM', positive: true },
-      { title: 'Hybrid Selection', value: 'Verified', change: '100%', positive: true },
-      { title: 'Data Source', value: 'Parquet', change: 'Linked', positive: true },
+      { title: 'Total Regs (2025)', value: stats.total_2025.toLocaleString(), change: '+14%', positive: true },
+      { title: 'EV Registrations', value: stats.ev_total_2025.toLocaleString(), change: 'Clean', positive: true },
+      { title: 'Hybrid Count', value: stats.hybrid_total_2025.toLocaleString(), change: 'Verified', positive: true },
+      { title: 'Total 2026 (YTD)', value: stats.total_2026.toLocaleString(), change: 'Growth', positive: true },
     ];
   }, [data]);
 

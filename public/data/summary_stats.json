@@ -1,0 +1,127 @@
+{
+  "trends": [
+    {
+      "month": "Jan",
+      "2025": 53930,
+      "2026": 67989
+    },
+    {
+      "month": "Feb",
+      "2025": 67327,
+      "2026": 56683
+    },
+    {
+      "month": "Mar",
+      "2025": 77121,
+      "2026": 67823
+    },
+    {
+      "month": "Apr",
+      "2025": 65200,
+      "2026": 77819
+    },
+    {
+      "month": "May",
+      "2025": 74393,
+      "2026": 0
+    },
+    {
+      "month": "Jun",
+      "2025": 58858,
+      "2026": 0
+    },
+    {
+      "month": "Jul",
+      "2025": 75663,
+      "2026": 0
+    },
+    {
+      "month": "Aug",
+      "2025": 78978,
+      "2026": 0
+    },
+    {
+      "month": "Sep",
+      "2025": 62598,
+      "2026": 0
+    },
+    {
+      "month": "Oct",
+      "2025": 81413,
+      "2026": 0
+    },
+    {
+      "month": "Nov",
+      "2025": 77876,
+      "2026": 0
+    },
+    {
+      "month": "Dec",
+      "2025": 96970,
+      "2026": 0
+    }
+  ],
+  "stats": {
+    "total_2025": 870327,
+    "total_2026": 270314,
+    "ev_total_2025": 44813,
+    "hybrid_total_2025": 31190,
+    "last_updated": "2026-05-20 19:59:41"
+  },
+  "fuel_dist": [
+    {
+      "name": "petrol",
+      "value": 743469
+    },
+    {
+      "name": "greendiesel",
+      "value": 45422
+    },
+    {
+      "name": "electric",
+      "value": 44813
+    },
+    {
+      "name": "hybrid_petrol",
+      "value": 31176
+    },
+    {
+      "name": "diesel",
+      "value": 5430
+    }
+  ],
+  "top_models": [
+    {
+      "model": "Perodua Bezza",
+      "count": 132874
+    },
+    {
+      "model": "Perodua Axia",
+      "count": 109246
+    },
+    {
+      "model": "Proton Saga",
+      "count": 100800
+    },
+    {
+      "model": "Perodua Myvi",
+      "count": 92202
+    },
+    {
+      "model": "Perodua Alza",
+      "count": 58340
+    },
+    {
+      "model": "Perodua Ativa",
+      "count": 45123
+    },
+    {
+      "model": "Toyota Vios",
+      "count": 37227
+    },
+    {
+      "model": "Proton X50",
+      "count": 35867
+    }
+  ]
+}
