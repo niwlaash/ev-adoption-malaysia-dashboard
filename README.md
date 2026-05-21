@@ -3,8 +3,10 @@
 
 A high-performance, professional analytics dashboard designed to visualize the rapidly evolving automotive landscape in Malaysia. This project leverages official Department of Statistics Malaysia (DOSM) registration data to provide deep insights into Electric Vehicle (EV) adoption, market share shifts, and regional growth trends.
 
-![Dashboard Preview](https://github.com/niwlaash/ev-adoption-malaysia-dashboard/raw/main/public/preview_placeholder.png) 
-*(Note: Replace with actual screenshot for GitHub)*
+## 🌐 Live Demo
+https://ev-adoption-malaysia-dashboard.vercel.app/
+
+![Dashboard Preview](./public/dashboard-preview.png)
 
 ## 🌟 Key Features
 
