@@ -1,4 +1,4 @@
-# 🏎️ Malaysia Automotive Market Dashboard
+# 🏎️ Malaysia EV Analytic / Automotive Market Dashboard
 ### Experience Malaysia's Sustainable Transport Transition through Open Data
 
 A high-performance, professional analytics dashboard designed to visualize the rapidly evolving automotive landscape in Malaysia. This project leverages official Department of Statistics Malaysia (DOSM) registration data to provide deep insights into Electric Vehicle (EV) adoption, market share shifts, and regional growth trends.
