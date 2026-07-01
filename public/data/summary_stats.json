@@ -27,8 +27,8 @@
     {
       "month": "May",
       "2025": 74393,
-      "2026": 0,
-      "fuel_types": 878
+      "2026": 66053,
+      "fuel_types": 911
     },
     {
       "month": "Jun",
@@ -101,8 +101,8 @@
     {
       "month": "May",
       "2025": 4152,
-      "2026": 0,
-      "fuel_types": 65
+      "2026": 5038,
+      "fuel_types": 71
     },
     {
       "month": "Jun",
@@ -307,14 +307,24 @@
       "Proton": 2408,
       "Tesla": 172,
       "Zeekr": 357
+    },
+    {
+      "month": "May",
+      "year": "2026",
+      "date_sort": "2026-05",
+      "Byd": 925,
+      "Chery": 541,
+      "Proton": 1779,
+      "Tesla": 197,
+      "Zeekr": 413
     }
   ],
   "stats": {
     "total_2025": 870327,
-    "total_2026": 270314,
+    "total_2026": 336367,
     "ev_total_2025": 44813,
     "hybrid_total_2025": 31190,
-    "last_updated": "2026-06-01 02:58:21"
+    "last_updated": "2026-07-01 02:49:52"
   },
   "fuel_dist": [
     {
@@ -341,103 +351,103 @@
   "top_models": [
     {
       "model": "Perodua Bezza",
-      "count": 132874
+      "count": 139953
     },
     {
       "model": "Perodua Axia",
-      "count": 109246
+      "count": 115231
     },
     {
       "model": "Proton Saga",
-      "count": 100800
+      "count": 108137
     },
     {
       "model": "Perodua Myvi",
-      "count": 92202
+      "count": 96618
     },
     {
       "model": "Perodua Alza",
-      "count": 58340
+      "count": 61211
     },
     {
       "model": "Perodua Ativa",
-      "count": 45123
+      "count": 46885
     },
     {
       "model": "Toyota Vios",
-      "count": 37227
+      "count": 38903
     },
     {
       "model": "Proton X50",
-      "count": 35867
+      "count": 37940
     }
   ],
   "top_ev_models": [
     {
       "model": "Proton E.Mas 7",
-      "count": 10067
+      "count": 10963
     },
     {
       "model": "Proton E.Mas 5",
-      "count": 8686
+      "count": 9569
     },
     {
       "model": "Byd Atto 3",
-      "count": 5846
+      "count": 5942
     },
     {
       "model": "Byd Sealion",
-      "count": 5046
+      "count": 5288
     },
     {
       "model": "Tesla Model Y",
-      "count": 4772
+      "count": 4876
     },
     {
       "model": "Tesla Model 3",
-      "count": 3339
+      "count": 3432
     },
     {
       "model": "Zeekr 7X",
-      "count": 2509
+      "count": 2864
     },
     {
       "model": "Byd Atto 2",
-      "count": 2052
+      "count": 2260
     }
   ],
   "top_ev_makes": [
     {
       "make": "Proton",
-      "count": 18753
+      "count": 20532
     },
     {
       "make": "Byd",
-      "count": 18081
+      "count": 19006
     },
     {
       "make": "Tesla",
-      "count": 8112
+      "count": 8309
     },
     {
       "make": "Zeekr",
-      "count": 3774
+      "count": 4187
     },
     {
       "make": "Chery",
-      "count": 3138
+      "count": 3679
     },
     {
       "make": "Xpeng",
-      "count": 1930
+      "count": 2109
     },
     {
       "make": "Bmw",
-      "count": 1705
+      "count": 1770
     },
     {
       "make": "Denza",
-      "count": 1344
+      "count": 1378
     }
   ],
   "state_dist": [
@@ -485,23 +495,23 @@
   "category_dist": [
     {
       "type": "All Types",
-      "count": 140529
+      "count": 148816
     },
     {
       "type": "Passenger Car",
-      "count": 104096
+      "count": 109134
     },
     {
       "type": "Motorcycle",
-      "count": 25531
+      "count": 28646
     },
     {
       "type": "Special Purpose",
-      "count": 10007
+      "count": 10136
     },
     {
       "type": "Van/Commercial",
-      "count": 577
+      "count": 581
     },
     {
       "type": "Bus",
@@ -509,7 +519,7 @@
     },
     {
       "type": "Lorry/Truck",
-      "count": 65
+      "count": 66
     }
   ]
 }
