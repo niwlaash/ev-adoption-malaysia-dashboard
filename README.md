@@ -13,19 +13,22 @@
 
 Malaysia has set ambitious targets under the **National Energy Transition Roadmap (NETR)** and the **Low Carbon Mobility Blueprint (LCMB)**, including deploying **10,000 public charging points** and accelerating the adoption of clean passenger transport.
 
-However, everyday car buyers, researchers, and journalists face three critical information challenges:
+However, researchers, journalists, policymakers, and prospective car buyers face critical information challenges that this dashboard directly solves:
 
-1. **The Range Anxiety & Charger Reality Gap**  
-   Drivers considering an electric vehicle often ask: *"Will I be stranded on long trips?"* Marketing materials from car brands rarely address how many chargers are actually available where people live and travel.
-   
-2. **The Regional Infrastructure Imbalance**  
-   While urban centers like Kuala Lumpur and Selangor enjoy high charger density, other regions—such as the East Coast and Borneo—risk being left behind. Without accessible public data, it is difficult to identify where charging stations are needed most.
+1. **The "Hype vs. Reality" Gap (Tracking Actual Registrations vs. Marketing Claims)**  
+   Automakers, dealerships, and media headlines frequently promote soaring sales projections, making it difficult to discern how many electric vehicles are genuinely being adopted by drivers on Malaysian roads. This dashboard grounds the conversation in **official JPJ road transport records**, tracking exact quarterly volume for pure electric cars (BEVs) and hybrids (PHEVs) from 2022 to 2026.
 
-3. **Inaccessible Government Datasets**  
-   Although the Malaysian Government publishes vehicle registration figures on `data.gov.my`, the files are distributed as massive technical **Apache Parquet tables** containing millions of raw rows. Everyday citizens and journalists cannot easily open or explore these files on mobile devices or standard spreadsheets.
+2. **Accountability for National Policy (Tracking the NETR 10,000 Charger Target)**  
+   Under the National Energy Transition Roadmap (NETR), Malaysia set a target of deploying **10,000 public chargers**. Until now, the public lacked a unified, independent scoreboard to verify whether infrastructure deployment is on schedule or falling behind. This portal provides an objective tracking metric: **2,504 verified bays (25.0% progress)** and calculates Malaysia's national **Cars-Per-Charger ratio (41.3:1 vs. the international 10:1 safety benchmark)**.
+
+3. **Unlocking Inaccessible Government Big Data (Democratizing Parquet Files)**  
+   Although the Malaysian Government publishes vehicle records on `data.gov.my`, the datasets are distributed as heavy **Apache Parquet database files** containing millions of rows. Ordinary citizens, students, and journalists cannot open `.parquet` files without writing Python/Pandas code or using specialized database software. This portal automatically processes these heavy files into an interactive, fast web view with safe one-click CSV and JSON exports.
+
+4. **Demystifying the "Corporate Fleet" Skew (Understanding Commercial Registrations)**  
+   Over 74% of all electric cars in Malaysia are registered under `Rakan Niaga` (JPJ's commercial business partner gateway). Without statistical context, state-level figures appear distorted or confusing. This dashboard explicitly separates commercial fleet leasing and dealer e-Daftar registrations from retail branch counts, providing transparent clarity on where EVs are actually registered.
 
 ### Our Mission
-The **Malaysia EV Open Data Portal** solves these problems by transforming raw, complex public records into an open, fast, and neutral dashboard. We provide an independent source of truth—free from automaker marketing spin, subscription paywalls, or personal data tracking.
+The **Malaysia EV Open Data Portal** is an analytical civic scoreboard. It is not a turn-by-turn navigation app—it is a macro-level transparency tool that gives the public, media, and policymakers verified facts on Malaysia's electrification trajectory, free from commercial bias or paywalls.
 
 ---
 
