@@ -240,7 +240,17 @@ export const OpenDataTable: React.FC<OpenDataTableProps> = ({ data }) => {
                   className="hover:bg-neutral-50 dark:hover:bg-neutral-800/40 transition-colors"
                 >
                   <td className="py-2 px-3 font-semibold text-neutral-900 dark:text-neutral-100">
-                    {row.state}
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span>{row.state}</span>
+                      {row.state === 'Corporate Fleet' && (
+                        <span 
+                          className="px-1.5 py-0.2 rounded text-[10px] bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300 font-normal"
+                          title="Registered centrally via JPJ Rakan Niaga / e-Daftar partner channel"
+                        >
+                          e-Daftar / Commercial
+                        </span>
+                      )}
+                    </div>
                   </td>
                   <td className="py-2 px-3 text-neutral-500 dark:text-neutral-400 font-mono text-[11px]">
                     {row.region || 'Other'}

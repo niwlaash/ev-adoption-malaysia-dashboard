@@ -3,6 +3,7 @@ import { useSummaryStats } from '../hooks/useMetricsData';
 import { PortalHeader } from '../components/portal/PortalHeader';
 import { CivicControlCenter } from '../components/portal/CivicControlCenter';
 import { StateComparator } from '../components/portal/StateComparator';
+import { FleetInsightCard } from '../components/portal/FleetInsightCard';
 import { KpiRow } from '../components/portal/KpiRow';
 import { RegistrationChart } from '../components/portal/RegistrationChart';
 import { StateRankings, type StateRecord } from '../components/portal/StateRankings';
@@ -391,7 +392,10 @@ export const PortalDashboard: React.FC = () => {
             </div>
           </div>
 
-          {/* 8. State-by-State Open Data Table */}
+          {/* 8. Fleet Insight Banner */}
+          <FleetInsightCard />
+
+          {/* 9. State-by-State Open Data Table */}
           <OpenDataTable data={activeStateTable} />
 
         </main>

@@ -84,6 +84,21 @@ This portal relies exclusively on authoritative, public open data sources:
 3. **Automated Refresh Schedule**  
    An automated **GitHub Actions pipeline** runs on the **1st of every month** to fetch the latest public government releases, recompute summary statistics, and deploy the updated dataset seamlessly.
 
+### 🏢 Why is "Corporate Fleet" (Rakan Niaga) in the Dataset?
+
+In the official JPJ vehicle registration dataset, **over 74% (77,252+ vehicles)** of all pure electric cars are recorded under **"Corporate Fleet"** (originally tagged as *Rakan Niaga*). Here is why this category exists and why it matters:
+
+1. **The JPJ e-Daftar Commercial Partner Channel**  
+   Authorized automotive dealerships (e.g., Proton, BYD, Tesla authorized dealers), distributors, and fleet leasing companies do not register vehicles at physical state counter branches. Instead, they register cars in bulk online through JPJ's electronic business partner gateway (*Sistem Pendaftaran Kenderaan Atas Talian / Rakan Niaga*). In government records, these are logged centrally under the commercial partner gateway rather than a specific geographic branch.
+
+2. **Corporate Tax Incentives & ESG Fleets**  
+   Malaysian businesses heavily drive EV adoption to claim **Green Technology Tax Incentives** and **Accelerated Capital Allowances (ACA)**. Companies lease electric vehicles for executive perks, company fleets, and commercial delivery operations, creating a massive concentration of enterprise-registered EVs.
+
+3. **Why Does It Show 0 Public Chargers?**  
+   Public charging stations are installed in physical geographic states (e.g., Selangor, Penang, Johor, Kuala Lumpur). *Corporate Fleet* is a nationwide registration channel—not a geographic territory. Vehicles registered under this channel operate on roads and use chargers across all 16 states.
+
+> **Dashboard Note:** To prevent distorting local state infrastructure ratios, our State Comparison and Ranking tools focus on physical territory registrations (Selangor, KL, Johor, etc.), while the Open Data Table includes the full Corporate Fleet row for 100% mathematical completeness.
+
 ---
 
 ## 🔒 Privacy & Civic Integrity
