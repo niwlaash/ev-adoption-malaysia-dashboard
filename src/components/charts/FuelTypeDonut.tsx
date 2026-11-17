@@ -21,7 +21,7 @@ export default function FuelTypeDonut() {
             dataKey="value"
             stroke="none"
           >
-            {fuelData.map((_entry: any, index: number) => (
+            {fuelData.map((_entry: { name: string; value: number }, index: number) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>

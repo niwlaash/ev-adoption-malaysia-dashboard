@@ -1,6 +1,6 @@
 import { parquetRead } from 'hyparquet';
 
-export async function fetchAndParseParquet(url: string): Promise<any[]> {
+export async function fetchAndParseParquet(url: string): Promise<Record<string, unknown>[]> {
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -16,18 +16,18 @@ export async function fetchAndParseParquet(url: string): Promise<any[]> {
     const arrayBuffer = await response.arrayBuffer();
 
     // hyparquet reads directly from arrayBuffer and returns data without using Arrow's buggy metadata parser
-    const data: any[] = [];
+    const data: Record<string, unknown>[] = [];
 
     await parquetRead({
       file: arrayBuffer,
       onComplete: (rows) => {
-        data.push(...rows);
+        data.push(...(rows as unknown as Record<string, unknown>[]));
       }
     });
 
     return data;
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error(`Parquet processing error for ${url}:`, err);
-    throw new Error(err.message || String(err));
+    throw new Error(err instanceof Error ? err.message : String(err), { cause: err });
   }
 }

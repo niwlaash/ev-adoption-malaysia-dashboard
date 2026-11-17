@@ -14,21 +14,21 @@ export default function EVTrends() {
     let total2025 = 0;
     let total2026 = 0;
 
-    const mapped = data.ev_trends.map((item: any) => {
+    const mapped = data.ev_trends.map((item: Record<string, number>) => {
       const val25 = item['2025'] || 0;
       const val26 = item['2026'] || 0;
       total2025 += val25;
       total2026 += val26;
 
       return {
-        month: item.month,
+        month: String(item.month),
         previous: val25,
         current: val26,
       };
     });
 
     const filtered = timeRange === 'ytd'
-      ? mapped.filter((d: any) => d.current > 0)
+      ? mapped.filter((d: { month: string; previous: number; current: number }) => d.current > 0)
       : mapped;
 
     return {

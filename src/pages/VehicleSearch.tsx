@@ -4,7 +4,7 @@ import { useSummaryStats } from '../hooks/useMetricsData';
 export default function VehicleSearch() {
   const { data: summaryData } = useSummaryStats();
 
-  const displayData = summaryData?.top_ev_models?.map((v: any) => ({
+  const displayData = summaryData?.top_ev_models?.map((v: { model: string; count: number }) => ({
     make: v.model.split(' ')[0],
     model: v.model.split(' ').slice(1).join(' '),
     regs: v.count,
@@ -13,7 +13,7 @@ export default function VehicleSearch() {
 
   const handleExport = () => {
     const headers = ['Rank', 'Make', 'Model', 'Registrations'];
-    const rows = displayData.map((v: any, i: number) => [i + 1, v.make, v.model, v.regs]);
+    const rows = displayData.map((v: { make: string; model: string; regs: number }, i: number) => [i + 1, v.make, v.model, v.regs]);
     const csvContent = [headers, ...rows].map(e => e.join(",")).join("\n");
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
@@ -75,7 +75,7 @@ export default function VehicleSearch() {
               </tr>
             </thead>
             <tbody className="divide-y divide-neutral-100 dark:divide-neutral-800/50">
-              {displayData.map((v: any, i: number) => (
+              {displayData.map((v: { make: string; model: string; regs: number; type: string }, i: number) => (
                 <tr key={i} className="group hover:bg-neutral-50 dark:hover:bg-neutral-800/30 transition-all cursor-pointer">
                   <td className="px-8 py-6">
                     <div className="flex items-center justify-center w-10 h-10 bg-neutral-100 dark:bg-neutral-800/50 rounded-xl group-hover:scale-110 transition-transform">

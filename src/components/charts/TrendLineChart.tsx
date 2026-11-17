@@ -1,6 +1,6 @@
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-export default function TrendLineChart({ data }: { data?: any[] }) {
+export default function TrendLineChart({ data }: { data?: Record<string, unknown>[] }) {
   const chartData = (data && data.length > 0) ? data : [
     { month: 'Jan', current: 1200, previous: 800 },
     { month: 'Feb', current: 1500, previous: 900 },

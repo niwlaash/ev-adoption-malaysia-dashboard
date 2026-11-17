@@ -4,7 +4,7 @@ import { useSummaryStats } from '../../hooks/useMetricsData';
 export default function VehicleTypeTreemap() {
   const { data: summaryData } = useSummaryStats();
 
-  const data = summaryData?.category_dist?.map((item: any) => ({
+  const data = summaryData?.category_dist?.map((item: { type: string; count: number }) => ({
     name: item.type,
     size: item.count
   })) || [];
@@ -30,8 +30,17 @@ export default function VehicleTypeTreemap() {
   );
 }
 
-const CustomizedContent = (props: any) => {
-  const { depth, x, y, width, height, name } = props;
+interface CustomizedContentProps {
+  depth?: number;
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
+  name?: string;
+}
+
+const CustomizedContent = (props: CustomizedContentProps) => {
+  const { depth = 0, x = 0, y = 0, width = 0, height = 0, name } = props;
 
   return (
     <g>

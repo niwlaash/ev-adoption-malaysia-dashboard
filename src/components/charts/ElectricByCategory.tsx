@@ -8,8 +8,8 @@ export default function ElectricByCategory() {
 
     // Filter out 'all_types' and map to chart format
     const chartData = (data?.category_dist || [])
-        .filter((item: any) => item.type !== 'All Types')
-        .map((item: any) => ({
+        .filter((item: { type: string; count: number }) => item.type !== 'All Types')
+        .map((item: { type: string; count: number }) => ({
             name: item.type,
             count: item.count
         }));
@@ -28,7 +28,7 @@ export default function ElectricByCategory() {
                         labelStyle={{ color: '#fff' }}
                     />
                     <Bar dataKey="count" radius={[4, 4, 0, 0]} name="Electric Regs" barSize={40}>
-                        {chartData.map((_entry: any, index: number) => (
+                        {chartData.map((_entry: { name: string; count: number }, index: number) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}
                     </Bar>

@@ -1,565 +1,4337 @@
 {
-  "trends": [
-    {
-      "month": "Jan",
-      "2025": 53926,
-      "2026": 67989,
-      "fuel_types": 918
-    },
-    {
-      "month": "Feb",
-      "2025": 67320,
-      "2026": 56683,
-      "fuel_types": 910
-    },
-    {
-      "month": "Mar",
-      "2025": 77103,
-      "2026": 67823,
-      "fuel_types": 925
-    },
-    {
-      "month": "Apr",
-      "2025": 65190,
-      "2026": 77819,
-      "fuel_types": 889
-    },
-    {
-      "month": "May",
-      "2025": 74381,
-      "2026": 66053,
-      "fuel_types": 911
-    },
-    {
-      "month": "Jun",
-      "2025": 58840,
-      "2026": 72943,
-      "fuel_types": 905
-    },
-    {
-      "month": "Jul",
-      "2025": 75635,
-      "2026": 80030,
-      "fuel_types": 925
-    },
-    {
-      "month": "Aug",
-      "2025": 78970,
-      "2026": 77276,
-      "fuel_types": 925
-    },
-    {
-      "month": "Sep",
-      "2025": 62587,
-      "2026": 74259,
-      "fuel_types": 918
-    },
-    {
-      "month": "Oct",
-      "2025": 81404,
-      "2026": 0,
-      "fuel_types": 869
-    },
-    {
-      "month": "Nov",
-      "2025": 77865,
-      "2026": 0,
-      "fuel_types": 886
-    },
-    {
-      "month": "Dec",
-      "2025": 96967,
-      "2026": 0,
-      "fuel_types": 892
-    }
-  ],
-  "ev_trends": [
-    {
-      "month": "Jan",
-      "2025": 1691,
-      "2026": 6239,
-      "fuel_types": 67
-    },
-    {
-      "month": "Feb",
-      "2025": 2160,
-      "2026": 3635,
-      "fuel_types": 69
-    },
-    {
-      "month": "Mar",
-      "2025": 2976,
-      "2026": 4717,
-      "fuel_types": 65
-    },
-    {
-      "month": "Apr",
-      "2025": 2892,
-      "2026": 5894,
-      "fuel_types": 63
-    },
-    {
-      "month": "May",
-      "2025": 4152,
-      "2026": 5038,
-      "fuel_types": 71
-    },
-    {
-      "month": "Jun",
-      "2025": 3272,
-      "2026": 6215,
-      "fuel_types": 66
-    },
-    {
-      "month": "Jul",
-      "2025": 2792,
-      "2026": 6937,
-      "fuel_types": 76
-    },
-    {
-      "month": "Aug",
-      "2025": 3461,
-      "2026": 8833,
-      "fuel_types": 71
-    },
-    {
-      "month": "Sep",
-      "2025": 3532,
-      "2026": 6029,
-      "fuel_types": 72
-    },
-    {
-      "month": "Oct",
-      "2025": 4345,
-      "2026": 0,
-      "fuel_types": 63
-    },
-    {
-      "month": "Nov",
-      "2025": 5417,
-      "2026": 0,
-      "fuel_types": 65
-    },
-    {
-      "month": "Dec",
-      "2025": 8123,
-      "2026": 0,
-      "fuel_types": 72
-    }
-  ],
-  "make_trends": [
-    {
-      "month": "Jan",
-      "year": "2025",
-      "date_sort": "2025-01",
-      "Byd": 505,
-      "Chery": 12,
-      "Proton": 421,
-      "Tesla": 13,
-      "Zeekr": 101
-    },
-    {
-      "month": "Feb",
-      "year": "2025",
-      "date_sort": "2025-02",
-      "Byd": 634,
-      "Chery": 10,
-      "Proton": 580,
-      "Tesla": 443,
-      "Zeekr": 11
-    },
-    {
-      "month": "Mar",
-      "year": "2025",
-      "date_sort": "2025-03",
-      "Byd": 1020,
-      "Chery": 30,
-      "Proton": 737,
-      "Tesla": 171,
-      "Zeekr": 157
-    },
-    {
-      "month": "Apr",
-      "year": "2025",
-      "date_sort": "2025-04",
-      "Byd": 1048,
-      "Chery": 45,
-      "Proton": 799,
-      "Tesla": 108,
-      "Zeekr": 91
-    },
-    {
-      "month": "May",
-      "year": "2025",
-      "date_sort": "2025-05",
-      "Byd": 1148,
-      "Chery": 116,
-      "Proton": 862,
-      "Tesla": 1075,
-      "Zeekr": 105
-    },
-    {
-      "month": "Jun",
-      "year": "2025",
-      "date_sort": "2025-06",
-      "Byd": 1045,
-      "Chery": 189,
-      "Proton": 604,
-      "Tesla": 587,
-      "Zeekr": 65
-    },
-    {
-      "month": "Jul",
-      "year": "2025",
-      "date_sort": "2025-07",
-      "Byd": 870,
-      "Chery": 59,
-      "Proton": 686,
-      "Tesla": 256,
-      "Zeekr": 61
-    },
-    {
-      "month": "Aug",
-      "year": "2025",
-      "date_sort": "2025-08",
-      "Byd": 1119,
-      "Chery": 53,
-      "Proton": 766,
-      "Tesla": 509,
-      "Zeekr": 88
-    },
-    {
-      "month": "Sep",
-      "year": "2025",
-      "date_sort": "2025-09",
-      "Byd": 1028,
-      "Chery": 96,
-      "Proton": 757,
-      "Tesla": 685,
-      "Zeekr": 293
-    },
-    {
-      "month": "Oct",
-      "year": "2025",
-      "date_sort": "2025-10",
-      "Byd": 1748,
-      "Chery": 342,
-      "Proton": 742,
-      "Tesla": 320,
-      "Zeekr": 390
-    },
-    {
-      "month": "Nov",
-      "year": "2025",
-      "date_sort": "2025-11",
-      "Byd": 1705,
-      "Chery": 250,
-      "Proton": 830,
-      "Tesla": 1301,
-      "Zeekr": 356
-    },
-    {
-      "month": "Dec",
-      "year": "2025",
-      "date_sort": "2025-12",
-      "Byd": 2537,
-      "Chery": 343,
-      "Proton": 1106,
-      "Tesla": 1814,
-      "Zeekr": 842
-    },
-    {
-      "month": "Jan",
-      "year": "2026",
-      "date_sort": "2026-01",
-      "Byd": 913,
-      "Chery": 463,
-      "Proton": 3276,
-      "Tesla": 176,
-      "Zeekr": 489
-    },
-    {
-      "month": "Feb",
-      "year": "2026",
-      "date_sort": "2026-02",
-      "Byd": 469,
-      "Chery": 303,
-      "Proton": 1802,
-      "Tesla": 144,
-      "Zeekr": 191
-    },
-    {
-      "month": "Mar",
-      "year": "2026",
-      "date_sort": "2026-03",
-      "Byd": 879,
-      "Chery": 265,
-      "Proton": 2377,
-      "Tesla": 338,
-      "Zeekr": 177
-    },
-    {
-      "month": "Apr",
-      "year": "2026",
-      "date_sort": "2026-04",
-      "Byd": 1413,
-      "Chery": 562,
-      "Proton": 2408,
-      "Tesla": 172,
-      "Zeekr": 357
-    },
-    {
-      "month": "May",
-      "year": "2026",
-      "date_sort": "2026-05",
-      "Byd": 925,
-      "Chery": 541,
-      "Proton": 1779,
-      "Tesla": 197,
-      "Zeekr": 413
-    },
-    {
-      "month": "Jun",
-      "year": "2026",
-      "date_sort": "2026-06",
-      "Byd": 1076,
-      "Chery": 515,
-      "Proton": 1888,
-      "Tesla": 935,
-      "Zeekr": 459
-    },
-    {
-      "month": "Jul",
-      "year": "2026",
-      "date_sort": "2026-07",
-      "Byd": 1226,
-      "Chery": 460,
-      "Proton": 2928,
-      "Tesla": 605,
-      "Zeekr": 476
-    },
-    {
-      "month": "Aug",
-      "year": "2026",
-      "date_sort": "2026-08",
-      "Byd": 571,
-      "Chery": 416,
-      "Proton": 5383,
-      "Tesla": 1166,
-      "Zeekr": 395
-    },
-    {
-      "month": "Sep",
-      "year": "2026",
-      "date_sort": "2026-09",
-      "Byd": 615,
-      "Chery": 158,
-      "Proton": 3016,
-      "Tesla": 703,
-      "Zeekr": 445
-    }
-  ],
   "stats": {
-    "total_2025": 870188,
-    "total_2026": 640875,
-    "ev_total_2025": 44813,
-    "hybrid_total_2025": 31190,
-    "last_updated": "2026-11-01 03:44:06"
+    "total_evs_cumulative": 103515,
+    "total_hybrids_cumulative": 106706,
+    "total_tiv_cumulative": 3573959,
+    "ev_share_tiv_cumulative": 2.9,
+    "annual": {
+      "2022": {
+        "total_cars": 744752,
+        "ev_total": 3128,
+        "hybrid_total": 15377,
+        "ev_share_tiv": 0.42,
+        "yoy_growth": 100.0
+      },
+      "2023": {
+        "total_cars": 832329,
+        "ev_total": 13301,
+        "hybrid_total": 22215,
+        "ev_share_tiv": 1.6,
+        "yoy_growth": 325.2
+      },
+      "2024": {
+        "total_cars": 856237,
+        "ev_total": 21788,
+        "hybrid_total": 24526,
+        "ev_share_tiv": 2.54,
+        "yoy_growth": 63.8
+      },
+      "2025": {
+        "total_cars": 870327,
+        "ev_total": 44813,
+        "hybrid_total": 31190,
+        "ev_share_tiv": 5.15,
+        "yoy_growth": 105.7
+      },
+      "2026": {
+        "total_cars": 270314,
+        "ev_total": 20485,
+        "hybrid_total": 13398,
+        "ev_share_tiv": 7.58,
+        "yoy_growth": 110.8
+      }
+    },
+    "charging_bays": 2504,
+    "charging_stations": 818,
+    "total_ac_bays": 2464,
+    "total_dc_bays": 0,
+    "ev_to_charger_ratio": 41.3,
+    "netr_target": 10000,
+    "netr_progress": 25.0,
+    "last_updated": "2026-11-17 11:55:17"
   },
-  "fuel_dist": [
-    {
-      "name": "Petrol",
-      "value": 743330
+  "milestones": {
+    "2022": "Budget 2022 Duty-Free CBU Exemption takes effect; EV registrations cross 3,000.",
+    "2023": "BYD Atto 3 volume deliveries; NETR targets 10,000 charging bays by 2025.",
+    "2024": "Tesla launches Model 3 & Model Y deliveries; BYD Seal reaches volume scale.",
+    "2025": "Mainstream adoption expands; Chery Omoda E5 and corporate EV fleets launch.",
+    "2026": "National OEM era arrives: Proton e.MAS 7 surges to the #1 EV position in Malaysia.",
+    "all": "2022\u20132026 Electrification Transition: From luxury niche to national mass-market mobility."
+  },
+  "quarterly_trends": {
+    "all": [
+      {
+        "period": "2022Q1",
+        "bev": 414,
+        "hybrid": 1957,
+        "total_ev": 2371
+      },
+      {
+        "period": "2022Q2",
+        "bev": 883,
+        "hybrid": 3469,
+        "total_ev": 4352
+      },
+      {
+        "period": "2022Q3",
+        "bev": 1093,
+        "hybrid": 4404,
+        "total_ev": 5497
+      },
+      {
+        "period": "2022Q4",
+        "bev": 1918,
+        "hybrid": 5551,
+        "total_ev": 7469
+      },
+      {
+        "period": "2023Q1",
+        "bev": 2168,
+        "hybrid": 5428,
+        "total_ev": 7596
+      },
+      {
+        "period": "2023Q2",
+        "bev": 2962,
+        "hybrid": 4195,
+        "total_ev": 7157
+      },
+      {
+        "period": "2023Q3",
+        "bev": 3716,
+        "hybrid": 4788,
+        "total_ev": 8504
+      },
+      {
+        "period": "2023Q4",
+        "bev": 6823,
+        "hybrid": 7804,
+        "total_ev": 14627
+      },
+      {
+        "period": "2024Q1",
+        "bev": 5619,
+        "hybrid": 6192,
+        "total_ev": 11811
+      },
+      {
+        "period": "2024Q2",
+        "bev": 7238,
+        "hybrid": 5530,
+        "total_ev": 12768
+      },
+      {
+        "period": "2024Q3",
+        "bev": 6587,
+        "hybrid": 5731,
+        "total_ev": 12318
+      },
+      {
+        "period": "2024Q4",
+        "bev": 8604,
+        "hybrid": 7073,
+        "total_ev": 15677
+      },
+      {
+        "period": "2025Q1",
+        "bev": 9345,
+        "hybrid": 7133,
+        "total_ev": 16478
+      },
+      {
+        "period": "2025Q2",
+        "bev": 12746,
+        "hybrid": 7034,
+        "total_ev": 19780
+      },
+      {
+        "period": "2025Q3",
+        "bev": 13403,
+        "hybrid": 7778,
+        "total_ev": 21181
+      },
+      {
+        "period": "2025Q4",
+        "bev": 21742,
+        "hybrid": 9247,
+        "total_ev": 30989
+      },
+      {
+        "period": "2026Q1",
+        "bev": 17672,
+        "hybrid": 8456,
+        "total_ev": 26128
+      },
+      {
+        "period": "2026Q2",
+        "bev": 9272,
+        "hybrid": 4942,
+        "total_ev": 14214
+      }
+    ],
+    "2022": [
+      {
+        "period": "2022Q1",
+        "bev": 414,
+        "hybrid": 1957,
+        "total_ev": 2371
+      },
+      {
+        "period": "2022Q2",
+        "bev": 883,
+        "hybrid": 3469,
+        "total_ev": 4352
+      },
+      {
+        "period": "2022Q3",
+        "bev": 1093,
+        "hybrid": 4404,
+        "total_ev": 5497
+      },
+      {
+        "period": "2022Q4",
+        "bev": 1918,
+        "hybrid": 5551,
+        "total_ev": 7469
+      }
+    ],
+    "2023": [
+      {
+        "period": "2023Q1",
+        "bev": 2168,
+        "hybrid": 5428,
+        "total_ev": 7596
+      },
+      {
+        "period": "2023Q2",
+        "bev": 2962,
+        "hybrid": 4195,
+        "total_ev": 7157
+      },
+      {
+        "period": "2023Q3",
+        "bev": 3716,
+        "hybrid": 4788,
+        "total_ev": 8504
+      },
+      {
+        "period": "2023Q4",
+        "bev": 6823,
+        "hybrid": 7804,
+        "total_ev": 14627
+      }
+    ],
+    "2024": [
+      {
+        "period": "2024Q1",
+        "bev": 5619,
+        "hybrid": 6192,
+        "total_ev": 11811
+      },
+      {
+        "period": "2024Q2",
+        "bev": 7238,
+        "hybrid": 5530,
+        "total_ev": 12768
+      },
+      {
+        "period": "2024Q3",
+        "bev": 6587,
+        "hybrid": 5731,
+        "total_ev": 12318
+      },
+      {
+        "period": "2024Q4",
+        "bev": 8604,
+        "hybrid": 7073,
+        "total_ev": 15677
+      }
+    ],
+    "2025": [
+      {
+        "period": "2025Q1",
+        "bev": 9345,
+        "hybrid": 7133,
+        "total_ev": 16478
+      },
+      {
+        "period": "2025Q2",
+        "bev": 12746,
+        "hybrid": 7034,
+        "total_ev": 19780
+      },
+      {
+        "period": "2025Q3",
+        "bev": 13403,
+        "hybrid": 7778,
+        "total_ev": 21181
+      },
+      {
+        "period": "2025Q4",
+        "bev": 21742,
+        "hybrid": 9247,
+        "total_ev": 30989
+      }
+    ],
+    "2026": [
+      {
+        "period": "2026Q1",
+        "bev": 17672,
+        "hybrid": 8456,
+        "total_ev": 26128
+      },
+      {
+        "period": "2026Q2",
+        "bev": 9272,
+        "hybrid": 4942,
+        "total_ev": 14214
+      }
+    ],
+    "by_region": {
+      "Klang Valley": [
+        {
+          "period": "2022Q1",
+          "bev": 86,
+          "hybrid": 258,
+          "total_ev": 344
+        },
+        {
+          "period": "2022Q2",
+          "bev": 206,
+          "hybrid": 497,
+          "total_ev": 703
+        },
+        {
+          "period": "2022Q3",
+          "bev": 288,
+          "hybrid": 611,
+          "total_ev": 899
+        },
+        {
+          "period": "2022Q4",
+          "bev": 528,
+          "hybrid": 875,
+          "total_ev": 1403
+        },
+        {
+          "period": "2023Q1",
+          "bev": 513,
+          "hybrid": 828,
+          "total_ev": 1341
+        },
+        {
+          "period": "2023Q2",
+          "bev": 740,
+          "hybrid": 642,
+          "total_ev": 1382
+        },
+        {
+          "period": "2023Q3",
+          "bev": 907,
+          "hybrid": 547,
+          "total_ev": 1454
+        },
+        {
+          "period": "2023Q4",
+          "bev": 1373,
+          "hybrid": 829,
+          "total_ev": 2202
+        },
+        {
+          "period": "2024Q1",
+          "bev": 914,
+          "hybrid": 775,
+          "total_ev": 1689
+        },
+        {
+          "period": "2024Q2",
+          "bev": 1207,
+          "hybrid": 827,
+          "total_ev": 2034
+        },
+        {
+          "period": "2024Q3",
+          "bev": 1085,
+          "hybrid": 697,
+          "total_ev": 1782
+        },
+        {
+          "period": "2024Q4",
+          "bev": 999,
+          "hybrid": 877,
+          "total_ev": 1876
+        },
+        {
+          "period": "2025Q1",
+          "bev": 1044,
+          "hybrid": 704,
+          "total_ev": 1748
+        },
+        {
+          "period": "2025Q2",
+          "bev": 1478,
+          "hybrid": 1054,
+          "total_ev": 2532
+        },
+        {
+          "period": "2025Q3",
+          "bev": 1287,
+          "hybrid": 970,
+          "total_ev": 2257
+        },
+        {
+          "period": "2025Q4",
+          "bev": 2420,
+          "hybrid": 908,
+          "total_ev": 3328
+        },
+        {
+          "period": "2026Q1",
+          "bev": 1343,
+          "hybrid": 749,
+          "total_ev": 2092
+        },
+        {
+          "period": "2026Q2",
+          "bev": 549,
+          "hybrid": 703,
+          "total_ev": 1252
+        }
+      ],
+      "Northern": [
+        {
+          "period": "2022Q1",
+          "bev": 12,
+          "hybrid": 50,
+          "total_ev": 62
+        },
+        {
+          "period": "2022Q2",
+          "bev": 33,
+          "hybrid": 84,
+          "total_ev": 117
+        },
+        {
+          "period": "2022Q3",
+          "bev": 69,
+          "hybrid": 130,
+          "total_ev": 199
+        },
+        {
+          "period": "2022Q4",
+          "bev": 96,
+          "hybrid": 173,
+          "total_ev": 269
+        },
+        {
+          "period": "2023Q1",
+          "bev": 75,
+          "hybrid": 185,
+          "total_ev": 260
+        },
+        {
+          "period": "2023Q2",
+          "bev": 138,
+          "hybrid": 101,
+          "total_ev": 239
+        },
+        {
+          "period": "2023Q3",
+          "bev": 205,
+          "hybrid": 138,
+          "total_ev": 343
+        },
+        {
+          "period": "2023Q4",
+          "bev": 323,
+          "hybrid": 214,
+          "total_ev": 537
+        },
+        {
+          "period": "2024Q1",
+          "bev": 191,
+          "hybrid": 181,
+          "total_ev": 372
+        },
+        {
+          "period": "2024Q2",
+          "bev": 197,
+          "hybrid": 138,
+          "total_ev": 335
+        },
+        {
+          "period": "2024Q3",
+          "bev": 203,
+          "hybrid": 139,
+          "total_ev": 342
+        },
+        {
+          "period": "2024Q4",
+          "bev": 225,
+          "hybrid": 197,
+          "total_ev": 422
+        },
+        {
+          "period": "2025Q1",
+          "bev": 191,
+          "hybrid": 151,
+          "total_ev": 342
+        },
+        {
+          "period": "2025Q2",
+          "bev": 288,
+          "hybrid": 201,
+          "total_ev": 489
+        },
+        {
+          "period": "2025Q3",
+          "bev": 242,
+          "hybrid": 219,
+          "total_ev": 461
+        },
+        {
+          "period": "2025Q4",
+          "bev": 485,
+          "hybrid": 222,
+          "total_ev": 707
+        },
+        {
+          "period": "2026Q1",
+          "bev": 308,
+          "hybrid": 199,
+          "total_ev": 507
+        },
+        {
+          "period": "2026Q2",
+          "bev": 162,
+          "hybrid": 96,
+          "total_ev": 258
+        }
+      ],
+      "Southern": [
+        {
+          "period": "2022Q1",
+          "bev": 5,
+          "hybrid": 63,
+          "total_ev": 68
+        },
+        {
+          "period": "2022Q2",
+          "bev": 26,
+          "hybrid": 111,
+          "total_ev": 137
+        },
+        {
+          "period": "2022Q3",
+          "bev": 44,
+          "hybrid": 170,
+          "total_ev": 214
+        },
+        {
+          "period": "2022Q4",
+          "bev": 62,
+          "hybrid": 215,
+          "total_ev": 277
+        },
+        {
+          "period": "2023Q1",
+          "bev": 70,
+          "hybrid": 208,
+          "total_ev": 278
+        },
+        {
+          "period": "2023Q2",
+          "bev": 85,
+          "hybrid": 160,
+          "total_ev": 245
+        },
+        {
+          "period": "2023Q3",
+          "bev": 89,
+          "hybrid": 168,
+          "total_ev": 257
+        },
+        {
+          "period": "2023Q4",
+          "bev": 186,
+          "hybrid": 241,
+          "total_ev": 427
+        },
+        {
+          "period": "2024Q1",
+          "bev": 167,
+          "hybrid": 252,
+          "total_ev": 419
+        },
+        {
+          "period": "2024Q2",
+          "bev": 216,
+          "hybrid": 185,
+          "total_ev": 401
+        },
+        {
+          "period": "2024Q3",
+          "bev": 214,
+          "hybrid": 191,
+          "total_ev": 405
+        },
+        {
+          "period": "2024Q4",
+          "bev": 224,
+          "hybrid": 267,
+          "total_ev": 491
+        },
+        {
+          "period": "2025Q1",
+          "bev": 182,
+          "hybrid": 209,
+          "total_ev": 391
+        },
+        {
+          "period": "2025Q2",
+          "bev": 356,
+          "hybrid": 241,
+          "total_ev": 597
+        },
+        {
+          "period": "2025Q3",
+          "bev": 303,
+          "hybrid": 295,
+          "total_ev": 598
+        },
+        {
+          "period": "2025Q4",
+          "bev": 543,
+          "hybrid": 315,
+          "total_ev": 858
+        },
+        {
+          "period": "2026Q1",
+          "bev": 362,
+          "hybrid": 290,
+          "total_ev": 652
+        },
+        {
+          "period": "2026Q2",
+          "bev": 169,
+          "hybrid": 154,
+          "total_ev": 323
+        }
+      ],
+      "East Coast": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 14,
+          "total_ev": 14
+        },
+        {
+          "period": "2022Q2",
+          "bev": 1,
+          "hybrid": 22,
+          "total_ev": 23
+        },
+        {
+          "period": "2022Q3",
+          "bev": 7,
+          "hybrid": 47,
+          "total_ev": 54
+        },
+        {
+          "period": "2022Q4",
+          "bev": 3,
+          "hybrid": 44,
+          "total_ev": 47
+        },
+        {
+          "period": "2023Q1",
+          "bev": 4,
+          "hybrid": 44,
+          "total_ev": 48
+        },
+        {
+          "period": "2023Q2",
+          "bev": 10,
+          "hybrid": 32,
+          "total_ev": 42
+        },
+        {
+          "period": "2023Q3",
+          "bev": 7,
+          "hybrid": 36,
+          "total_ev": 43
+        },
+        {
+          "period": "2023Q4",
+          "bev": 15,
+          "hybrid": 60,
+          "total_ev": 75
+        },
+        {
+          "period": "2024Q1",
+          "bev": 20,
+          "hybrid": 64,
+          "total_ev": 84
+        },
+        {
+          "period": "2024Q2",
+          "bev": 21,
+          "hybrid": 53,
+          "total_ev": 74
+        },
+        {
+          "period": "2024Q3",
+          "bev": 48,
+          "hybrid": 47,
+          "total_ev": 95
+        },
+        {
+          "period": "2024Q4",
+          "bev": 34,
+          "hybrid": 69,
+          "total_ev": 103
+        },
+        {
+          "period": "2025Q1",
+          "bev": 76,
+          "hybrid": 66,
+          "total_ev": 142
+        },
+        {
+          "period": "2025Q2",
+          "bev": 94,
+          "hybrid": 61,
+          "total_ev": 155
+        },
+        {
+          "period": "2025Q3",
+          "bev": 69,
+          "hybrid": 81,
+          "total_ev": 150
+        },
+        {
+          "period": "2025Q4",
+          "bev": 171,
+          "hybrid": 80,
+          "total_ev": 251
+        },
+        {
+          "period": "2026Q1",
+          "bev": 125,
+          "hybrid": 63,
+          "total_ev": 188
+        },
+        {
+          "period": "2026Q2",
+          "bev": 61,
+          "hybrid": 39,
+          "total_ev": 100
+        }
+      ],
+      "Borneo": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 43,
+          "total_ev": 43
+        },
+        {
+          "period": "2022Q2",
+          "bev": 10,
+          "hybrid": 35,
+          "total_ev": 45
+        },
+        {
+          "period": "2022Q3",
+          "bev": 21,
+          "hybrid": 82,
+          "total_ev": 103
+        },
+        {
+          "period": "2022Q4",
+          "bev": 57,
+          "hybrid": 86,
+          "total_ev": 143
+        },
+        {
+          "period": "2023Q1",
+          "bev": 27,
+          "hybrid": 79,
+          "total_ev": 106
+        },
+        {
+          "period": "2023Q2",
+          "bev": 55,
+          "hybrid": 60,
+          "total_ev": 115
+        },
+        {
+          "period": "2023Q3",
+          "bev": 76,
+          "hybrid": 59,
+          "total_ev": 135
+        },
+        {
+          "period": "2023Q4",
+          "bev": 148,
+          "hybrid": 90,
+          "total_ev": 238
+        },
+        {
+          "period": "2024Q1",
+          "bev": 87,
+          "hybrid": 69,
+          "total_ev": 156
+        },
+        {
+          "period": "2024Q2",
+          "bev": 137,
+          "hybrid": 53,
+          "total_ev": 190
+        },
+        {
+          "period": "2024Q3",
+          "bev": 110,
+          "hybrid": 64,
+          "total_ev": 174
+        },
+        {
+          "period": "2024Q4",
+          "bev": 138,
+          "hybrid": 80,
+          "total_ev": 218
+        },
+        {
+          "period": "2025Q1",
+          "bev": 130,
+          "hybrid": 90,
+          "total_ev": 220
+        },
+        {
+          "period": "2025Q2",
+          "bev": 190,
+          "hybrid": 59,
+          "total_ev": 249
+        },
+        {
+          "period": "2025Q3",
+          "bev": 171,
+          "hybrid": 100,
+          "total_ev": 271
+        },
+        {
+          "period": "2025Q4",
+          "bev": 209,
+          "hybrid": 106,
+          "total_ev": 315
+        },
+        {
+          "period": "2026Q1",
+          "bev": 155,
+          "hybrid": 87,
+          "total_ev": 242
+        },
+        {
+          "period": "2026Q2",
+          "bev": 63,
+          "hybrid": 49,
+          "total_ev": 112
+        }
+      ]
     },
-    {
-      "name": "Green Diesel",
-      "value": 45422
-    },
-    {
-      "name": "Electric",
-      "value": 44813
-    },
-    {
-      "name": "Hybrid Petrol",
-      "value": 31176
-    },
-    {
-      "name": "Diesel",
-      "value": 5430
+    "by_state": {
+      "Terengganu": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 2,
+          "total_ev": 2
+        },
+        {
+          "period": "2022Q2",
+          "bev": 0,
+          "hybrid": 6,
+          "total_ev": 6
+        },
+        {
+          "period": "2022Q3",
+          "bev": 2,
+          "hybrid": 14,
+          "total_ev": 16
+        },
+        {
+          "period": "2022Q4",
+          "bev": 1,
+          "hybrid": 5,
+          "total_ev": 6
+        },
+        {
+          "period": "2023Q1",
+          "bev": 2,
+          "hybrid": 16,
+          "total_ev": 18
+        },
+        {
+          "period": "2023Q2",
+          "bev": 0,
+          "hybrid": 12,
+          "total_ev": 12
+        },
+        {
+          "period": "2023Q3",
+          "bev": 1,
+          "hybrid": 9,
+          "total_ev": 10
+        },
+        {
+          "period": "2023Q4",
+          "bev": 3,
+          "hybrid": 17,
+          "total_ev": 20
+        },
+        {
+          "period": "2024Q1",
+          "bev": 1,
+          "hybrid": 18,
+          "total_ev": 19
+        },
+        {
+          "period": "2024Q2",
+          "bev": 4,
+          "hybrid": 15,
+          "total_ev": 19
+        },
+        {
+          "period": "2024Q3",
+          "bev": 4,
+          "hybrid": 9,
+          "total_ev": 13
+        },
+        {
+          "period": "2024Q4",
+          "bev": 7,
+          "hybrid": 16,
+          "total_ev": 23
+        },
+        {
+          "period": "2025Q1",
+          "bev": 9,
+          "hybrid": 15,
+          "total_ev": 24
+        },
+        {
+          "period": "2025Q2",
+          "bev": 8,
+          "hybrid": 18,
+          "total_ev": 26
+        },
+        {
+          "period": "2025Q3",
+          "bev": 10,
+          "hybrid": 19,
+          "total_ev": 29
+        },
+        {
+          "period": "2025Q4",
+          "bev": 31,
+          "hybrid": 20,
+          "total_ev": 51
+        },
+        {
+          "period": "2026Q1",
+          "bev": 18,
+          "hybrid": 13,
+          "total_ev": 31
+        },
+        {
+          "period": "2026Q2",
+          "bev": 8,
+          "hybrid": 9,
+          "total_ev": 17
+        }
+      ],
+      "Johor": [
+        {
+          "period": "2022Q1",
+          "bev": 4,
+          "hybrid": 42,
+          "total_ev": 46
+        },
+        {
+          "period": "2022Q2",
+          "bev": 21,
+          "hybrid": 73,
+          "total_ev": 94
+        },
+        {
+          "period": "2022Q3",
+          "bev": 27,
+          "hybrid": 112,
+          "total_ev": 139
+        },
+        {
+          "period": "2022Q4",
+          "bev": 45,
+          "hybrid": 137,
+          "total_ev": 182
+        },
+        {
+          "period": "2023Q1",
+          "bev": 43,
+          "hybrid": 138,
+          "total_ev": 181
+        },
+        {
+          "period": "2023Q2",
+          "bev": 54,
+          "hybrid": 104,
+          "total_ev": 158
+        },
+        {
+          "period": "2023Q3",
+          "bev": 74,
+          "hybrid": 112,
+          "total_ev": 186
+        },
+        {
+          "period": "2023Q4",
+          "bev": 142,
+          "hybrid": 172,
+          "total_ev": 314
+        },
+        {
+          "period": "2024Q1",
+          "bev": 106,
+          "hybrid": 174,
+          "total_ev": 280
+        },
+        {
+          "period": "2024Q2",
+          "bev": 142,
+          "hybrid": 131,
+          "total_ev": 273
+        },
+        {
+          "period": "2024Q3",
+          "bev": 124,
+          "hybrid": 136,
+          "total_ev": 260
+        },
+        {
+          "period": "2024Q4",
+          "bev": 156,
+          "hybrid": 201,
+          "total_ev": 357
+        },
+        {
+          "period": "2025Q1",
+          "bev": 125,
+          "hybrid": 143,
+          "total_ev": 268
+        },
+        {
+          "period": "2025Q2",
+          "bev": 253,
+          "hybrid": 175,
+          "total_ev": 428
+        },
+        {
+          "period": "2025Q3",
+          "bev": 198,
+          "hybrid": 236,
+          "total_ev": 434
+        },
+        {
+          "period": "2025Q4",
+          "bev": 404,
+          "hybrid": 240,
+          "total_ev": 644
+        },
+        {
+          "period": "2026Q1",
+          "bev": 250,
+          "hybrid": 228,
+          "total_ev": 478
+        },
+        {
+          "period": "2026Q2",
+          "bev": 118,
+          "hybrid": 117,
+          "total_ev": 235
+        }
+      ],
+      "Kedah": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 4,
+          "total_ev": 4
+        },
+        {
+          "period": "2022Q2",
+          "bev": 1,
+          "hybrid": 12,
+          "total_ev": 13
+        },
+        {
+          "period": "2022Q3",
+          "bev": 1,
+          "hybrid": 17,
+          "total_ev": 18
+        },
+        {
+          "period": "2022Q4",
+          "bev": 3,
+          "hybrid": 25,
+          "total_ev": 28
+        },
+        {
+          "period": "2023Q1",
+          "bev": 7,
+          "hybrid": 23,
+          "total_ev": 30
+        },
+        {
+          "period": "2023Q2",
+          "bev": 14,
+          "hybrid": 22,
+          "total_ev": 36
+        },
+        {
+          "period": "2023Q3",
+          "bev": 24,
+          "hybrid": 26,
+          "total_ev": 50
+        },
+        {
+          "period": "2023Q4",
+          "bev": 54,
+          "hybrid": 47,
+          "total_ev": 101
+        },
+        {
+          "period": "2024Q1",
+          "bev": 40,
+          "hybrid": 30,
+          "total_ev": 70
+        },
+        {
+          "period": "2024Q2",
+          "bev": 35,
+          "hybrid": 17,
+          "total_ev": 52
+        },
+        {
+          "period": "2024Q3",
+          "bev": 39,
+          "hybrid": 21,
+          "total_ev": 60
+        },
+        {
+          "period": "2024Q4",
+          "bev": 40,
+          "hybrid": 31,
+          "total_ev": 71
+        },
+        {
+          "period": "2025Q1",
+          "bev": 59,
+          "hybrid": 17,
+          "total_ev": 76
+        },
+        {
+          "period": "2025Q2",
+          "bev": 34,
+          "hybrid": 40,
+          "total_ev": 74
+        },
+        {
+          "period": "2025Q3",
+          "bev": 45,
+          "hybrid": 42,
+          "total_ev": 87
+        },
+        {
+          "period": "2025Q4",
+          "bev": 63,
+          "hybrid": 55,
+          "total_ev": 118
+        },
+        {
+          "period": "2026Q1",
+          "bev": 39,
+          "hybrid": 33,
+          "total_ev": 72
+        },
+        {
+          "period": "2026Q2",
+          "bev": 25,
+          "hybrid": 24,
+          "total_ev": 49
+        }
+      ],
+      "Kelantan": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 4,
+          "total_ev": 4
+        },
+        {
+          "period": "2022Q2",
+          "bev": 1,
+          "hybrid": 5,
+          "total_ev": 6
+        },
+        {
+          "period": "2022Q3",
+          "bev": 1,
+          "hybrid": 11,
+          "total_ev": 12
+        },
+        {
+          "period": "2022Q4",
+          "bev": 1,
+          "hybrid": 11,
+          "total_ev": 12
+        },
+        {
+          "period": "2023Q1",
+          "bev": 0,
+          "hybrid": 11,
+          "total_ev": 11
+        },
+        {
+          "period": "2023Q2",
+          "bev": 2,
+          "hybrid": 7,
+          "total_ev": 9
+        },
+        {
+          "period": "2023Q3",
+          "bev": 2,
+          "hybrid": 12,
+          "total_ev": 14
+        },
+        {
+          "period": "2023Q4",
+          "bev": 4,
+          "hybrid": 14,
+          "total_ev": 18
+        },
+        {
+          "period": "2024Q1",
+          "bev": 6,
+          "hybrid": 25,
+          "total_ev": 31
+        },
+        {
+          "period": "2024Q2",
+          "bev": 7,
+          "hybrid": 26,
+          "total_ev": 33
+        },
+        {
+          "period": "2024Q3",
+          "bev": 20,
+          "hybrid": 20,
+          "total_ev": 40
+        },
+        {
+          "period": "2024Q4",
+          "bev": 5,
+          "hybrid": 19,
+          "total_ev": 24
+        },
+        {
+          "period": "2025Q1",
+          "bev": 18,
+          "hybrid": 21,
+          "total_ev": 39
+        },
+        {
+          "period": "2025Q2",
+          "bev": 18,
+          "hybrid": 19,
+          "total_ev": 37
+        },
+        {
+          "period": "2025Q3",
+          "bev": 15,
+          "hybrid": 27,
+          "total_ev": 42
+        },
+        {
+          "period": "2025Q4",
+          "bev": 40,
+          "hybrid": 26,
+          "total_ev": 66
+        },
+        {
+          "period": "2026Q1",
+          "bev": 42,
+          "hybrid": 25,
+          "total_ev": 67
+        },
+        {
+          "period": "2026Q2",
+          "bev": 12,
+          "hybrid": 12,
+          "total_ev": 24
+        }
+      ],
+      "Kuala Lumpur": [
+        {
+          "period": "2022Q1",
+          "bev": 65,
+          "hybrid": 213,
+          "total_ev": 278
+        },
+        {
+          "period": "2022Q2",
+          "bev": 172,
+          "hybrid": 428,
+          "total_ev": 600
+        },
+        {
+          "period": "2022Q3",
+          "bev": 229,
+          "hybrid": 498,
+          "total_ev": 727
+        },
+        {
+          "period": "2022Q4",
+          "bev": 426,
+          "hybrid": 745,
+          "total_ev": 1171
+        },
+        {
+          "period": "2023Q1",
+          "bev": 406,
+          "hybrid": 660,
+          "total_ev": 1066
+        },
+        {
+          "period": "2023Q2",
+          "bev": 617,
+          "hybrid": 529,
+          "total_ev": 1146
+        },
+        {
+          "period": "2023Q3",
+          "bev": 755,
+          "hybrid": 430,
+          "total_ev": 1185
+        },
+        {
+          "period": "2023Q4",
+          "bev": 1015,
+          "hybrid": 659,
+          "total_ev": 1674
+        },
+        {
+          "period": "2024Q1",
+          "bev": 645,
+          "hybrid": 595,
+          "total_ev": 1240
+        },
+        {
+          "period": "2024Q2",
+          "bev": 879,
+          "hybrid": 701,
+          "total_ev": 1580
+        },
+        {
+          "period": "2024Q3",
+          "bev": 822,
+          "hybrid": 530,
+          "total_ev": 1352
+        },
+        {
+          "period": "2024Q4",
+          "bev": 727,
+          "hybrid": 685,
+          "total_ev": 1412
+        },
+        {
+          "period": "2025Q1",
+          "bev": 826,
+          "hybrid": 516,
+          "total_ev": 1342
+        },
+        {
+          "period": "2025Q2",
+          "bev": 1110,
+          "hybrid": 873,
+          "total_ev": 1983
+        },
+        {
+          "period": "2025Q3",
+          "bev": 916,
+          "hybrid": 730,
+          "total_ev": 1646
+        },
+        {
+          "period": "2025Q4",
+          "bev": 1720,
+          "hybrid": 664,
+          "total_ev": 2384
+        },
+        {
+          "period": "2026Q1",
+          "bev": 927,
+          "hybrid": 544,
+          "total_ev": 1471
+        },
+        {
+          "period": "2026Q2",
+          "bev": 414,
+          "hybrid": 567,
+          "total_ev": 981
+        }
+      ],
+      "Perak": [
+        {
+          "period": "2022Q1",
+          "bev": 1,
+          "hybrid": 9,
+          "total_ev": 10
+        },
+        {
+          "period": "2022Q2",
+          "bev": 6,
+          "hybrid": 18,
+          "total_ev": 24
+        },
+        {
+          "period": "2022Q3",
+          "bev": 24,
+          "hybrid": 26,
+          "total_ev": 50
+        },
+        {
+          "period": "2022Q4",
+          "bev": 30,
+          "hybrid": 32,
+          "total_ev": 62
+        },
+        {
+          "period": "2023Q1",
+          "bev": 26,
+          "hybrid": 50,
+          "total_ev": 76
+        },
+        {
+          "period": "2023Q2",
+          "bev": 46,
+          "hybrid": 22,
+          "total_ev": 68
+        },
+        {
+          "period": "2023Q3",
+          "bev": 52,
+          "hybrid": 31,
+          "total_ev": 83
+        },
+        {
+          "period": "2023Q4",
+          "bev": 68,
+          "hybrid": 54,
+          "total_ev": 122
+        },
+        {
+          "period": "2024Q1",
+          "bev": 41,
+          "hybrid": 45,
+          "total_ev": 86
+        },
+        {
+          "period": "2024Q2",
+          "bev": 56,
+          "hybrid": 28,
+          "total_ev": 84
+        },
+        {
+          "period": "2024Q3",
+          "bev": 50,
+          "hybrid": 36,
+          "total_ev": 86
+        },
+        {
+          "period": "2024Q4",
+          "bev": 42,
+          "hybrid": 53,
+          "total_ev": 95
+        },
+        {
+          "period": "2025Q1",
+          "bev": 32,
+          "hybrid": 43,
+          "total_ev": 75
+        },
+        {
+          "period": "2025Q2",
+          "bev": 64,
+          "hybrid": 46,
+          "total_ev": 110
+        },
+        {
+          "period": "2025Q3",
+          "bev": 39,
+          "hybrid": 47,
+          "total_ev": 86
+        },
+        {
+          "period": "2025Q4",
+          "bev": 128,
+          "hybrid": 34,
+          "total_ev": 162
+        },
+        {
+          "period": "2026Q1",
+          "bev": 71,
+          "hybrid": 48,
+          "total_ev": 119
+        },
+        {
+          "period": "2026Q2",
+          "bev": 44,
+          "hybrid": 31,
+          "total_ev": 75
+        }
+      ],
+      "Penang": [
+        {
+          "period": "2022Q1",
+          "bev": 11,
+          "hybrid": 33,
+          "total_ev": 44
+        },
+        {
+          "period": "2022Q2",
+          "bev": 26,
+          "hybrid": 54,
+          "total_ev": 80
+        },
+        {
+          "period": "2022Q3",
+          "bev": 44,
+          "hybrid": 85,
+          "total_ev": 129
+        },
+        {
+          "period": "2022Q4",
+          "bev": 63,
+          "hybrid": 114,
+          "total_ev": 177
+        },
+        {
+          "period": "2023Q1",
+          "bev": 41,
+          "hybrid": 108,
+          "total_ev": 149
+        },
+        {
+          "period": "2023Q2",
+          "bev": 78,
+          "hybrid": 56,
+          "total_ev": 134
+        },
+        {
+          "period": "2023Q3",
+          "bev": 129,
+          "hybrid": 76,
+          "total_ev": 205
+        },
+        {
+          "period": "2023Q4",
+          "bev": 198,
+          "hybrid": 107,
+          "total_ev": 305
+        },
+        {
+          "period": "2024Q1",
+          "bev": 106,
+          "hybrid": 102,
+          "total_ev": 208
+        },
+        {
+          "period": "2024Q2",
+          "bev": 100,
+          "hybrid": 88,
+          "total_ev": 188
+        },
+        {
+          "period": "2024Q3",
+          "bev": 111,
+          "hybrid": 80,
+          "total_ev": 191
+        },
+        {
+          "period": "2024Q4",
+          "bev": 137,
+          "hybrid": 109,
+          "total_ev": 246
+        },
+        {
+          "period": "2025Q1",
+          "bev": 93,
+          "hybrid": 88,
+          "total_ev": 181
+        },
+        {
+          "period": "2025Q2",
+          "bev": 180,
+          "hybrid": 105,
+          "total_ev": 285
+        },
+        {
+          "period": "2025Q3",
+          "bev": 153,
+          "hybrid": 119,
+          "total_ev": 272
+        },
+        {
+          "period": "2025Q4",
+          "bev": 290,
+          "hybrid": 120,
+          "total_ev": 410
+        },
+        {
+          "period": "2026Q1",
+          "bev": 193,
+          "hybrid": 112,
+          "total_ev": 305
+        },
+        {
+          "period": "2026Q2",
+          "bev": 90,
+          "hybrid": 38,
+          "total_ev": 128
+        }
+      ],
+      "Pahang": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 8,
+          "total_ev": 8
+        },
+        {
+          "period": "2022Q2",
+          "bev": 0,
+          "hybrid": 11,
+          "total_ev": 11
+        },
+        {
+          "period": "2022Q3",
+          "bev": 4,
+          "hybrid": 22,
+          "total_ev": 26
+        },
+        {
+          "period": "2022Q4",
+          "bev": 1,
+          "hybrid": 28,
+          "total_ev": 29
+        },
+        {
+          "period": "2023Q1",
+          "bev": 2,
+          "hybrid": 17,
+          "total_ev": 19
+        },
+        {
+          "period": "2023Q2",
+          "bev": 8,
+          "hybrid": 13,
+          "total_ev": 21
+        },
+        {
+          "period": "2023Q3",
+          "bev": 4,
+          "hybrid": 15,
+          "total_ev": 19
+        },
+        {
+          "period": "2023Q4",
+          "bev": 8,
+          "hybrid": 29,
+          "total_ev": 37
+        },
+        {
+          "period": "2024Q1",
+          "bev": 13,
+          "hybrid": 21,
+          "total_ev": 34
+        },
+        {
+          "period": "2024Q2",
+          "bev": 10,
+          "hybrid": 12,
+          "total_ev": 22
+        },
+        {
+          "period": "2024Q3",
+          "bev": 24,
+          "hybrid": 18,
+          "total_ev": 42
+        },
+        {
+          "period": "2024Q4",
+          "bev": 22,
+          "hybrid": 34,
+          "total_ev": 56
+        },
+        {
+          "period": "2025Q1",
+          "bev": 49,
+          "hybrid": 30,
+          "total_ev": 79
+        },
+        {
+          "period": "2025Q2",
+          "bev": 68,
+          "hybrid": 24,
+          "total_ev": 92
+        },
+        {
+          "period": "2025Q3",
+          "bev": 44,
+          "hybrid": 35,
+          "total_ev": 79
+        },
+        {
+          "period": "2025Q4",
+          "bev": 100,
+          "hybrid": 34,
+          "total_ev": 134
+        },
+        {
+          "period": "2026Q1",
+          "bev": 65,
+          "hybrid": 25,
+          "total_ev": 90
+        },
+        {
+          "period": "2026Q2",
+          "bev": 41,
+          "hybrid": 18,
+          "total_ev": 59
+        }
+      ],
+      "Selangor": [
+        {
+          "period": "2022Q1",
+          "bev": 21,
+          "hybrid": 45,
+          "total_ev": 66
+        },
+        {
+          "period": "2022Q2",
+          "bev": 34,
+          "hybrid": 69,
+          "total_ev": 103
+        },
+        {
+          "period": "2022Q3",
+          "bev": 59,
+          "hybrid": 113,
+          "total_ev": 172
+        },
+        {
+          "period": "2022Q4",
+          "bev": 102,
+          "hybrid": 130,
+          "total_ev": 232
+        },
+        {
+          "period": "2023Q1",
+          "bev": 107,
+          "hybrid": 168,
+          "total_ev": 275
+        },
+        {
+          "period": "2023Q2",
+          "bev": 123,
+          "hybrid": 113,
+          "total_ev": 236
+        },
+        {
+          "period": "2023Q3",
+          "bev": 152,
+          "hybrid": 117,
+          "total_ev": 269
+        },
+        {
+          "period": "2023Q4",
+          "bev": 358,
+          "hybrid": 170,
+          "total_ev": 528
+        },
+        {
+          "period": "2024Q1",
+          "bev": 269,
+          "hybrid": 180,
+          "total_ev": 449
+        },
+        {
+          "period": "2024Q2",
+          "bev": 328,
+          "hybrid": 126,
+          "total_ev": 454
+        },
+        {
+          "period": "2024Q3",
+          "bev": 263,
+          "hybrid": 167,
+          "total_ev": 430
+        },
+        {
+          "period": "2024Q4",
+          "bev": 272,
+          "hybrid": 192,
+          "total_ev": 464
+        },
+        {
+          "period": "2025Q1",
+          "bev": 218,
+          "hybrid": 188,
+          "total_ev": 406
+        },
+        {
+          "period": "2025Q2",
+          "bev": 368,
+          "hybrid": 181,
+          "total_ev": 549
+        },
+        {
+          "period": "2025Q3",
+          "bev": 371,
+          "hybrid": 240,
+          "total_ev": 611
+        },
+        {
+          "period": "2025Q4",
+          "bev": 700,
+          "hybrid": 244,
+          "total_ev": 944
+        },
+        {
+          "period": "2026Q1",
+          "bev": 416,
+          "hybrid": 205,
+          "total_ev": 621
+        },
+        {
+          "period": "2026Q2",
+          "bev": 135,
+          "hybrid": 136,
+          "total_ev": 271
+        }
+      ],
+      "Sarawak": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 22,
+          "total_ev": 22
+        },
+        {
+          "period": "2022Q2",
+          "bev": 6,
+          "hybrid": 18,
+          "total_ev": 24
+        },
+        {
+          "period": "2022Q3",
+          "bev": 11,
+          "hybrid": 37,
+          "total_ev": 48
+        },
+        {
+          "period": "2022Q4",
+          "bev": 23,
+          "hybrid": 38,
+          "total_ev": 61
+        },
+        {
+          "period": "2023Q1",
+          "bev": 14,
+          "hybrid": 41,
+          "total_ev": 55
+        },
+        {
+          "period": "2023Q2",
+          "bev": 35,
+          "hybrid": 25,
+          "total_ev": 60
+        },
+        {
+          "period": "2023Q3",
+          "bev": 36,
+          "hybrid": 24,
+          "total_ev": 60
+        },
+        {
+          "period": "2023Q4",
+          "bev": 69,
+          "hybrid": 42,
+          "total_ev": 111
+        },
+        {
+          "period": "2024Q1",
+          "bev": 28,
+          "hybrid": 35,
+          "total_ev": 63
+        },
+        {
+          "period": "2024Q2",
+          "bev": 48,
+          "hybrid": 29,
+          "total_ev": 77
+        },
+        {
+          "period": "2024Q3",
+          "bev": 46,
+          "hybrid": 35,
+          "total_ev": 81
+        },
+        {
+          "period": "2024Q4",
+          "bev": 59,
+          "hybrid": 32,
+          "total_ev": 91
+        },
+        {
+          "period": "2025Q1",
+          "bev": 55,
+          "hybrid": 44,
+          "total_ev": 99
+        },
+        {
+          "period": "2025Q2",
+          "bev": 83,
+          "hybrid": 30,
+          "total_ev": 113
+        },
+        {
+          "period": "2025Q3",
+          "bev": 61,
+          "hybrid": 55,
+          "total_ev": 116
+        },
+        {
+          "period": "2025Q4",
+          "bev": 95,
+          "hybrid": 43,
+          "total_ev": 138
+        },
+        {
+          "period": "2026Q1",
+          "bev": 106,
+          "hybrid": 46,
+          "total_ev": 152
+        },
+        {
+          "period": "2026Q2",
+          "bev": 42,
+          "hybrid": 27,
+          "total_ev": 69
+        }
+      ],
+      "Labuan": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2022Q2",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2022Q3",
+          "bev": 1,
+          "hybrid": 7,
+          "total_ev": 8
+        },
+        {
+          "period": "2022Q4",
+          "bev": 5,
+          "hybrid": 14,
+          "total_ev": 19
+        },
+        {
+          "period": "2023Q1",
+          "bev": 1,
+          "hybrid": 8,
+          "total_ev": 9
+        },
+        {
+          "period": "2023Q2",
+          "bev": 3,
+          "hybrid": 3,
+          "total_ev": 6
+        },
+        {
+          "period": "2023Q3",
+          "bev": 2,
+          "hybrid": 2,
+          "total_ev": 4
+        },
+        {
+          "period": "2023Q4",
+          "bev": 4,
+          "hybrid": 3,
+          "total_ev": 7
+        },
+        {
+          "period": "2024Q1",
+          "bev": 3,
+          "hybrid": 4,
+          "total_ev": 7
+        },
+        {
+          "period": "2024Q2",
+          "bev": 3,
+          "hybrid": 5,
+          "total_ev": 8
+        },
+        {
+          "period": "2024Q3",
+          "bev": 1,
+          "hybrid": 4,
+          "total_ev": 5
+        },
+        {
+          "period": "2024Q4",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        }
+      ],
+      "Sabah": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 21,
+          "total_ev": 21
+        },
+        {
+          "period": "2022Q2",
+          "bev": 4,
+          "hybrid": 17,
+          "total_ev": 21
+        },
+        {
+          "period": "2022Q3",
+          "bev": 9,
+          "hybrid": 38,
+          "total_ev": 47
+        },
+        {
+          "period": "2022Q4",
+          "bev": 29,
+          "hybrid": 34,
+          "total_ev": 63
+        },
+        {
+          "period": "2023Q1",
+          "bev": 12,
+          "hybrid": 30,
+          "total_ev": 42
+        },
+        {
+          "period": "2023Q2",
+          "bev": 17,
+          "hybrid": 32,
+          "total_ev": 49
+        },
+        {
+          "period": "2023Q3",
+          "bev": 38,
+          "hybrid": 33,
+          "total_ev": 71
+        },
+        {
+          "period": "2023Q4",
+          "bev": 75,
+          "hybrid": 45,
+          "total_ev": 120
+        },
+        {
+          "period": "2024Q1",
+          "bev": 56,
+          "hybrid": 30,
+          "total_ev": 86
+        },
+        {
+          "period": "2024Q2",
+          "bev": 86,
+          "hybrid": 19,
+          "total_ev": 105
+        },
+        {
+          "period": "2024Q3",
+          "bev": 63,
+          "hybrid": 25,
+          "total_ev": 88
+        },
+        {
+          "period": "2024Q4",
+          "bev": 79,
+          "hybrid": 48,
+          "total_ev": 127
+        },
+        {
+          "period": "2025Q1",
+          "bev": 75,
+          "hybrid": 46,
+          "total_ev": 121
+        },
+        {
+          "period": "2025Q2",
+          "bev": 107,
+          "hybrid": 29,
+          "total_ev": 136
+        },
+        {
+          "period": "2025Q3",
+          "bev": 110,
+          "hybrid": 45,
+          "total_ev": 155
+        },
+        {
+          "period": "2025Q4",
+          "bev": 114,
+          "hybrid": 63,
+          "total_ev": 177
+        },
+        {
+          "period": "2026Q1",
+          "bev": 49,
+          "hybrid": 41,
+          "total_ev": 90
+        },
+        {
+          "period": "2026Q2",
+          "bev": 21,
+          "hybrid": 22,
+          "total_ev": 43
+        }
+      ],
+      "Perlis": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 4,
+          "total_ev": 4
+        },
+        {
+          "period": "2022Q2",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2022Q3",
+          "bev": 0,
+          "hybrid": 2,
+          "total_ev": 2
+        },
+        {
+          "period": "2022Q4",
+          "bev": 0,
+          "hybrid": 2,
+          "total_ev": 2
+        },
+        {
+          "period": "2023Q1",
+          "bev": 1,
+          "hybrid": 4,
+          "total_ev": 5
+        },
+        {
+          "period": "2023Q2",
+          "bev": 0,
+          "hybrid": 1,
+          "total_ev": 1
+        },
+        {
+          "period": "2023Q3",
+          "bev": 0,
+          "hybrid": 5,
+          "total_ev": 5
+        },
+        {
+          "period": "2023Q4",
+          "bev": 3,
+          "hybrid": 6,
+          "total_ev": 9
+        },
+        {
+          "period": "2024Q1",
+          "bev": 4,
+          "hybrid": 4,
+          "total_ev": 8
+        },
+        {
+          "period": "2024Q2",
+          "bev": 6,
+          "hybrid": 5,
+          "total_ev": 11
+        },
+        {
+          "period": "2024Q3",
+          "bev": 3,
+          "hybrid": 2,
+          "total_ev": 5
+        },
+        {
+          "period": "2024Q4",
+          "bev": 6,
+          "hybrid": 4,
+          "total_ev": 10
+        },
+        {
+          "period": "2025Q1",
+          "bev": 7,
+          "hybrid": 3,
+          "total_ev": 10
+        },
+        {
+          "period": "2025Q2",
+          "bev": 10,
+          "hybrid": 10,
+          "total_ev": 20
+        },
+        {
+          "period": "2025Q3",
+          "bev": 5,
+          "hybrid": 11,
+          "total_ev": 16
+        },
+        {
+          "period": "2025Q4",
+          "bev": 4,
+          "hybrid": 13,
+          "total_ev": 17
+        },
+        {
+          "period": "2026Q1",
+          "bev": 5,
+          "hybrid": 6,
+          "total_ev": 11
+        },
+        {
+          "period": "2026Q2",
+          "bev": 3,
+          "hybrid": 3,
+          "total_ev": 6
+        }
+      ],
+      "Melaka": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 10,
+          "total_ev": 10
+        },
+        {
+          "period": "2022Q2",
+          "bev": 5,
+          "hybrid": 29,
+          "total_ev": 34
+        },
+        {
+          "period": "2022Q3",
+          "bev": 11,
+          "hybrid": 42,
+          "total_ev": 53
+        },
+        {
+          "period": "2022Q4",
+          "bev": 12,
+          "hybrid": 55,
+          "total_ev": 67
+        },
+        {
+          "period": "2023Q1",
+          "bev": 19,
+          "hybrid": 43,
+          "total_ev": 62
+        },
+        {
+          "period": "2023Q2",
+          "bev": 11,
+          "hybrid": 45,
+          "total_ev": 56
+        },
+        {
+          "period": "2023Q3",
+          "bev": 11,
+          "hybrid": 39,
+          "total_ev": 50
+        },
+        {
+          "period": "2023Q4",
+          "bev": 24,
+          "hybrid": 44,
+          "total_ev": 68
+        },
+        {
+          "period": "2024Q1",
+          "bev": 42,
+          "hybrid": 54,
+          "total_ev": 96
+        },
+        {
+          "period": "2024Q2",
+          "bev": 41,
+          "hybrid": 32,
+          "total_ev": 73
+        },
+        {
+          "period": "2024Q3",
+          "bev": 37,
+          "hybrid": 27,
+          "total_ev": 64
+        },
+        {
+          "period": "2024Q4",
+          "bev": 45,
+          "hybrid": 42,
+          "total_ev": 87
+        },
+        {
+          "period": "2025Q1",
+          "bev": 33,
+          "hybrid": 40,
+          "total_ev": 73
+        },
+        {
+          "period": "2025Q2",
+          "bev": 77,
+          "hybrid": 41,
+          "total_ev": 118
+        },
+        {
+          "period": "2025Q3",
+          "bev": 73,
+          "hybrid": 30,
+          "total_ev": 103
+        },
+        {
+          "period": "2025Q4",
+          "bev": 92,
+          "hybrid": 49,
+          "total_ev": 141
+        },
+        {
+          "period": "2026Q1",
+          "bev": 77,
+          "hybrid": 37,
+          "total_ev": 114
+        },
+        {
+          "period": "2026Q2",
+          "bev": 40,
+          "hybrid": 23,
+          "total_ev": 63
+        }
+      ],
+      "Negeri Sembilan": [
+        {
+          "period": "2022Q1",
+          "bev": 1,
+          "hybrid": 11,
+          "total_ev": 12
+        },
+        {
+          "period": "2022Q2",
+          "bev": 0,
+          "hybrid": 9,
+          "total_ev": 9
+        },
+        {
+          "period": "2022Q3",
+          "bev": 6,
+          "hybrid": 16,
+          "total_ev": 22
+        },
+        {
+          "period": "2022Q4",
+          "bev": 5,
+          "hybrid": 23,
+          "total_ev": 28
+        },
+        {
+          "period": "2023Q1",
+          "bev": 8,
+          "hybrid": 27,
+          "total_ev": 35
+        },
+        {
+          "period": "2023Q2",
+          "bev": 20,
+          "hybrid": 11,
+          "total_ev": 31
+        },
+        {
+          "period": "2023Q3",
+          "bev": 4,
+          "hybrid": 17,
+          "total_ev": 21
+        },
+        {
+          "period": "2023Q4",
+          "bev": 20,
+          "hybrid": 25,
+          "total_ev": 45
+        },
+        {
+          "period": "2024Q1",
+          "bev": 19,
+          "hybrid": 24,
+          "total_ev": 43
+        },
+        {
+          "period": "2024Q2",
+          "bev": 33,
+          "hybrid": 22,
+          "total_ev": 55
+        },
+        {
+          "period": "2024Q3",
+          "bev": 53,
+          "hybrid": 28,
+          "total_ev": 81
+        },
+        {
+          "period": "2024Q4",
+          "bev": 23,
+          "hybrid": 24,
+          "total_ev": 47
+        },
+        {
+          "period": "2025Q1",
+          "bev": 24,
+          "hybrid": 26,
+          "total_ev": 50
+        },
+        {
+          "period": "2025Q2",
+          "bev": 26,
+          "hybrid": 25,
+          "total_ev": 51
+        },
+        {
+          "period": "2025Q3",
+          "bev": 32,
+          "hybrid": 29,
+          "total_ev": 61
+        },
+        {
+          "period": "2025Q4",
+          "bev": 47,
+          "hybrid": 26,
+          "total_ev": 73
+        },
+        {
+          "period": "2026Q1",
+          "bev": 35,
+          "hybrid": 25,
+          "total_ev": 60
+        },
+        {
+          "period": "2026Q2",
+          "bev": 11,
+          "hybrid": 14,
+          "total_ev": 25
+        }
+      ],
+      "Putrajaya": [
+        {
+          "period": "2022Q1",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2022Q2",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2022Q3",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2022Q4",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2023Q1",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2023Q2",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        },
+        {
+          "period": "2024Q4",
+          "bev": 0,
+          "hybrid": 0,
+          "total_ev": 0
+        }
+      ]
     }
-  ],
-  "top_models": [
-    {
-      "model": "Perodua Bezza",
-      "count": 173964
+  },
+  "top_makes": {
+    "by_year": {
+      "all": [
+        {
+          "make": "Byd",
+          "count": 31154,
+          "share": 36.3
+        },
+        {
+          "make": "Proton",
+          "count": 18753,
+          "share": 21.9
+        },
+        {
+          "make": "Tesla",
+          "count": 15426,
+          "share": 18.0
+        },
+        {
+          "make": "Bmw",
+          "count": 8227,
+          "share": 9.6
+        },
+        {
+          "make": "Zeekr",
+          "count": 3849,
+          "share": 4.5
+        },
+        {
+          "make": "Chery",
+          "count": 3693,
+          "share": 4.3
+        },
+        {
+          "make": "Mercedes Benz",
+          "count": 2381,
+          "share": 2.8
+        },
+        {
+          "make": "Xpeng",
+          "count": 2327,
+          "share": 2.7
+        }
+      ],
+      "2022": [
+        {
+          "make": "Bmw",
+          "count": 1310,
+          "share": 43.6
+        },
+        {
+          "make": "Volvo",
+          "count": 363,
+          "share": 12.1
+        },
+        {
+          "make": "Tesla",
+          "count": 305,
+          "share": 10.1
+        },
+        {
+          "make": "Hyundai",
+          "count": 278,
+          "share": 9.2
+        },
+        {
+          "make": "Mini",
+          "count": 274,
+          "share": 9.1
+        },
+        {
+          "make": "Mercedes Benz",
+          "count": 217,
+          "share": 7.2
+        },
+        {
+          "make": "Porsche",
+          "count": 185,
+          "share": 6.2
+        },
+        {
+          "make": "Kia",
+          "count": 76,
+          "share": 2.5
+        }
+      ],
+      "2023": [
+        {
+          "make": "Byd",
+          "count": 4470,
+          "share": 36.1
+        },
+        {
+          "make": "Bmw",
+          "count": 3237,
+          "share": 26.1
+        },
+        {
+          "make": "Tesla",
+          "count": 1873,
+          "share": 15.1
+        },
+        {
+          "make": "Mercedes Benz",
+          "count": 908,
+          "share": 7.3
+        },
+        {
+          "make": "Volvo",
+          "count": 496,
+          "share": 4.0
+        },
+        {
+          "make": "Mini",
+          "count": 477,
+          "share": 3.8
+        },
+        {
+          "make": "Porsche",
+          "count": 470,
+          "share": 3.8
+        },
+        {
+          "make": "Great Wall",
+          "count": 463,
+          "share": 3.7
+        }
+      ],
+      "2024": [
+        {
+          "make": "Byd",
+          "count": 8570,
+          "share": 45.8
+        },
+        {
+          "make": "Tesla",
+          "count": 5136,
+          "share": 27.4
+        },
+        {
+          "make": "Bmw",
+          "count": 1975,
+          "share": 10.6
+        },
+        {
+          "make": "Mini",
+          "count": 637,
+          "share": 3.4
+        },
+        {
+          "make": "Great Wall",
+          "count": 615,
+          "share": 3.3
+        },
+        {
+          "make": "Smart",
+          "count": 603,
+          "share": 3.2
+        },
+        {
+          "make": "Mg",
+          "count": 592,
+          "share": 3.2
+        },
+        {
+          "make": "Volvo",
+          "count": 583,
+          "share": 3.1
+        }
+      ],
+      "2025": [
+        {
+          "make": "Byd",
+          "count": 14407,
+          "share": 37.0
+        },
+        {
+          "make": "Proton",
+          "count": 8890,
+          "share": 22.8
+        },
+        {
+          "make": "Tesla",
+          "count": 7282,
+          "share": 18.7
+        },
+        {
+          "make": "Zeekr",
+          "count": 2560,
+          "share": 6.6
+        },
+        {
+          "make": "Chery",
+          "count": 1545,
+          "share": 4.0
+        },
+        {
+          "make": "Xpeng",
+          "count": 1536,
+          "share": 3.9
+        },
+        {
+          "make": "Bmw",
+          "count": 1493,
+          "share": 3.8
+        },
+        {
+          "make": "Denza",
+          "count": 1200,
+          "share": 3.1
+        }
+      ],
+      "2026": [
+        {
+          "make": "Proton",
+          "count": 9863,
+          "share": 53.1
+        },
+        {
+          "make": "Byd",
+          "count": 3674,
+          "share": 19.8
+        },
+        {
+          "make": "Chery",
+          "count": 1593,
+          "share": 8.6
+        },
+        {
+          "make": "Zeekr",
+          "count": 1214,
+          "share": 6.5
+        },
+        {
+          "make": "Tesla",
+          "count": 830,
+          "share": 4.5
+        },
+        {
+          "make": "Mg",
+          "count": 579,
+          "share": 3.1
+        },
+        {
+          "make": "Leapmotor",
+          "count": 429,
+          "share": 2.3
+        },
+        {
+          "make": "Xpeng",
+          "count": 394,
+          "share": 2.1
+        }
+      ]
     },
-    {
-      "model": "Perodua Axia",
-      "count": 144114
+    "by_region": {
+      "Klang Valley": [
+        {
+          "make": "Byd",
+          "count": 3236,
+          "share": 28.6
+        },
+        {
+          "make": "Bmw",
+          "count": 2476,
+          "share": 21.9
+        },
+        {
+          "make": "Tesla",
+          "count": 2410,
+          "share": 21.3
+        },
+        {
+          "make": "Proton",
+          "count": 1174,
+          "share": 10.4
+        },
+        {
+          "make": "Zeekr",
+          "count": 1080,
+          "share": 9.5
+        },
+        {
+          "make": "Porsche",
+          "count": 934,
+          "share": 8.3
+        }
+      ],
+      "Northern": [
+        {
+          "make": "Byd",
+          "count": 848,
+          "share": 34.3
+        },
+        {
+          "make": "Bmw",
+          "count": 623,
+          "share": 25.2
+        },
+        {
+          "make": "Proton",
+          "count": 381,
+          "share": 15.4
+        },
+        {
+          "make": "Tesla",
+          "count": 349,
+          "share": 14.1
+        },
+        {
+          "make": "Porsche",
+          "count": 136,
+          "share": 5.5
+        },
+        {
+          "make": "Chery",
+          "count": 132,
+          "share": 5.3
+        }
+      ],
+      "Southern": [
+        {
+          "make": "Byd",
+          "count": 809,
+          "share": 33.9
+        },
+        {
+          "make": "Tesla",
+          "count": 487,
+          "share": 20.4
+        },
+        {
+          "make": "Proton",
+          "count": 430,
+          "share": 18.0
+        },
+        {
+          "make": "Bmw",
+          "count": 367,
+          "share": 15.4
+        },
+        {
+          "make": "Chery",
+          "count": 171,
+          "share": 7.2
+        },
+        {
+          "make": "Mini",
+          "count": 125,
+          "share": 5.2
+        }
+      ],
+      "East Coast": [
+        {
+          "make": "Proton",
+          "count": 277,
+          "share": 43.6
+        },
+        {
+          "make": "Byd",
+          "count": 199,
+          "share": 31.3
+        },
+        {
+          "make": "Tesla",
+          "count": 51,
+          "share": 8.0
+        },
+        {
+          "make": "Bmw",
+          "count": 49,
+          "share": 7.7
+        },
+        {
+          "make": "Chery",
+          "count": 41,
+          "share": 6.5
+        },
+        {
+          "make": "Dong Feng",
+          "count": 18,
+          "share": 2.8
+        }
+      ],
+      "Borneo": [
+        {
+          "make": "Byd",
+          "count": 768,
+          "share": 50.8
+        },
+        {
+          "make": "Bmw",
+          "count": 318,
+          "share": 21.0
+        },
+        {
+          "make": "Proton",
+          "count": 183,
+          "share": 12.1
+        },
+        {
+          "make": "Tesla",
+          "count": 104,
+          "share": 6.9
+        },
+        {
+          "make": "Mg",
+          "count": 74,
+          "share": 4.9
+        },
+        {
+          "make": "Chery",
+          "count": 64,
+          "share": 4.2
+        }
+      ]
     },
-    {
-      "model": "Proton Saga",
-      "count": 138941
-    },
-    {
-      "model": "Perodua Myvi",
-      "count": 116329
-    },
-    {
-      "model": "Perodua Alza",
-      "count": 76112
-    },
-    {
-      "model": "Perodua Ativa",
-      "count": 55653
-    },
-    {
-      "model": "Toyota Vios",
-      "count": 46670
-    },
-    {
-      "model": "Proton X50",
-      "count": 46119
+    "by_state": {
+      "Terengganu": [
+        {
+          "make": "Byd",
+          "count": 43,
+          "share": 46.7
+        },
+        {
+          "make": "Proton",
+          "count": 28,
+          "share": 30.4
+        },
+        {
+          "make": "Chery",
+          "count": 6,
+          "share": 6.5
+        },
+        {
+          "make": "Tesla",
+          "count": 6,
+          "share": 6.5
+        },
+        {
+          "make": "Bmw",
+          "count": 5,
+          "share": 5.4
+        },
+        {
+          "make": "Mercedes Benz",
+          "count": 4,
+          "share": 4.3
+        }
+      ],
+      "Johor": [
+        {
+          "make": "Byd",
+          "count": 572,
+          "share": 33.2
+        },
+        {
+          "make": "Tesla",
+          "count": 386,
+          "share": 22.4
+        },
+        {
+          "make": "Proton",
+          "count": 276,
+          "share": 16.0
+        },
+        {
+          "make": "Bmw",
+          "count": 265,
+          "share": 15.4
+        },
+        {
+          "make": "Chery",
+          "count": 127,
+          "share": 7.4
+        },
+        {
+          "make": "Zeekr",
+          "count": 97,
+          "share": 5.6
+        }
+      ],
+      "Kedah": [
+        {
+          "make": "Byd",
+          "count": 204,
+          "share": 47.3
+        },
+        {
+          "make": "Proton",
+          "count": 92,
+          "share": 21.3
+        },
+        {
+          "make": "Bmw",
+          "count": 38,
+          "share": 8.8
+        },
+        {
+          "make": "Tesla",
+          "count": 38,
+          "share": 8.8
+        },
+        {
+          "make": "Smart",
+          "count": 30,
+          "share": 7.0
+        },
+        {
+          "make": "Leapmotor",
+          "count": 29,
+          "share": 6.7
+        }
+      ],
+      "Kelantan": [
+        {
+          "make": "Byd",
+          "count": 77,
+          "share": 44.5
+        },
+        {
+          "make": "Proton",
+          "count": 51,
+          "share": 29.5
+        },
+        {
+          "make": "Bmw",
+          "count": 17,
+          "share": 9.8
+        },
+        {
+          "make": "Tesla",
+          "count": 13,
+          "share": 7.5
+        },
+        {
+          "make": "Neta",
+          "count": 9,
+          "share": 5.2
+        },
+        {
+          "make": "Chery",
+          "count": 6,
+          "share": 3.5
+        }
+      ],
+      "Kuala Lumpur": [
+        {
+          "make": "Byd",
+          "count": 2481,
+          "share": 30.0
+        },
+        {
+          "make": "Bmw",
+          "count": 2027,
+          "share": 24.5
+        },
+        {
+          "make": "Tesla",
+          "count": 1347,
+          "share": 16.3
+        },
+        {
+          "make": "Zeekr",
+          "count": 867,
+          "share": 10.5
+        },
+        {
+          "make": "Mercedes Benz",
+          "count": 815,
+          "share": 9.9
+        },
+        {
+          "make": "Proton",
+          "count": 737,
+          "share": 8.9
+        }
+      ],
+      "Perak": [
+        {
+          "make": "Bmw",
+          "count": 211,
+          "share": 34.7
+        },
+        {
+          "make": "Byd",
+          "count": 151,
+          "share": 24.8
+        },
+        {
+          "make": "Proton",
+          "count": 77,
+          "share": 12.7
+        },
+        {
+          "make": "Tesla",
+          "count": 76,
+          "share": 12.5
+        },
+        {
+          "make": "Chery",
+          "count": 48,
+          "share": 7.9
+        },
+        {
+          "make": "Mini",
+          "count": 45,
+          "share": 7.4
+        }
+      ],
+      "Penang": [
+        {
+          "make": "Byd",
+          "count": 478,
+          "share": 32.3
+        },
+        {
+          "make": "Bmw",
+          "count": 372,
+          "share": 25.1
+        },
+        {
+          "make": "Tesla",
+          "count": 232,
+          "share": 15.7
+        },
+        {
+          "make": "Proton",
+          "count": 198,
+          "share": 13.4
+        },
+        {
+          "make": "Porsche",
+          "count": 124,
+          "share": 8.4
+        },
+        {
+          "make": "Mini",
+          "count": 78,
+          "share": 5.3
+        }
+      ],
+      "Pahang": [
+        {
+          "make": "Proton",
+          "count": 198,
+          "share": 51.7
+        },
+        {
+          "make": "Byd",
+          "count": 79,
+          "share": 20.6
+        },
+        {
+          "make": "Tesla",
+          "count": 32,
+          "share": 8.4
+        },
+        {
+          "make": "Chery",
+          "count": 29,
+          "share": 7.6
+        },
+        {
+          "make": "Bmw",
+          "count": 27,
+          "share": 7.0
+        },
+        {
+          "make": "Dong Feng",
+          "count": 18,
+          "share": 4.7
+        }
+      ],
+      "Selangor": [
+        {
+          "make": "Tesla",
+          "count": 1063,
+          "share": 33.8
+        },
+        {
+          "make": "Byd",
+          "count": 755,
+          "share": 24.0
+        },
+        {
+          "make": "Bmw",
+          "count": 449,
+          "share": 14.3
+        },
+        {
+          "make": "Proton",
+          "count": 437,
+          "share": 13.9
+        },
+        {
+          "make": "Porsche",
+          "count": 224,
+          "share": 7.1
+        },
+        {
+          "make": "Zeekr",
+          "count": 213,
+          "share": 6.8
+        }
+      ],
+      "Sarawak": [
+        {
+          "make": "Byd",
+          "count": 223,
+          "share": 34.0
+        },
+        {
+          "make": "Bmw",
+          "count": 157,
+          "share": 23.9
+        },
+        {
+          "make": "Proton",
+          "count": 131,
+          "share": 20.0
+        },
+        {
+          "make": "Mg",
+          "count": 72,
+          "share": 11.0
+        },
+        {
+          "make": "Tesla",
+          "count": 44,
+          "share": 6.7
+        },
+        {
+          "make": "Chery",
+          "count": 29,
+          "share": 4.4
+        }
+      ],
+      "Labuan": [
+        {
+          "make": "Byd",
+          "count": 8,
+          "share": 34.8
+        },
+        {
+          "make": "Bmw",
+          "count": 4,
+          "share": 17.4
+        },
+        {
+          "make": "Tesla",
+          "count": 4,
+          "share": 17.4
+        },
+        {
+          "make": "Mini",
+          "count": 3,
+          "share": 13.0
+        },
+        {
+          "make": "Mercedes Benz",
+          "count": 2,
+          "share": 8.7
+        },
+        {
+          "make": "Kia",
+          "count": 2,
+          "share": 8.7
+        }
+      ],
+      "Sabah": [
+        {
+          "make": "Byd",
+          "count": 537,
+          "share": 62.7
+        },
+        {
+          "make": "Bmw",
+          "count": 157,
+          "share": 18.3
+        },
+        {
+          "make": "Tesla",
+          "count": 56,
+          "share": 6.5
+        },
+        {
+          "make": "Proton",
+          "count": 52,
+          "share": 6.1
+        },
+        {
+          "make": "Chery",
+          "count": 35,
+          "share": 4.1
+        },
+        {
+          "make": "Mini",
+          "count": 20,
+          "share": 2.3
+        }
+      ],
+      "Perlis": [
+        {
+          "make": "Byd",
+          "count": 15,
+          "share": 28.8
+        },
+        {
+          "make": "Chery",
+          "count": 15,
+          "share": 28.8
+        },
+        {
+          "make": "Proton",
+          "count": 14,
+          "share": 26.9
+        },
+        {
+          "make": "Tesla",
+          "count": 3,
+          "share": 5.8
+        },
+        {
+          "make": "Leapmotor",
+          "count": 3,
+          "share": 5.8
+        },
+        {
+          "make": "Great Wall",
+          "count": 2,
+          "share": 3.8
+        }
+      ],
+      "Melaka": [
+        {
+          "make": "Byd",
+          "count": 181,
+          "share": 39.3
+        },
+        {
+          "make": "Proton",
+          "count": 99,
+          "share": 21.5
+        },
+        {
+          "make": "Tesla",
+          "count": 62,
+          "share": 13.5
+        },
+        {
+          "make": "Bmw",
+          "count": 58,
+          "share": 12.6
+        },
+        {
+          "make": "Volvo",
+          "count": 33,
+          "share": 7.2
+        },
+        {
+          "make": "Mini",
+          "count": 27,
+          "share": 5.9
+        }
+      ],
+      "Negeri Sembilan": [
+        {
+          "make": "Neta",
+          "count": 73,
+          "share": 25.0
+        },
+        {
+          "make": "Byd",
+          "count": 56,
+          "share": 19.2
+        },
+        {
+          "make": "Proton",
+          "count": 55,
+          "share": 18.8
+        },
+        {
+          "make": "Bmw",
+          "count": 44,
+          "share": 15.1
+        },
+        {
+          "make": "Tesla",
+          "count": 39,
+          "share": 13.4
+        },
+        {
+          "make": "Mini",
+          "count": 25,
+          "share": 8.6
+        }
+      ],
+      "Putrajaya": []
     }
-  ],
-  "top_ev_models": [
-    {
-      "model": "Proton E.Mas 5",
-      "count": 20540
-    },
-    {
-      "model": "Proton E.Mas 7",
-      "count": 13207
-    },
-    {
-      "model": "Byd Atto 3",
-      "count": 7304
-    },
-    {
-      "model": "Tesla Model Y",
-      "count": 6757
-    },
-    {
-      "model": "Byd Sealion",
-      "count": 6064
-    },
-    {
-      "model": "Tesla Model 3",
-      "count": 4960
-    },
-    {
-      "model": "Zeekr 7X",
-      "count": 4306
-    },
-    {
-      "model": "Byd Atto 2",
-      "count": 2783
-    }
-  ],
-  "top_ev_makes": [
-    {
-      "make": "Proton",
-      "count": 33747
-    },
-    {
-      "make": "Byd",
-      "count": 22494
-    },
-    {
-      "make": "Tesla",
-      "count": 11718
-    },
-    {
-      "make": "Zeekr",
-      "count": 5962
-    },
-    {
-      "make": "Chery",
-      "count": 5228
-    },
-    {
-      "make": "Xpeng",
-      "count": 2589
-    },
-    {
-      "make": "Leapmotor",
-      "count": 2195
-    },
-    {
-      "make": "Bmw",
-      "count": 2110
-    }
-  ],
-  "state_dist": [
-    {
-      "state": "Corporate Fleet",
-      "count": 34884
-    },
+  },
+  "parity_matrix": [
     {
       "state": "Kuala Lumpur",
-      "count": 4572
+      "region": "Klang Valley",
+      "ev_count": 12671,
+      "ev_share_pct": 12.24,
+      "bays": 170,
+      "charger_share_pct": 6.79,
+      "parity_gap": -5.45,
+      "status": "Deficit (Underserved)"
     },
     {
       "state": "Selangor",
-      "count": 1657
+      "region": "Klang Valley",
+      "ev_count": 4296,
+      "ev_share_pct": 4.15,
+      "bays": 276,
+      "charger_share_pct": 11.02,
+      "parity_gap": 6.87,
+      "status": "Surplus (Corridor)"
     },
     {
       "state": "Johor",
-      "count": 980
+      "region": "Southern",
+      "ev_count": 2286,
+      "ev_share_pct": 2.21,
+      "bays": 181,
+      "charger_share_pct": 7.23,
+      "parity_gap": 5.02,
+      "status": "Surplus (Corridor)"
     },
     {
-      "state": "Pulau Pinang",
-      "count": 716
+      "state": "Penang",
+      "region": "Northern",
+      "ev_count": 2043,
+      "ev_share_pct": 1.97,
+      "bays": 45,
+      "charger_share_pct": 1.8,
+      "parity_gap": -0.17,
+      "status": "Balanced"
     },
     {
       "state": "Sabah",
-      "count": 406
-    },
-    {
-      "state": "Sarawak",
-      "count": 294
-    },
-    {
-      "state": "Melaka",
-      "count": 275
+      "region": "Borneo",
+      "ev_count": 944,
+      "ev_share_pct": 0.91,
+      "bays": 0,
+      "charger_share_pct": 0.0,
+      "parity_gap": -0.91,
+      "status": "Balanced"
     },
     {
       "state": "Perak",
-      "count": 263
+      "region": "Northern",
+      "ev_count": 820,
+      "ev_share_pct": 0.79,
+      "bays": 97,
+      "charger_share_pct": 3.87,
+      "parity_gap": 3.08,
+      "status": "Surplus (Corridor)"
+    },
+    {
+      "state": "Sarawak",
+      "region": "Borneo",
+      "ev_count": 817,
+      "ev_share_pct": 0.79,
+      "bays": 61,
+      "charger_share_pct": 2.44,
+      "parity_gap": 1.65,
+      "status": "Surplus (Corridor)"
+    },
+    {
+      "state": "Melaka",
+      "region": "Southern",
+      "ev_count": 650,
+      "ev_share_pct": 0.63,
+      "bays": 59,
+      "charger_share_pct": 2.36,
+      "parity_gap": 1.73,
+      "status": "Surplus (Corridor)"
+    },
+    {
+      "state": "Kedah",
+      "region": "Northern",
+      "ev_count": 523,
+      "ev_share_pct": 0.51,
+      "bays": 77,
+      "charger_share_pct": 3.08,
+      "parity_gap": 2.57,
+      "status": "Surplus (Corridor)"
     },
     {
       "state": "Pahang",
-      "count": 261
+      "region": "East Coast",
+      "ev_count": 463,
+      "ev_share_pct": 0.45,
+      "bays": 139,
+      "charger_share_pct": 5.55,
+      "parity_gap": 5.1,
+      "status": "Surplus (Corridor)"
+    },
+    {
+      "state": "Negeri Sembilan",
+      "region": "Southern",
+      "ev_count": 367,
+      "ev_share_pct": 0.35,
+      "bays": 32,
+      "charger_share_pct": 1.28,
+      "parity_gap": 0.93,
+      "status": "Balanced"
+    },
+    {
+      "state": "Kelantan",
+      "region": "East Coast",
+      "ev_count": 194,
+      "ev_share_pct": 0.19,
+      "bays": 36,
+      "charger_share_pct": 1.44,
+      "parity_gap": 1.25,
+      "status": "Balanced"
+    },
+    {
+      "state": "Terengganu",
+      "region": "East Coast",
+      "ev_count": 109,
+      "ev_share_pct": 0.11,
+      "bays": 47,
+      "charger_share_pct": 1.88,
+      "parity_gap": 1.77,
+      "status": "Surplus (Corridor)"
+    },
+    {
+      "state": "Perlis",
+      "region": "Northern",
+      "ev_count": 57,
+      "ev_share_pct": 0.06,
+      "bays": 6,
+      "charger_share_pct": 0.24,
+      "parity_gap": 0.18,
+      "status": "Balanced"
+    },
+    {
+      "state": "Labuan",
+      "region": "Borneo",
+      "ev_count": 23,
+      "ev_share_pct": 0.02,
+      "bays": 0,
+      "charger_share_pct": 0.0,
+      "parity_gap": -0.02,
+      "status": "Balanced"
+    },
+    {
+      "state": "Putrajaya",
+      "region": "Klang Valley",
+      "ev_count": 0,
+      "ev_share_pct": 0.0,
+      "bays": 12,
+      "charger_share_pct": 0.48,
+      "parity_gap": 0.48,
+      "status": "Balanced"
     }
   ],
-  "category_dist": [
+  "charging_infra": {
+    "total_stations": 818,
+    "total_bays": 2504,
+    "total_ac": 2464,
+    "total_dc": 0,
+    "corridors": [
+      {
+        "corridor": "PLUS North-South Expressway",
+        "stations": 12,
+        "bays": 30,
+        "ac": 30,
+        "dc": 0
+      },
+      {
+        "corridor": "East Coast Expressway (LPT)",
+        "stations": 11,
+        "bays": 21,
+        "ac": 20,
+        "dc": 0
+      },
+      {
+        "corridor": "Pan Borneo Highway",
+        "stations": 0,
+        "bays": 0,
+        "ac": 0,
+        "dc": 0
+      },
+      {
+        "corridor": "Other Highway / R&R",
+        "stations": 46,
+        "bays": 118,
+        "ac": 117,
+        "dc": 0
+      },
+      {
+        "corridor": "Urban & Destination",
+        "stations": 749,
+        "bays": 2335,
+        "ac": 2297,
+        "dc": 0
+      }
+    ],
+    "state_chargers": {
+      "Johor": {
+        "stations": 37,
+        "bays": 181,
+        "ac": 173,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 20
+          },
+          {
+            "name": "chargEV",
+            "count": 4
+          },
+          {
+            "name": "DC Hand",
+            "count": 4
+          },
+          {
+            "name": "Shell Recharge",
+            "count": 3
+          }
+        ]
+      },
+      "Selangor": {
+        "stations": 84,
+        "bays": 276,
+        "ac": 265,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 69
+          },
+          {
+            "name": "Gentari",
+            "count": 5
+          },
+          {
+            "name": "DC Hand",
+            "count": 5
+          },
+          {
+            "name": "chargEV",
+            "count": 3
+          }
+        ]
+      },
+      "Melaka": {
+        "stations": 19,
+        "bays": 59,
+        "ac": 57,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 13
+          },
+          {
+            "name": "JomCharge",
+            "count": 2
+          },
+          {
+            "name": "DC Hand",
+            "count": 2
+          },
+          {
+            "name": "chargEV",
+            "count": 1
+          }
+        ]
+      },
+      "Perak": {
+        "stations": 38,
+        "bays": 97,
+        "ac": 92,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 29
+          },
+          {
+            "name": "DC Hand",
+            "count": 4
+          },
+          {
+            "name": "Shell Recharge",
+            "count": 2
+          },
+          {
+            "name": "JomCharge",
+            "count": 2
+          }
+        ]
+      },
+      "Terengganu": {
+        "stations": 19,
+        "bays": 47,
+        "ac": 47,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 16
+          },
+          {
+            "name": "Shell Recharge",
+            "count": 3
+          }
+        ]
+      },
+      "Pahang": {
+        "stations": 52,
+        "bays": 139,
+        "ac": 137,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 43
+          },
+          {
+            "name": "chargEV",
+            "count": 3
+          },
+          {
+            "name": "Shell Recharge",
+            "count": 2
+          },
+          {
+            "name": "ParkEasy",
+            "count": 1
+          }
+        ]
+      },
+      "Kedah": {
+        "stations": 31,
+        "bays": 77,
+        "ac": 74,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 29
+          },
+          {
+            "name": "DC Hand",
+            "count": 2
+          }
+        ]
+      },
+      "Penang": {
+        "stations": 20,
+        "bays": 45,
+        "ac": 43,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 15
+          },
+          {
+            "name": "DC Hand",
+            "count": 5
+          }
+        ]
+      },
+      "Negeri Sembilan": {
+        "stations": 13,
+        "bays": 32,
+        "ac": 32,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Gentari",
+            "count": 6
+          },
+          {
+            "name": "Independent / Other",
+            "count": 4
+          },
+          {
+            "name": "Shell Recharge",
+            "count": 2
+          },
+          {
+            "name": "JomCharge",
+            "count": 1
+          }
+        ]
+      },
+      "Kuala Lumpur": {
+        "stations": 40,
+        "bays": 170,
+        "ac": 163,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 24
+          },
+          {
+            "name": "DC Hand",
+            "count": 7
+          },
+          {
+            "name": "Gentari",
+            "count": 4
+          },
+          {
+            "name": "Shell Recharge",
+            "count": 3
+          }
+        ]
+      },
+      "Sarawak": {
+        "stations": 26,
+        "bays": 61,
+        "ac": 61,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 21
+          },
+          {
+            "name": "Gentari",
+            "count": 4
+          },
+          {
+            "name": "chargEV",
+            "count": 1
+          }
+        ]
+      },
+      "Kelantan": {
+        "stations": 13,
+        "bays": 36,
+        "ac": 36,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 9
+          },
+          {
+            "name": "Gentari",
+            "count": 2
+          },
+          {
+            "name": "DC Hand",
+            "count": 1
+          },
+          {
+            "name": "JomCharge",
+            "count": 1
+          }
+        ]
+      },
+      "Putrajaya": {
+        "stations": 3,
+        "bays": 12,
+        "ac": 12,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "DC Hand",
+            "count": 2
+          },
+          {
+            "name": "Independent / Other",
+            "count": 1
+          }
+        ]
+      },
+      "Perlis": {
+        "stations": 2,
+        "bays": 6,
+        "ac": 6,
+        "dc": 0,
+        "top_cpos": [
+          {
+            "name": "Independent / Other",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "top_cpos": [
+      {
+        "name": "Independent / Other",
+        "count": 711
+      },
+      {
+        "name": "DC Hand",
+        "count": 37
+      },
+      {
+        "name": "Gentari",
+        "count": 27
+      },
+      {
+        "name": "Shell Recharge",
+        "count": 16
+      },
+      {
+        "name": "chargEV",
+        "count": 13
+      },
+      {
+        "name": "JomCharge",
+        "count": 9
+      }
+    ],
+    "netr_target": 10000,
+    "netr_progress": 25.0
+  },
+  "state_table": [
     {
-      "type": "All Types",
-      "count": 182148
+      "state": "Corporate Fleet",
+      "region": "Other",
+      "bev_registrations": 77252,
+      "hybrid_registrations": 84589,
+      "total_electrified": 161841,
+      "charging_bays": 0,
+      "charging_stations": 0,
+      "ac_bays": 0,
+      "dc_bays": 0,
+      "ev_charger_ratio": 77252,
+      "ev_share_pct": 74.63,
+      "charger_share_pct": 0.0,
+      "parity_gap": -74.63,
+      "parity_status": "Deficit (Underserved)",
+      "growth_rate": -50.7,
+      "yearly_bev": {
+        "2022": 1574,
+        "2023": 8255,
+        "2024": 15351,
+        "2025": 34884,
+        "2026": 17188
+      }
     },
     {
-      "type": "Passenger Car",
-      "count": 137149
+      "state": "Kuala Lumpur",
+      "region": "Klang Valley",
+      "bev_registrations": 12671,
+      "hybrid_registrations": 10567,
+      "total_electrified": 23238,
+      "charging_bays": 170,
+      "charging_stations": 40,
+      "ac_bays": 163,
+      "dc_bays": 0,
+      "ev_charger_ratio": 74.5,
+      "ev_share_pct": 12.24,
+      "charger_share_pct": 6.79,
+      "parity_gap": -5.45,
+      "parity_status": "Deficit (Underserved)",
+      "growth_rate": -70.7,
+      "yearly_bev": {
+        "2022": 892,
+        "2023": 2793,
+        "2024": 3073,
+        "2025": 4572,
+        "2026": 1341
+      }
     },
     {
-      "type": "Motorcycle",
-      "count": 33151
+      "state": "Selangor",
+      "region": "Klang Valley",
+      "bev_registrations": 4296,
+      "hybrid_registrations": 2784,
+      "total_electrified": 7080,
+      "charging_bays": 276,
+      "charging_stations": 84,
+      "ac_bays": 265,
+      "dc_bays": 0,
+      "ev_charger_ratio": 15.6,
+      "ev_share_pct": 4.15,
+      "charger_share_pct": 11.02,
+      "parity_gap": 6.87,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -66.7,
+      "yearly_bev": {
+        "2022": 216,
+        "2023": 740,
+        "2024": 1132,
+        "2025": 1657,
+        "2026": 551
+      }
     },
     {
-      "type": "Special Purpose",
-      "count": 10761
+      "state": "Johor",
+      "region": "Southern",
+      "bev_registrations": 2286,
+      "hybrid_registrations": 2671,
+      "total_electrified": 4957,
+      "charging_bays": 181,
+      "charging_stations": 37,
+      "ac_bays": 173,
+      "dc_bays": 0,
+      "ev_charger_ratio": 12.6,
+      "ev_share_pct": 2.21,
+      "charger_share_pct": 7.23,
+      "parity_gap": 5.02,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -62.4,
+      "yearly_bev": {
+        "2022": 97,
+        "2023": 313,
+        "2024": 528,
+        "2025": 980,
+        "2026": 368
+      }
     },
     {
-      "type": "Van/Commercial",
-      "count": 657
+      "state": "Penang",
+      "region": "Northern",
+      "bev_registrations": 2043,
+      "hybrid_registrations": 1594,
+      "total_electrified": 3637,
+      "charging_bays": 45,
+      "charging_stations": 20,
+      "ac_bays": 43,
+      "dc_bays": 0,
+      "ev_charger_ratio": 45.4,
+      "ev_share_pct": 1.97,
+      "charger_share_pct": 1.8,
+      "parity_gap": -0.17,
+      "parity_status": "Balanced",
+      "growth_rate": -60.5,
+      "yearly_bev": {
+        "2022": 144,
+        "2023": 446,
+        "2024": 454,
+        "2025": 716,
+        "2026": 283
+      }
     },
     {
-      "type": "Bus",
-      "count": 328
+      "state": "Sabah",
+      "region": "Borneo",
+      "bev_registrations": 944,
+      "hybrid_registrations": 618,
+      "total_electrified": 1562,
+      "charging_bays": 0,
+      "charging_stations": 0,
+      "ac_bays": 0,
+      "dc_bays": 0,
+      "ev_charger_ratio": 944,
+      "ev_share_pct": 0.91,
+      "charger_share_pct": 0.0,
+      "parity_gap": -0.91,
+      "parity_status": "Balanced",
+      "growth_rate": -82.8,
+      "yearly_bev": {
+        "2022": 42,
+        "2023": 142,
+        "2024": 284,
+        "2025": 406,
+        "2026": 70
+      }
     },
     {
-      "type": "Lorry/Truck",
-      "count": 102
+      "state": "Perak",
+      "region": "Northern",
+      "bev_registrations": 820,
+      "hybrid_registrations": 653,
+      "total_electrified": 1473,
+      "charging_bays": 97,
+      "charging_stations": 38,
+      "ac_bays": 92,
+      "dc_bays": 0,
+      "ev_charger_ratio": 8.5,
+      "ev_share_pct": 0.79,
+      "charger_share_pct": 3.87,
+      "parity_gap": 3.08,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -56.3,
+      "yearly_bev": {
+        "2022": 61,
+        "2023": 192,
+        "2024": 189,
+        "2025": 263,
+        "2026": 115
+      }
+    },
+    {
+      "state": "Sarawak",
+      "region": "Borneo",
+      "bev_registrations": 817,
+      "hybrid_registrations": 623,
+      "total_electrified": 1440,
+      "charging_bays": 61,
+      "charging_stations": 26,
+      "ac_bays": 61,
+      "dc_bays": 0,
+      "ev_charger_ratio": 13.4,
+      "ev_share_pct": 0.79,
+      "charger_share_pct": 2.44,
+      "parity_gap": 1.65,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -49.7,
+      "yearly_bev": {
+        "2022": 40,
+        "2023": 154,
+        "2024": 181,
+        "2025": 294,
+        "2026": 148
+      }
+    },
+    {
+      "state": "Melaka",
+      "region": "Southern",
+      "bev_registrations": 650,
+      "hybrid_registrations": 682,
+      "total_electrified": 1332,
+      "charging_bays": 59,
+      "charging_stations": 19,
+      "ac_bays": 57,
+      "dc_bays": 0,
+      "ev_charger_ratio": 11.0,
+      "ev_share_pct": 0.63,
+      "charger_share_pct": 2.36,
+      "parity_gap": 1.73,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -57.5,
+      "yearly_bev": {
+        "2022": 28,
+        "2023": 65,
+        "2024": 165,
+        "2025": 275,
+        "2026": 117
+      }
+    },
+    {
+      "state": "Kedah",
+      "region": "Northern",
+      "bev_registrations": 523,
+      "hybrid_registrations": 486,
+      "total_electrified": 1009,
+      "charging_bays": 77,
+      "charging_stations": 31,
+      "ac_bays": 74,
+      "dc_bays": 0,
+      "ev_charger_ratio": 6.8,
+      "ev_share_pct": 0.51,
+      "charger_share_pct": 3.08,
+      "parity_gap": 2.57,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -68.2,
+      "yearly_bev": {
+        "2022": 5,
+        "2023": 99,
+        "2024": 154,
+        "2025": 201,
+        "2026": 64
+      }
+    },
+    {
+      "state": "Pahang",
+      "region": "East Coast",
+      "bev_registrations": 463,
+      "hybrid_registrations": 394,
+      "total_electrified": 857,
+      "charging_bays": 139,
+      "charging_stations": 52,
+      "ac_bays": 137,
+      "dc_bays": 0,
+      "ev_charger_ratio": 3.3,
+      "ev_share_pct": 0.45,
+      "charger_share_pct": 5.55,
+      "parity_gap": 5.1,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -59.4,
+      "yearly_bev": {
+        "2022": 5,
+        "2023": 22,
+        "2024": 69,
+        "2025": 261,
+        "2026": 106
+      }
+    },
+    {
+      "state": "Negeri Sembilan",
+      "region": "Southern",
+      "bev_registrations": 367,
+      "hybrid_registrations": 382,
+      "total_electrified": 749,
+      "charging_bays": 32,
+      "charging_stations": 13,
+      "ac_bays": 32,
+      "dc_bays": 0,
+      "ev_charger_ratio": 11.5,
+      "ev_share_pct": 0.35,
+      "charger_share_pct": 1.28,
+      "parity_gap": 0.93,
+      "parity_status": "Balanced",
+      "growth_rate": -64.3,
+      "yearly_bev": {
+        "2022": 12,
+        "2023": 52,
+        "2024": 128,
+        "2025": 129,
+        "2026": 46
+      }
+    },
+    {
+      "state": "Kelantan",
+      "region": "East Coast",
+      "bev_registrations": 194,
+      "hybrid_registrations": 295,
+      "total_electrified": 489,
+      "charging_bays": 36,
+      "charging_stations": 13,
+      "ac_bays": 36,
+      "dc_bays": 0,
+      "ev_charger_ratio": 5.4,
+      "ev_share_pct": 0.19,
+      "charger_share_pct": 1.44,
+      "parity_gap": 1.25,
+      "parity_status": "Balanced",
+      "growth_rate": -40.7,
+      "yearly_bev": {
+        "2022": 3,
+        "2023": 8,
+        "2024": 38,
+        "2025": 91,
+        "2026": 54
+      }
+    },
+    {
+      "state": "Terengganu",
+      "region": "East Coast",
+      "bev_registrations": 109,
+      "hybrid_registrations": 233,
+      "total_electrified": 342,
+      "charging_bays": 47,
+      "charging_stations": 19,
+      "ac_bays": 47,
+      "dc_bays": 0,
+      "ev_charger_ratio": 2.3,
+      "ev_share_pct": 0.11,
+      "charger_share_pct": 1.88,
+      "parity_gap": 1.77,
+      "parity_status": "Surplus (Corridor)",
+      "growth_rate": -55.2,
+      "yearly_bev": {
+        "2022": 3,
+        "2023": 6,
+        "2024": 16,
+        "2025": 58,
+        "2026": 26
+      }
+    },
+    {
+      "state": "Perlis",
+      "region": "Northern",
+      "bev_registrations": 57,
+      "hybrid_registrations": 85,
+      "total_electrified": 142,
+      "charging_bays": 6,
+      "charging_stations": 2,
+      "ac_bays": 6,
+      "dc_bays": 0,
+      "ev_charger_ratio": 9.5,
+      "ev_share_pct": 0.06,
+      "charger_share_pct": 0.24,
+      "parity_gap": 0.18,
+      "parity_status": "Balanced",
+      "growth_rate": -69.2,
+      "yearly_bev": {
+        "2022": 0,
+        "2023": 4,
+        "2024": 19,
+        "2025": 26,
+        "2026": 8
+      }
+    },
+    {
+      "state": "Labuan",
+      "region": "Borneo",
+      "bev_registrations": 23,
+      "hybrid_registrations": 50,
+      "total_electrified": 73,
+      "charging_bays": 0,
+      "charging_stations": 0,
+      "ac_bays": 0,
+      "dc_bays": 0,
+      "ev_charger_ratio": 23,
+      "ev_share_pct": 0.02,
+      "charger_share_pct": 0.0,
+      "parity_gap": -0.02,
+      "parity_status": "Balanced",
+      "growth_rate": 0.0,
+      "yearly_bev": {
+        "2022": 6,
+        "2023": 10,
+        "2024": 7,
+        "2025": 0,
+        "2026": 0
+      }
+    },
+    {
+      "state": "Putrajaya",
+      "region": "Klang Valley",
+      "bev_registrations": 0,
+      "hybrid_registrations": 0,
+      "total_electrified": 0,
+      "charging_bays": 12,
+      "charging_stations": 3,
+      "ac_bays": 12,
+      "dc_bays": 0,
+      "ev_charger_ratio": 0.0,
+      "ev_share_pct": 0.0,
+      "charger_share_pct": 0.48,
+      "parity_gap": 0.48,
+      "parity_status": "Balanced",
+      "growth_rate": 0.0,
+      "yearly_bev": {
+        "2022": 0,
+        "2023": 0,
+        "2024": 0,
+        "2025": 0,
+        "2026": 0
+      }
     }
   ]
 }

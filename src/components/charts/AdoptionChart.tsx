@@ -9,7 +9,7 @@ export default function AdoptionChart() {
   const chartData = useMemo(() => {
     if (!data) return [];
     const source = view === 'total' ? data.trends : data.ev_trends;
-    return source.map((item: any) => ({
+    return source.map((item: Record<string, unknown>) => ({
       month: item.month,
       y2025: item['2025'],
       y2026: item['2026'] || 0,
