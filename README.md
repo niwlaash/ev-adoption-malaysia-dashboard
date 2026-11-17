@@ -1,102 +1,131 @@
-# ⚡ Malaysia EV Open Data Portal
-> **Making Malaysia's Electric Vehicle Transition Honest, Transparent, and Easy to Understand.**
+# Malaysia EV Open Data Portal
 
-[![Live Demo](https://img.shields.io/badge/Live%20Portal-Vercel-emerald?style=for-the-badge&logo=vercel)](https://ev-adoption-malaysia-dashboard.vercel.app/)
-[![License: CC BY 4.0](https://img.shields.io/badge/Data_License-CC_BY_4.0-blue?style=for-the-badge)](https://creativecommons.org/licenses/by/4.0/)
-[![License: MIT](https://img.shields.io/badge/Code_License-MIT-neutral?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Data Status](https://img.shields.io/badge/Data_Period-2022--2026_YTD-amber?style=for-the-badge)](https://data.gov.my/)
+> **An independent, public-benefit civic analytics platform tracking Malaysia's electric vehicle transition through verified open data.**
 
----
-
-## 📌 The Problem We Solve
-
-Buying an electric vehicle in Malaysia can feel like a gamble. Drivers face common concerns:
-* *"Are there actually enough public chargers where I live and travel?"*
-* *"Is EV adoption really growing, or is it just marketing hype?"*
-* *"Which states have enough charging stations, and which are being left behind?"*
-
-While the Malaysian Government publishes vehicle data on `data.gov.my`, the information is trapped in massive, technical **Parquet database files** that ordinary citizens cannot easily open or read on their phones.
-
-The **Malaysia EV Open Data Portal** takes millions of raw, complicated government rows, cleans out the errors, and turns them into a fast, interactive public dashboard that anyone can use for free.
+[![Live Demo](https://img.shields.io/badge/Live_Portal-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ev-adoption-malaysia-dashboard.vercel.app/)
+[![Data License: CC BY 4.0](https://img.shields.io/badge/Data_License-CC_BY_4.0-059669?style=for-the-badge)](https://creativecommons.org/licenses/by/4.0/)
+[![Source Code: MIT](https://img.shields.io/badge/Code_License-MIT-1E3A8A?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Coverage Period](https://img.shields.io/badge/Coverage-2022_--_2026_YTD-D97706?style=for-the-badge)](https://data.gov.my/)
 
 ---
 
-## 🧭 The 5W1H Framework: Understanding the Portal
+## 🎯 Why This Dashboard Was Built
 
-### 1. WHO is this for?
-* **Everyday Car Buyers**: Check how many EVs are on the road in your state and whether your local charging infrastructure is keeping up before making a purchase.
-* **Policymakers & Town Planners**: Track Malaysia's progress toward the **10,000 public charger target** set under the National Energy Transition Roadmap (NETR).
-* **Charging Operators (CPOs)**: Identify "charging deserts" (states and highway stretches that desperately need more fast chargers).
-* **Journalists & University Researchers**: Download clean, verified datasets with one click for research, news articles, and academic papers.
+Malaysia has set ambitious targets under the **National Energy Transition Roadmap (NETR)** and the **Low Carbon Mobility Blueprint (LCMB)**, including deploying **10,000 public charging points** and accelerating the adoption of clean passenger transport.
 
-### 2. WHAT does this portal do?
-* **Tracks Real Registrations**: Compares **Pure Electric Cars (BEVs)** against **Plug-in Hybrids (PHEVs)** across every quarter from 2022 to 2026.
-* **Maps Charging Infrastructure**: Visualizes 2,504 public charging bays across 818 locations, showing the split between **AC destination chargers** and **DC fast chargers**.
-* **Calculates the State Parity Gap**: Measures charger inequality by comparing each state's share of electric cars against its share of public chargers.
-* **Shows Real Brand Market Share**: Reveals which car brands are truly being registered by Malaysian drivers (e.g. Proton e.MAS, BYD, Tesla, BMW), based on official road transport records rather than press releases.
+However, everyday car buyers, researchers, and journalists face three critical information challenges:
 
-### 3. WHEN is it updated & what timeline does it cover?
-* **Coverage**: Tracks the complete national transition timeline from **January 2022 through 2026 Year-to-Date (YTD)**.
-* **Refresh Schedule**: An automated GitHub Actions pipeline runs on the **1st of every month** to pull newly published government data and update the portal without human intervention.
+1. **The Range Anxiety & Charger Reality Gap**  
+   Drivers considering an electric vehicle often ask: *"Will I be stranded on long trips?"* Marketing materials from car brands rarely address how many chargers are actually available where people live and travel.
+   
+2. **The Regional Infrastructure Imbalance**  
+   While urban centers like Kuala Lumpur and Selangor enjoy high charger density, other regions—such as the East Coast and Borneo—risk being left behind. Without accessible public data, it is difficult to identify where charging stations are needed most.
 
-### 4. WHERE does the data come from?
-* **Vehicle Registrations**: Official public records from the **Road Transport Department (JPJ)** and the **Department of Statistics Malaysia (DOSM)** via `data.gov.my`.
-* **Charging Stations**: Verified point-of-interest geospatial records from the **Open Charge Map (OCM)** global registry, cleaned and mapped across highway corridors (PLUS, LPT, Pan Borneo) and city hubs.
+3. **Inaccessible Government Datasets**  
+   Although the Malaysian Government publishes vehicle registration figures on `data.gov.my`, the files are distributed as massive technical **Apache Parquet tables** containing millions of raw rows. Everyday citizens and journalists cannot easily open or explore these files on mobile devices or standard spreadsheets.
 
-### 5. WHY was this built?
-* **Democratizing Public Data**: Public records paid for by taxpayers should be easy for all citizens to see, explore, and benefit from.
-* **Measuring Infrastructure Safety**: The European Union recommends an international benchmark of **10 electric cars per public charger (10:1)**. Malaysia currently stands at **41.3:1**, proving that charger installation must accelerate rapidly to keep pace with EV adoption.
-
-### 6. HOW does it solve the problem?
-* **Zero Technical Barrier**: No database tools or spreadsheets required. Users can filter by Year (`2022` to `2026`) or State (`Selangor`, `Johor`, `Penang`, `Sarawak`, etc.) with instant, sub-second responses.
-* **Head-to-Head State Comparison**: Select any two states to see how their fleet sizes, charger counts, and charger ratios compare side-by-side.
-* **Zero-PII Privacy & Security**:
-  * 100% static client-side web application (no tracking cookies, no user accounts, no login required).
-  * Underlying government data contains **zero personal data** (no owner names, no MyKad IC numbers, no addresses, and no license plate numbers).
-  * Built-in protection against Spreadsheet Formula Injection (**CWE-1236**) so all CSV downloads open safely in Excel without security warnings.
+### Our Mission
+The **Malaysia EV Open Data Portal** solves these problems by transforming raw, complex public records into an open, fast, and neutral dashboard. We provide an independent source of truth—free from automaker marketing spin, subscription paywalls, or personal data tracking.
 
 ---
 
-## 🔍 Key Findings from the Portal (2022–2026)
+## 📊 Key Insights at a Glance (2022–2026)
 
-| Metric | Current Value | What It Means |
+Based on official records processed through our pipeline:
+
+| Indicator | Current Figure | Context & Significance |
 | :--- | :---: | :--- |
-| **Total Registered Electric Vehicles** | **103,515** | Cumulative BEVs and Hybrids registered in Malaysia since 2022. |
-| **Verified Public Charging Bays** | **2,504** | Total active charging points across 818 verified locations nationwide. |
-| **National Cars-Per-Charger Ratio** | **41.3 : 1** | Malaysia has 41 EVs sharing every 1 public charger (Ideal global target is 10:1). |
-| **NETR 2025 Target Progress** | **25.0%** | 2,504 out of the 10,000 public chargers planned under the National Energy Transition Roadmap. |
-| **#1 EV Brand in 2026 (YTD)** | **Proton e.MAS (53.1%)** | Local brand leads national sales volume following the e.MAS 7 rollout. |
+| **Total Electrified Vehicles** | **103,515** | Cumulative pure electric (BEV) and hybrid (PHEV) passenger cars registered in Malaysia since 2022. |
+| **Public Charging Bays** | **2,504** | Total active charging points across 818 verified locations nationwide. |
+| **National Cars-Per-Charger Ratio** | **41.3 : 1** | Malaysia currently has 41 EVs sharing each public charger (The European Union AFIR safety benchmark recommends **10 : 1**). |
+| **NETR 10,000 Target Progress** | **25.0%** | Progress toward Malaysia's national 2025 public charging infrastructure milestone. |
+| **Market Share Leader (2026 YTD)** | **Proton e.MAS (53.1%)** | Following the rollout of the e.MAS 7, the national brand captured over half of all new EV registrations in early 2026. |
 
 ---
 
-## 🛠️ How It Works (For Developers & Civic Hackers)
+## 🚀 Key Features
 
-### Architecture Overview
-* **Frontend**: React 19, TypeScript, Tailwind CSS, Vite.
-* **Charts**: Recharts with dark/light mode responsive themes.
-* **Data Processing**: Python pipeline (`data_pipeline/sync_data.py`) that ingests government Parquet files and generates optimized, lightweight summary datasets (`summary_stats.json`).
-* **Hosting**: Vercel with single-page application (SPA) routing and strict production security headers.
+* **Interactive Registration Horizon (2022–2026)**  
+  Examine market evolution across individual years or the complete cumulative corpus. Track quarterly trends distinguishing **Pure Electric Cars (BEVs)** from **Plug-in Hybrids (PHEVs)**.
 
-### Running Locally
+* **Bespoke Territory Combobox**  
+  Quickly filter by macro-regions (*Klang Valley, Northern, Southern, East Coast, Borneo*) or search specifically across all 16 states and federal territories with keyboard navigation (`↑`, `↓`, `Enter`).
+
+* **Head-to-Head State Comparator**  
+  Select any two states to directly compare electric car fleet sizes, total charging points, and the local car-to-charger ratio side-by-side.
+
+* **State Parity Gap Analysis**  
+  Identifies infrastructure inequality by calculating:  
+  $$\text{Parity Gap} = (\text{State \% of National Chargers}) - (\text{State \% of National EVs})$$  
+  States with a negative gap have fewer chargers than their vehicle share demands, highlighting critical investment targets for charging point operators (CPOs).
+
+* **Corridor Charging Infrastructure Breakdown**  
+  Visualizes charger distribution across major transit arteries (PLUS Expressway, East Coast LPT, Pan Borneo Highway, and urban hubs) categorized by **AC Destination** vs. **DC Fast** charging bays.
+
+* **Safe Open Data Export**  
+  One-click downloads in **CSV** and **JSON** format. All spreadsheets are sanitized against CSV Formula Injection (**CWE-1236**) so they open safely in Excel without security risks.
+
+---
+
+## 🏛️ Data Provenance & Methodology
+
+This portal relies exclusively on authoritative, public open data sources:
+
+1. **Vehicle Registrations — JPJ & DOSM**  
+   Ingested from official vehicle registration Parquet datasets published on [`data.gov.my`](https://data.gov.my) by the **Road Transport Department (JPJ)** and the **Department of Statistics Malaysia (DOSM)**.
+   * Covers monthly records from **January 2022 through 2026 YTD**.
+   * Fuel types are categorized into **Pure Electric (BEV)** and **Hybrid (PHEV)**.
+
+2. **Charging Infrastructure — Open Charge Map (OCM)**  
+   Station locations, bay counts, and connector power ratings are aggregated from the verified global open registry at [`openchargemap.org`](https://openchargemap.org).
+   * Over **818 verified station locations** mapped to canonical state boundaries.
+   * Automated cleaning routines normalize inconsistent location naming, remove trailing spaces, and deduplicate charging records.
+
+3. **Automated Refresh Schedule**  
+   An automated **GitHub Actions pipeline** runs on the **1st of every month** to fetch the latest public government releases, recompute summary statistics, and deploy the updated dataset seamlessly.
+
+---
+
+## 🔒 Privacy & Civic Integrity
+
+* **Zero Personal Data Collection**: No cookies, no third-party tracking scripts, no advertisements, and no user accounts. Your browsing activity stays completely private.
+* **Zero PII in Underlying Records**: Government datasets contain only technical vehicle specifications (date of registration, manufacturer, model, fuel type, color, and state). They contain **no owner names, no MyKad IC numbers, no home addresses, and no license plate numbers**, fully complying with Malaysia's **Personal Data Protection Act 2010 (PDPA)**.
+* **Independent & Non-Partisan**: This portal is an independent civic project created for public benefit and is not affiliated with any automotive manufacturer or political entity.
+
+---
+
+## 💻 Developer & Quick Start Guide
+
+### Prerequisites
+* **Node.js**: v18 or later
+* **Python**: v3.10 or later (for running data pipeline updates)
+
+### Local Development Setup
 
 ```bash
-# 1. Clone repository
+# 1. Clone the repository
 git clone https://github.com/niwlaash/ev-adoption-malaysia-dashboard.git
 cd ev-adoption-malaysia-dashboard
 
-# 2. Install dependencies
+# 2. Install frontend dependencies
 npm install
 
-# 3. Start local development server
+# 3. Start the local development server
 npm run dev
-# Open http://localhost:5173
+# The application will be accessible at http://localhost:5173
+```
 
-# 4. Run automated code verification
+### Verification & Testing
+
+```bash
+# Run ESLint across the codebase
 npm run lint
+
+# Run TypeScript compiler & production build
 npm run build
 ```
 
-### Running the Data Pipeline (Optional)
+### Running the Data Sync Pipeline (Optional)
 
 ```bash
 cd data_pipeline
@@ -106,13 +135,12 @@ python sync_data.py
 
 ---
 
-## 📄 Licensing & Open Data Terms
+## 📜 Licensing & Open Data Terms
 
-* **Data License**: All aggregated statistics and summaries are released under **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**. You are free to share, copy, analyze, and build applications upon this data with attribution.
-* **Source Code**: Released under the **[MIT License](https://opensource.org/licenses/MIT)**.
-* **Disclaimer**: This is an independent public-benefit civic initiative. It is not an official portal of the Road Transport Department (JPJ) or the Ministry of Transport Malaysia.
+* **Data Content**: All compiled datasets and visual summaries are published under the **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)** license. You are free to share, copy, analyze, and adapt this data for journalism, policy, research, or commercial applications with appropriate credit.
+* **Software Code**: The frontend codebase and data pipeline are licensed under the **[MIT License](https://opensource.org/licenses/MIT)**.
 
 ---
 
-**Built with care by [Alwin Ashraf](https://www.linkedin.com/in/alwin-ashraf-nor-azmil-4628a9223/)**  
-*Source code on [GitHub](https://github.com/niwlaash/ev-adoption-malaysia-dashboard) • Live at [ev-adoption-malaysia-dashboard.vercel.app](https://ev-adoption-malaysia-dashboard.vercel.app/)*
+**Authored & Maintained by [Alwin Ashraf](https://www.linkedin.com/in/alwin-ashraf-nor-azmil-4628a9223/)**  
+*Open Source on [GitHub](https://github.com/niwlaash/ev-adoption-malaysia-dashboard) • Live Deployment at [ev-adoption-malaysia-dashboard.vercel.app](https://ev-adoption-malaysia-dashboard.vercel.app/)*
