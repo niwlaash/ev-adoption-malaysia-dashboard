@@ -3,6 +3,7 @@ import { useSummaryStats } from '../hooks/useMetricsData';
 import { PortalHeader } from '../components/portal/PortalHeader';
 import { CivicControlCenter } from '../components/portal/CivicControlCenter';
 import { StateComparator } from '../components/portal/StateComparator';
+import { CivicInsightsDeck } from '../components/portal/CivicInsightsDeck';
 import { FleetInsightCard } from '../components/portal/FleetInsightCard';
 import { KpiRow } from '../components/portal/KpiRow';
 import { RegistrationChart } from '../components/portal/RegistrationChart';
@@ -64,7 +65,7 @@ export const PortalDashboard: React.FC = () => {
     if (!data?.quarterly_trends) return [];
 
     let series: { period: string; bev: number; hybrid: number; total_ev: number }[];
-    
+
     // 1. State-specific quarterly trend
     if (selectedState !== 'all' && data.quarterly_trends.by_state?.[selectedState]) {
       series = data.quarterly_trends.by_state[selectedState];
@@ -309,7 +310,7 @@ export const PortalDashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#FAFAFA] dark:bg-[#0B0F19] text-neutral-900 dark:text-neutral-100 font-sans antialiased transition-colors flex flex-col justify-between">
-      
+
       {/* 1. Header Bar */}
       <div>
         <PortalHeader
@@ -321,7 +322,7 @@ export const PortalDashboard: React.FC = () => {
         />
 
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-4">
-          
+
           {/* 2. Unified Civic Control Center (Horizon Scrubber + Scope Toolbar + Active Tags) */}
           <CivicControlCenter
             selectedYear={selectedYear}
@@ -352,6 +353,9 @@ export const PortalDashboard: React.FC = () => {
             netrProgress={activeKpis.netrProgress}
             evToChargerRatio={activeKpis.evToChargerRatio}
           />
+
+          {/* 6. Curated Civic Insights Deck */}
+          <CivicInsightsDeck />
 
           {/* 6. Primary Data Grid (60% / 40%) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">

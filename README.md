@@ -46,6 +46,26 @@ Based on official records processed through our pipeline:
 
 ---
 
+## 💡 Four Structural Trends Revealed by the Data
+
+By analyzing 5 years of official vehicle registration and charging records, the portal reveals four major real-world shifts:
+
+### 1. The "Hybrid to Pure EV" Tipping Point (17.5% → 70.2%)
+In early 2022, hybrids were the cautious stepping stone, accounting for **82.5%** of all green car registrations while pure electric cars (BEVs) made up only 17.5%. By mid-2024, pure electric vehicles crossed 50%, and by the final quarter of 2025, pure battery electric cars hit an all-time peak of **70.2%** of all new electrified registrations. Malaysian drivers have largely bypassed hybrids as an interim technology, moving directly to 100% electric.
+
+### 2. The Three Eras of Market Leadership (2022 → 2026)
+* **2022 (The Luxury Niche)**: BMW dominated with **43.6%** market share. EVs were luxury toys for affluent drivers buying the BMW iX and i4.
+* **2023–2024 (The Challenger Duel)**: BYD and Tesla entered. By 2024, BYD (45.8%) and Tesla (27.4%) together captured an astonishing **73.2% duopoly** of all electric cars sold in Malaysia.
+* **2025–2026 (The Domestic Disruption)**: Proton introduced the e.MAS 7. In 2026 YTD, Proton surged to **53.1% market share**, marking the first time in history that a domestic Malaysian automaker captured the majority of national EV registrations.
+
+### 3. The Urban Infrastructure Crunch (KL at 74.5:1 vs. Perak at 8.5:1)
+Charging bottlenecks are heavily concentrated in high-density urban areas. While Kuala Lumpur has the highest number of registered EVs (12,671 cars), it has only 170 public charging bays—a severe bottleneck of **74.5 cars per charger** (7.5x worse than the EU 10:1 safety target!). Penang faces a similar crunch at **45.4:1**. Conversely, Perak actually meets the global benchmark at **8.5 cars per charger**, thanks to public charging hubs installed along PLUS North-South Expressway rest areas (R&Rs).
+
+### 4. The 2025 Q4 Policy Rush (21,742 Pure EVs in One Quarter)
+The final quarter of 2025 recorded an all-time high of **21,742 pure EV registrations** in a single quarter—more than all of 2022 and 2023 combined. This surge was driven by consumers and corporate fleets rushing to take advantage of the final months of the complete road tax and import duty exemptions before the government's revised JPJ EV road tax framework took effect in 2026.
+
+---
+
 ## 🚀 Key Features
 
 * **Interactive Registration Horizon (2022–2026)**  
